@@ -8,6 +8,7 @@ var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { conn
 var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
+var events = [];
 
 var server,
     port = 8000;
@@ -30,7 +31,7 @@ var routes = [
 ];
 
 // Create a server with a host, port, and options
-server = hapi.createServer('0.0.0.0', port, options);
+server = hapi.createServer('0.0.0.0', port, hapiOptions);
 
 server.route(routes);
 
@@ -44,7 +45,7 @@ server.start(function () {
 function homeHandler (request, reply) {
     // Render the view with the custom greeting
     reply.view('index.html', {
-			events: {}
+			events: events
     });
 };
 
@@ -82,6 +83,14 @@ graph.search(searchOptions, function(err, res) {
 						var p_male = Math.round((male / total_ppz)*100);
 						var p_female = Math.round((female / total_ppz)*100);
 
+            events.push({
+              name: event_name,
+              p_male: p_male,
+              male: male,
+              p_female: p_female,
+              female: female,
+              ratio: ((female/(male+female))*100)+"%"
+            });
 						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
 					}
 				});
