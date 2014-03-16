@@ -9,10 +9,44 @@ var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
 
-// With options
-// graph.setOptions(options).get("zuck", function(err, res) {
-// 	console.log(res); // { id: '4', name: 'Mark Zuckerberg'... }
-// });
+var server,
+    port = 8000;
+
+var hapiOptions = {
+    views: {
+        path: 'templates',
+        engines: {
+            html: 'handlebars'
+        },
+        partialsPath: 'partials'
+    }
+};
+
+var routes = [
+    { method: 'GET', path: '/', config: { handler: homeHandler } },
+    { method: 'GET', path: '/{path*}', handler: {
+        directory: { path: './public', listing: true, index: true }
+    } }
+];
+
+// Create a server with a host, port, and options
+server = hapi.createServer('0.0.0.0', port, options);
+
+server.route(routes);
+
+// Start the server
+server.start(function () {
+    uri = server.info.uri;
+    console.log('Server started at: ' + server.info.uri);
+});
+
+// HAPI HANDLER
+function homeHandler (request, reply) {
+    // Render the view with the custom greeting
+    reply.view('index.html', {
+			events: {}
+    });
+};
 
 
 var searchOptions = {
@@ -25,7 +59,7 @@ var searchOptions = {
 graph.search(searchOptions, function(err, res) {
 	res.data.forEach(function(entry) {
 
-	   	var event_name = entry.name;
+	  var event_name = entry.name;
 		var	male = 0;
 		var female = 0;
 
