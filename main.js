@@ -1,10 +1,11 @@
+var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
-var hapi = require('hapi');
+
 
 var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
-var myToken = config.access_token
+var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
 
@@ -14,51 +15,43 @@ graph.setAccessToken(myToken);
 // });
 
 
-
-var get_events = function(callback){
-	var searchOptions = {
+var searchOptions = {
 		q : "lisbon",
 		type : "event",
-		limit : "10"
+		limit : "15"
 	}
 
-	graph.search(searchOptions, function(err, res) {
-		callback(res.data);
-	});
 
-};
+graph.search(searchOptions, function(err, res) {
+	res.data.forEach(function(entry) {
 
+	   	var event_name = entry.name;
+		var	male = 0;
+		var female = 0;
 
+		graph.get(entry.id+"/attending?limit=250", function(err, result) {
 
-http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
+			var counter = 0;
 
+			result.data.forEach(function(ppl){
 
+				graph.get(ppl.id, function(err, response){
+					counter++;
 
-	get_events(function(events){
+					switch(response.gender){
+						case 'female' : female++; break;
+						case 'male' : male++; break;
+					}
 
-		events.forEach(function(entry) {
+					if(counter == result.data.length){
+						var total_ppz = male + female;
+						var p_male = Math.round((male / total_ppz)*100);
+						var p_female = Math.round((female / total_ppz)*100);
 
-			graph.get(entry.id+"/attending?limit=10", function(err, result) {
-
-
-				console.log(JSON.stringify(result.data));
-				console.log("blah asdlkajsdlkasjdlasnd lasd klasjd lasjd");
-
-
-
+						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+					}
+				});
 			});
-
 		});
-		res.end("LOL");
-		//res.end(JSON.stringify(cb));
 	});
-
-
-
-
-
-	//res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-
-console.log('Server running at http://127.0.0.1:1337/');
+});
