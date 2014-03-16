@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MostWanted12345/eventhub",
   "dependencies": {
-    "fbgraph": "^0.2.9"
+    "fbgraph": "^0.2.9",
+    "hapi": "~3.0.0"
   }
 }

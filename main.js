@@ -1,7 +1,7 @@
-var config = require('./config')
+var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
-
+var hapi = require('hapi');
 
 var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
 var myToken = config.access_token
@@ -38,13 +38,13 @@ http.createServer(function (req, res) {
 	get_events(function(events){
 
 		events.forEach(function(entry) {
-		   
+
 			graph.get(entry.id+"/attending?limit=10", function(err, result) {
-				
+
 
 				console.log(JSON.stringify(result.data));
 				console.log("blah asdlkajsdlkasjdlasnd lasd klasjd lasjd");
-			
+
 
 
 			});
@@ -53,7 +53,7 @@ http.createServer(function (req, res) {
 		res.end("LOL");
 		//res.end(JSON.stringify(cb));
 	});
-	 
+
 
 
 
