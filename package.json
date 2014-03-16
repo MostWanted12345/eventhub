@@ -1,0 +1,22 @@
+{
+  "name": "eventhub",
+  "version": "0.0.0",
+  "description": "EventHub. The best thing ever!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MostWanted12345/eventhub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MostWanted12345/eventhub/issues"
+  },
+  "homepage": "https://github.com/MostWanted12345/eventhub",
+  "dependencies": {
+    "fbgraph": "^0.2.9"
+  }
+}
