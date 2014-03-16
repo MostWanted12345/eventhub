@@ -14,51 +14,43 @@ graph.setAccessToken(myToken);
 // });
 
 
-
-var get_events = function(callback){
-	var searchOptions = {
+var searchOptions = {
 		q : "lisbon",
 		type : "event",
-		limit : "10"
+		limit : "15"
 	}
 
-	graph.search(searchOptions, function(err, res) {
-		callback(res.data);
-	});
 
-};
-
-
-
-http.createServer(function (req, res) {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-
-
-
-	get_events(function(events){
-
-		events.forEach(function(entry) {
+graph.search(searchOptions, function(err, res) {
+	res.data.forEach(function(entry) {
 		   
-			graph.get(entry.id+"/attending?limit=10", function(err, result) {
-				
+	   	var event_name = entry.name;
+		var	male = 0;
+		var female = 0;
 
-				console.log(JSON.stringify(result.data));
-				console.log("blah asdlkajsdlkasjdlasnd lasd klasjd lasjd");
+		graph.get(entry.id+"/attending?limit=250", function(err, result) {
 			
+			var counter = 0;
 
+			result.data.forEach(function(ppl){
 
+				graph.get(ppl.id, function(err, response){
+					counter++;
+
+					switch(response.gender){
+						case 'female' : female++; break; 
+						case 'male' : male++; break;
+					}
+					
+					if(counter == result.data.length){
+						var total_ppz = male + female;
+						var p_male = Math.round((male / total_ppz)*100);
+						var p_female = Math.round((female / total_ppz)*100);
+
+						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+					}
+				});
 			});
-
 		});
-		res.end("LOL");
-		//res.end(JSON.stringify(cb));
 	});
-	 
-
-
-
-
-	//res.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-
-console.log('Server running at http://127.0.0.1:1337/');
+});
