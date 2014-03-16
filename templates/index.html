@@ -1,0 +1,16 @@
+{{> header}}
+
+<div class="ink-grid">
+  <div id="content" class="column-group gutters">
+
+  {{#each events}}
+    <div id="twitter" class="large-100 medium-100 small-100">
+      <h3 itemprop="name">{{name}}</h3>
+      {{ratio}}
+    </div>
+  {{/each}}
+
+  </div>
+</div>
+
+{{> footer}}
