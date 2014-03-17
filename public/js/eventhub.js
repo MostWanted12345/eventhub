@@ -11,10 +11,20 @@ $(document).ready(function(){
 		}
 
 		$(".ink-grid").animate({
-			"top": "-100px", 
-			"opacity": "0" 
+			"margin-top": "-=100px", 
+			"opacity": "0"
+		}, 750);
+
+		// ink-grid div disapears from screen and 
+		// then the event table shows
+		setTimeout(function(){
+			$(".ink-grid").css("display", "none");
+			$("#eventhub-table").animate({
+				"margin-top": "+=25px"
+			}, 250).fadeIn();
 		}, 750);
 	});
+
 
 
 });
