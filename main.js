@@ -111,8 +111,8 @@ var processEvent = function(entry) {
 							male: male,
 							p_female: p_female,
 							female: female,
-							list_male : l_male.slice(0,11),
-							list_female : l_female.slice(0,11)
+							list_male : l_male.slice(0,32),
+							list_female : l_female.slice(0,32)
 						});
 						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
 					}
