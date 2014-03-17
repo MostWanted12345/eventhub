@@ -8,20 +8,17 @@
 
 		<a href="#" data-gender="wtf" class="eventhub-small-link eventhub-trigger">Don't know?</a>
 	</div>
+</div>
 
+<div id="eventhub-table">
 
-	<div id="content" class="column-group gutters">
-
-
+	<h1>Event List</h1>
 
 	{{#each events}}
-		<div id="twitter" class="large-100 medium-100 small-100">
-		<h3 itemprop="name">{{name}}</h3>
-			{{ratio}}
-		</div>
-	{{/each}}
-
+	<div class="eventhub-table-row" class="large-100 medium-100 small-100">
+		<h3>{{ name }}</h3>{{ ratio }}
 	</div>
+	{{/each}}
 </div>
 
 {{> footer}}
