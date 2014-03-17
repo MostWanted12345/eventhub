@@ -55,10 +55,11 @@ var searchOptions = {
 
 config.pages.forEach(function(page) {
   graph.get(page.id+"/events", function(err, res) {
-    //console.log(res); // { id: '4', name: 'Mark Zuckerberg'... }
-    res.data.forEach(function(entry) {
-      processEvent(entry);
-    });
+    if(res && res.data) {
+      res.data.forEach(function(entry) {
+        processEvent(entry);
+      });
+    }
   });
 });
 
