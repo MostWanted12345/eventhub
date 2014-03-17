@@ -1,12 +1,12 @@
 $(document).ready(function(){
-		
+
 
 	$(".eventhub-trigger").click(function(){
-		
+
 		var gender = $(this).data("gender");
 
 		$(".ink-grid").animate({
-			"margin-top": "-=100px", 
+			"margin-top": "-=100px",
 			"opacity": "0"
 		}, 750);
 
@@ -15,12 +15,12 @@ $(document).ready(function(){
 		$("#eventhub-header").fadeOut(750);
 		setTimeout(function(){
 			$("#eventhub-footer").fadeIn(750);
-			
+
 			$("#eventhub-header small").css("color","#333");
 			$("#eventhub-header").fadeIn(750);
 		}, 1250);
 
-		// ink-grid div disapears from screen and 
+		// ink-grid div disapears from screen and
 		// then the event table shows
 		setTimeout(function(){
 			$(".ink-grid").css("display", "none");
@@ -34,7 +34,15 @@ $(document).ready(function(){
 		        dataType : "json",
 		        type: "GET",
 		        success : function(data){
-			
+
+					data.sort(function(a,b){
+						if(gender == "female") {
+							return b.p_male - a.p_male;
+						} else {
+							return b.p_female - a.p_female;
+						}
+					})
+
 					//var counter = 0;
 					data.forEach(function(obj){
 
@@ -58,16 +66,16 @@ $(document).ready(function(){
 							html += '<div class="eventhub-table-row-ppl" class="large-100 medium-100 small-100">';
 							gender_data.list.forEach(function(id){
 								html += '<a target="_blank" href="http://www.facebook.com/' + id + '">';
-								html += '<img src="http://graph.facebook.com/' + id + '/picture?type=square&width=75&height=75"/></a>';	
+								html += '<img src="http://graph.facebook.com/' + id + '/picture?type=square&width=75&height=75"/></a>';
 							});
-							
+
 							html += '<a href="https://www.facebook.com/events/' + obj.id + '/" target="_blank"><small>...</small></div></a>';
 							html += '<div class="clearfix"></div></div>';
 							$("#eventhub-table").append(html);
-							
+
 						//	counter++;
 						//}, 750*counter);
-					});				
+					});
 				}
 		    });
 
