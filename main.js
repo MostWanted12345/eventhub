@@ -23,6 +23,7 @@ var hapiOptions = {
 
 var routes = [
     { method: 'GET', path: '/', config: { handler: homeHandler } },
+    { method: 'GET', path: '/api', config: { handler: apiHandler } },
     { method: 'GET', path: '/{path*}', handler: {
         directory: { path: './public', listing: true, index: true }
     } }
@@ -38,6 +39,11 @@ function homeHandler (request, reply) {
     reply.view('index.html', {
 			events: events
     });
+};
+
+function apiHandler (request, reply) {
+    // Render the view with the custom greeting
+    reply(events);
 };
 
 
@@ -69,7 +75,6 @@ function processEvent(entry) {
   var end_time = new Date(entry.start_time);
 
   if(end_time >= now) {
-
     var event_name = entry.name;
     var	male = 0;
     var female = 0;
@@ -95,6 +100,7 @@ function processEvent(entry) {
 
             events.push({
               name: event_name,
+              id: entry.id,
               p_male: p_male,
               male: male,
               p_female: p_female,
