@@ -53,6 +53,7 @@ var searchOptions = {
   limit: 15
 }
 
+
 config.pages.forEach(function(page) {
   graph.get(page.id+"/events", function(err, res) {
     if(res && res.data) {
@@ -71,53 +72,59 @@ graph.search(searchOptions, function(err, res) {
 });
 */
 
-function processEvent(entry) {
-  var now = new Date();
-  var end_time = new Date(entry.start_time);
+var processEvent = function(entry) {
+	var now = new Date();
+	var end_time = new Date(entry.start_time);
 
-  if(end_time >= now) {
-    var event_name = entry.name;
-    var	male = 0;
-    var female = 0;
+	if(end_time >= now) {
 
-    graph.get(entry.id+"/attending?limit=250", function(err, result) {
+		var event_name = entry.name;
+		var	male = 0;
+		var female = 0;
+		var l_male = [];
+		var l_female = [];
 
-      var counter = 0;
+		graph.get(entry.id+"/attending?limit=1000000", function(err, result) {
 
-      result.data.forEach(function(ppl){
+			var counter = 0;
 
-        graph.get(ppl.id, function(err, response){
-          counter++;
+			result.data.forEach(function(ppl){
 
-          switch(response.gender){
-            case 'female' : female++; break;
-            case 'male' : male++; break;
-          }
+				graph.get(ppl.id, function(err, response){
 
-          if(counter == result.data.length){
-            var total_ppz = male + female;
-            var p_male = Math.round((male / total_ppz)*100);
-            var p_female = Math.round((female / total_ppz)*100);
+					counter++;
+					switch(response.gender){
+						case 'female' : female++; l_female.push(ppl.id); break;
+						case 'male' : male++; l_male.push(ppl.id); break;
+					}
 
-            events.push({
-              name: event_name,
-              id: entry.id,
-              p_male: p_male,
-              male: male,
-              p_female: p_female,
-              female: female,
-              ratio: ((female/(male+female))*100)+"%"
-            });
-            console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
-          }
-        });
-      });
-    });
-  }
+					if(counter == result.data.length){
+
+						var total_ppz = male + female;
+						var p_male = Math.round((male / total_ppz)*100);
+						var p_female = Math.round((female / total_ppz)*100);
+
+						events.push({
+							name: event_name,
+							id: entry.id,
+							total_ppl: total_ppz,
+							p_male: p_male,
+							male: male,
+							p_female: p_female,
+							female: female,
+							list_male : l_male.slice(0,11),
+							list_female : l_female.slice(0,11)
+						});
+						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+					}
+				});
+			});
+		});
+	}
 }
 
 // Start the server
 server.start(function () {
-    uri = server.info.uri;
-    console.log('Server started at: ' + server.info.uri);
+	uri = server.info.uri;
+	console.log('Server started at: ' + server.info.uri);
 });
