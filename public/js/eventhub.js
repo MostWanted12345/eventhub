@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	$("#lighbox").hide();
+	$("#lighbox-shadow").hide();
+
+	$("#lighbox .close").click(function(){
+		$("#lighbox").fadeOut(150);
+		$("#lighbox-shadow").fadeOut(150);
+
+		setTimeout(function(){
+			$("#lighbox .info").empty();
+		}, 150);
+	});
 
 	$(".eventhub-trigger").click(function(){
 
@@ -34,14 +45,14 @@ $(document).ready(function(){
 		        dataType : "json",
 		        type: "GET",
 		        success : function(data){
+							data.sort(function(a,b){
 
-					data.sort(function(a,b){
-						if(gender == "female") {
+					if(gender == "female") {
 							return b.p_male - a.p_male;
 						} else {
 							return b.p_female - a.p_female;
 						}
-					})
+					});
 
 					//var counter = 0;
 					data.forEach(function(obj){
@@ -60,21 +71,27 @@ $(document).ready(function(){
 						//setTimeout(function(){
 							var html = '<div class="eventhub-table-row">';
 							html += '<div class="eventhub-table-row-detail" class="large-100 medium-100 small-100">';
-							html +=	'<a href="https://www.facebook.com/events/' + obj.id + '/" target="_blank"><img src="http://graph.facebook.com/' + obj.id + '/picture?type=square&width=75&height=75"/>';
-							html += '<h3>' + obj.name + '</h3></a><span>' + gender_data.percentil + '%<br/><small>(' + gender_data.qtd + ')</small></span>';
-							html += '</div>';
-							html += '<div class="eventhub-table-row-ppl" class="large-100 medium-100 small-100">';
+							html += '<img src="http://graph.facebook.com/' + obj.id + '/picture?type=square&width=75&height=75"/>';
+							html += '<span>' + gender_data.percentil + '%<br/><small>(' + gender_data.qtd + ')</small></span></div>';
+							html += '<div class="clearfix"></div>';
+							html += '<div class="lbinfo" style="display:none;">';
+							html += '<span class="lbid">' + obj.id + '</span>';
+							html += '<span class="lbgender">' +gender_data.percentil+'|'+gender_data.qtd+'</span>';
+							html += '<span class="lbuserid">'
 							gender_data.list.forEach(function(id){
-								html += '<a target="_blank" href="http://www.facebook.com/' + id + '">';
-								html += '<img src="http://graph.facebook.com/' + id + '/picture?type=square&width=75&height=75"/></a>';
+								html += id + '|';
 							});
-
-							html += '<a href="https://www.facebook.com/events/' + obj.id + '/" target="_blank"><small>...</small></div></a>';
-							html += '<div class="clearfix"></div></div>';
+							html = html.slice(0,-1)
+							html += '</span><span class="lbtitle">' +obj.name+ '</span></div></div>';
 							$("#eventhub-table").append(html);
 
 						//	counter++;
 						//}, 750*counter);
+					});
+					$("#eventhub-table").append("<div class=\"clearfix\"></div>");
+
+					$(".eventhub-table-row").click(function(){
+						lightbox($(this).find(".lbinfo"));
 					});
 				}
 		    });
@@ -82,7 +99,29 @@ $(document).ready(function(){
 		}, 750);
 	});
 });
+var lightbox = function(obj){
+	var id = obj.find(".lbid").text();
+	var gender = obj.find(".lbgender").text().split("|");
+	var gender_percentil = gender[0];
+	var gender_qtd = gender[1];
+	var title = obj.find(".lbtitle").text();
+	var pplid = obj.find(".lbuserid").text().split("|");
 
+//<span>' + gender_percentil + '%<br/><small>(' + gender_qtd + ')</small></span>
+	var html = '<a href="https://www.facebook.com/events/' + id + '/" target="_blank">';
+	html += '<h3>' + title + '</h3></a></a>';
+	pplid.forEach(function(id){
+		html += '<a target="_blank" href="http://www.facebook.com/' + id + '">';
+		html += '<img src="http://graph.facebook.com/' + id + '/picture?type=square&width=96&height=96"/></a>';
+	});
+
+	$("#lighbox .info").append(html);
+	$("#lighbox .info").append("<div class=\"clearfix\"></div>");
+
+
+	$("#lighbox").fadeIn(500);
+	$("#lighbox-shadow").fadeIn(500);
+}
 
 var do_female = function(obj){
 	return { "percentil" : obj.p_male, "qtd" : obj.male + "boys" , "list" : obj.list_male, "error" : false};
