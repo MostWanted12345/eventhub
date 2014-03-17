@@ -6,6 +6,10 @@ $(document).ready(function(){
 	$("#lighbox .close").click(function(){
 		$("#lighbox").fadeOut(150);
 		$("#lighbox-shadow").fadeOut(150);
+
+		setTimeout(function(){
+			$("#lighbox .info").empty();
+		}, 150);
 	});
 
 	$(".eventhub-trigger").click(function(){
@@ -88,8 +92,6 @@ $(document).ready(function(){
 	});
 });
 var lightbox = function(obj){
-	$("#lightbox .info").empty();
-
 	var id = obj.find(".lbid").text();
 	var gender = obj.find(".lbgender").text().split("|");
 	var gender_percentil = gender[0];

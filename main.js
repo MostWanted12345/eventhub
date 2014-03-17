@@ -83,7 +83,7 @@ var processEvent = function(entry) {
 		var l_male = [];
 		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=1000000", function(err, result) {
+		graph.get(entry.id+"/attending?limit=10", function(err, result) {
 
 			var counter = 0;
 
