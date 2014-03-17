@@ -1,16 +1,27 @@
 {{> header}}
 
 <div class="ink-grid">
-  <div id="content" class="column-group gutters">
+	<div id="eventhub-welcome">
+		<h1>What are you?</h1>
+		<a href="#" data-gender="male" class="ink-button blue eventhub-button eventhub-trigger">Male</a>
+		<a href="#" data-gender="female" class="ink-button red eventhub-button eventhub-trigger">Female</a>
 
-  {{#each events}}
-    <div id="twitter" class="large-100 medium-100 small-100">
-      <h3 itemprop="name">{{name}}</h3>
-      {{ratio}}
-    </div>
-  {{/each}}
+		<a href="#" data-gender="wtf" class="eventhub-small-link eventhub-trigger">Don't know?</a>
+	</div>
 
-  </div>
+
+	<div id="content" class="column-group gutters">
+
+
+
+	{{#each events}}
+		<div id="twitter" class="large-100 medium-100 small-100">
+		<h3 itemprop="name">{{name}}</h3>
+			{{ratio}}
+		</div>
+	{{/each}}
+
+	</div>
 </div>
 
 {{> footer}}

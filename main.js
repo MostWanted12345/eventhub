@@ -1,18 +1,16 @@
+//imports && constans
 var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
 
-
 var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
+
 var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
 var events = [];
-
-var server,
-    port = 8000;
-
+var server, port = 8000;
 var hapiOptions = {
     views: {
         path: 'templates',
@@ -32,14 +30,7 @@ var routes = [
 
 // Create a server with a host, port, and options
 server = hapi.createServer('0.0.0.0', port, hapiOptions);
-
 server.route(routes);
-
-// Start the server
-server.start(function () {
-    uri = server.info.uri;
-    console.log('Server started at: ' + server.info.uri);
-});
 
 // HAPI HANDLER
 function homeHandler (request, reply) {
@@ -51,11 +42,10 @@ function homeHandler (request, reply) {
 
 
 var searchOptions = {
-		center: "-9.13,38.72",
-    distance: "1000",
-		type : "location",
-		limit : "15"
-	}
+  q : "lisbon",
+  type : "event",
+  limit: 15
+}
 
 config.pages.forEach(function(page) {
   graph.get(page.id+"/events", function(err, res) {
@@ -66,11 +56,13 @@ config.pages.forEach(function(page) {
   });
 });
 
+/*
 graph.search(searchOptions, function(err, res) {
 	res.data.forEach(function(entry) {
     processEvent(entry);
 	});
 });
+*/
 
 function processEvent(entry) {
   var now = new Date();
@@ -116,3 +108,9 @@ function processEvent(entry) {
     });
   }
 }
+
+// Start the server
+server.start(function () {
+    uri = server.info.uri;
+    console.log('Server started at: ' + server.info.uri);
+});
