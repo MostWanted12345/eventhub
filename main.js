@@ -40,7 +40,9 @@ server.route(routes);
 // HAPI HANDLER
 function homeHandler (request, reply) {
     // Render the view with the custom greeting
-    reply.view('index.html');
+    reply.view('index.html', {
+      cities: pagesFinderOptions.cities
+    });
 };
 function wtfHandler (request, reply) {
     // Render the view with the custom greeting
