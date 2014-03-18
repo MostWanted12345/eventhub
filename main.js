@@ -3,6 +3,7 @@ var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
+var pagesFound = require('./pagesFound');
 
 var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
 
@@ -23,6 +24,7 @@ var hapiOptions = {
 
 var routes = [
     { method: 'GET', path: '/', config: { handler: homeHandler } },
+    { method: 'GET', path: '/wtf', config: { handler: wtfHandler } },
     { method: 'GET', path: '/api', config: { handler: apiHandler } },
     { method: 'GET', path: '/{path*}', handler: {
         directory: { path: './public', listing: true, index: true }
@@ -37,8 +39,12 @@ server.route(routes);
 function homeHandler (request, reply) {
     // Render the view with the custom greeting
     reply.view('index.html', {
-			events: events
+      events: events
     });
+};
+function wtfHandler (request, reply) {
+    // Render the view with the custom greeting
+    reply.view('wtf.html');
 };
 
 function apiHandler (request, reply) {
@@ -53,8 +59,8 @@ var searchOptions = {
   limit: 15
 }
 
-
-config.pages.forEach(function(page) {
+console.log(pagesFound.Lisboa)
+pagesFound.Lisboa.forEach(function(page) {
   graph.get(page.id+"/events", function(err, res) {
     if(res && res.data) {
       res.data.forEach(function(entry) {
@@ -84,7 +90,7 @@ var processEvent = function(entry) {
 		var l_male = [];
 		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=10", function(err, result) {
+		graph.get(entry.id+"/attending?limit=100000000", function(err, result) {
 
 			var counter = 0;
 

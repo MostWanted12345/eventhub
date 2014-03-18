@@ -1,13 +1,19 @@
 var graph = require('fbgraph');
 var config = require('./config');
 var options = require('./pagesFinderOptions');
+var async = require('async');
+var fs = require('fs');
 
 var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
+var pagesFound = {}
 
-options.cities.forEach(function(city){
-  options.queries.forEach(function(query){
+async.each(options.cities, function(city, cityCallback){
+  pagesFound[city.name] = [];
+  //console.log(pagesFound);
+
+  async.each(options.queries, function(query, queryCallback){
     var searchOptions = {
       q : city.name+"+"+query.q,
       type : "page",
@@ -16,7 +22,7 @@ options.cities.forEach(function(city){
 
     graph.search(searchOptions, function(err, res) {
       //console.log("\n\nLooking for ",searchOptions.q+"\n\n")
-      res.data.forEach(function(entry) {
+      async.each(res.data, function(entry, entryCallback) {
         var page = {
           //city: city.name,
           name: entry.name,
@@ -26,13 +32,28 @@ options.cities.forEach(function(city){
           if(res.location && res.location.country && res.location.country != "Portugal") {
 
           } else {
-            console.log(JSON.stringify(page)+ ",");
+            pagesFound[city.name].push(page);
+            //console.log(JSON.stringify(page)+ ",");
           }
+          entryCallback();
         })
-
-        //console.log(entry)
-
+      },function(err){
+        console.log("QUERY ENDED")
+        queryCallback();
       });
     });
+  }, function(err){
+    console.log("CITY ENDED");
+    cityCallback();
   });
+}, function(err){
+  console.log("EVERYTHING ENDED");
+  console.log(pagesFound);
+  fs.writeFile("pagesFound.json", JSON.stringify(pagesFound), function(err) {
+	    if(err) {
+	        console.log(err);
+	    } else {
+	        console.log("The file was saved!");
+	    }
+	});
 });
