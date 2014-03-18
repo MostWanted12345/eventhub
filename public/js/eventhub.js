@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 			// get array with events
 			$.ajax({
-		        url : '/api',
+		        url : '/api?c='+$("#city").val(),
 		        dataType : "json",
 		        type: "GET",
 		        success : function(data){

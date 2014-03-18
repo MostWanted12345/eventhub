@@ -6,6 +6,13 @@
 		<a href="#" data-gender="male" class="ink-button blue eventhub-button eventhub-trigger">Male</a>
 		<a href="#" data-gender="female" class="ink-button red eventhub-button eventhub-trigger">Female</a>
 
+    <h1>Where are you?</h1>
+    <select id="city">
+      {{#each cities}}
+        <option value="{{name}}">{{name}}</option>
+      {{/each}}
+    </select>
+
 		<!--<a href="#" data-gender="wtf" class="eventhub-small-link eventhub-trigger">Don't know?</a>-->
 	</div>
 </div>
@@ -14,7 +21,7 @@
 
 	<h1>Event List</h1>
 	<span><a href="/" >&lt; Back</a></span>
-	
+
 
 
 </div>

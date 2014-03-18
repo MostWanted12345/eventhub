@@ -11,6 +11,7 @@ var options = {
     {q: 'universidade'},
     {q: 'faculdade'},
     {q: 'praxe'},
+    {q: 'académica'},
     {q: 'bar'},
     {q: 'discoteca'}
     //{q: 'grupo+estudantes'},
