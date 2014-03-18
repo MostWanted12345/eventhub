@@ -4,13 +4,15 @@ var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
 var pagesFound = require('./pagesFound');
+var pagesFinderOptions = require('./pagesFinderOptions');
+
 
 var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
 
 var myToken = config.access_token;
 graph.setAccessToken(myToken);
 
-var events = [];
+var events = {};
 var server, port = 8000;
 var hapiOptions = {
     views: {
@@ -38,9 +40,7 @@ server.route(routes);
 // HAPI HANDLER
 function homeHandler (request, reply) {
     // Render the view with the custom greeting
-    reply.view('index.html', {
-      events: events
-    });
+    reply.view('index.html');
 };
 function wtfHandler (request, reply) {
     // Render the view with the custom greeting
@@ -49,7 +49,9 @@ function wtfHandler (request, reply) {
 
 function apiHandler (request, reply) {
     // Render the view with the custom greeting
-    reply(events);
+    console.log("RESQUEST ON API FOR: ", request.url.query.c);
+
+    reply(events[request.url.query.c]);
 };
 
 
@@ -59,14 +61,17 @@ var searchOptions = {
   limit: 15
 }
 
-console.log(pagesFound.Lisboa)
-pagesFound.Lisboa.forEach(function(page) {
-  graph.get(page.id+"/events", function(err, res) {
-    if(res && res.data) {
-      res.data.forEach(function(entry) {
-        processEvent(entry);
-      });
-    }
+
+pagesFinderOptions.cities.forEach(function(city) {
+  events[city.name] = [];
+  pagesFound[city.name].forEach(function(page) {
+    graph.get(page.id+"/events", function(err, res) {
+      if(res && res.data) {
+        res.data.forEach(function(entry) {
+          processEvent(entry, city);
+        });
+      };
+    });
   });
 });
 
@@ -78,7 +83,7 @@ graph.search(searchOptions, function(err, res) {
 });
 */
 
-var processEvent = function(entry) {
+var processEvent = function(entry, city) {
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
@@ -110,7 +115,7 @@ var processEvent = function(entry) {
 						var p_male = Math.round((male / total_ppz)*100);
 						var p_female = Math.round((female / total_ppz)*100);
 
-						events.push({
+						events[city.name].push({
 							name: event_name,
 							id: entry.id,
 							total_ppl: total_ppz,
