@@ -49,7 +49,7 @@ async.each(options.cities, function(city, cityCallback){
 }, function(err){
   console.log("EVERYTHING ENDED");
   console.log(pagesFound);
-  fs.writeFile("pagesFound.json", JSON.stringify(pagesFound), function(err) {
+  fs.writeFile("pagesFound.json", JSON.stringify(pagesFound, null, 2), function(err) {
 	    if(err) {
 	        console.log(err);
 	    } else {
