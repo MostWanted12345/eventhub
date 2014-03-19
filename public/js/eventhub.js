@@ -62,6 +62,7 @@ $(document).ready(function(){
 
 						//setTimeout(function(){
 							var html = '<div class="eventhub-table-row">';
+							html += '<div class="eventhub-loader"></div>';
 							html += '<div class="eventhub-table-row-detail" class="large-100 medium-100 small-100">';
 							html += '<img src="http://graph.facebook.com/' + obj.id + '/picture?type=square&width=75&height=75"/>';
 							html += '<span>' + gender_data.percentil + '%<br/><small>(' + gender_data.qtd + ')</small></span></div>';
@@ -84,13 +85,37 @@ $(document).ready(function(){
 
 					$(".eventhub-table-row").click(function(){
 						lightbox($(this).find(".lbinfo"));
-					});	
+					});
+
+
+					// $(".eventhub-table-row").hover(function(){
+					// 	$(this).find(".eventhub-loader").css("width", "170px");
+					// 	control(true);
+
+
+					// }, function() {
+					// 	$(this).find(".eventhub-loader").css("width", "0px");
+					// 	control(false);
+					// });
+
+
+					
 				}
 		    });
 
 		}, 750);
 	});
 });
+var control = function(check){
+	setTimeout(function(){
+		if(check){
+			console.log("OKAY");
+		} else {
+			console.log("NOT OKAY");
+		}
+	}, 1000);
+}
+
 var lightbox = function(obj){
 	var id = obj.find(".lbid").text();
 	var gender = obj.find(".lbgender").text().split("|");
