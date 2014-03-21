@@ -1,34 +1,50 @@
 {{> header}}
 
-<div class="ink-grid">
-	<div id="eventhub-welcome">
-		<h1>What are you?</h1>
-		<a href="#" data-gender="male" class="ink-button blue eventhub-button eventhub-trigger">Male</a>
-		<a href="#" data-gender="female" class="ink-button red eventhub-button eventhub-trigger">Female</a>
+<div id="eventhub-welcome">
+	<select id="city">
+		{{#each cities}}
+		<option value="{{name}}">{{name}}</option>
+		{{/each}}
+	</select>
+	<label>City:</label>
 
-    <h1>Where are you?</h1>
-    <select id="city">
-      {{#each cities}}
-        <option value="{{name}}">{{name}}</option>
-      {{/each}}
-    </select>
-
-		<!--<a href="#" data-gender="wtf" class="eventhub-small-link eventhub-trigger">Don't know?</a>-->
-	</div>
+	<h1>What tha f&#35;&#36;&#38; are you?</h1>
+	<a href="#" data-gender="male" class="ink-button blue eventhub-button eventhub-trigger pull-left">Male</a>
+	<a href="#" data-gender="female" class="ink-button red eventhub-button eventhub-trigger pull-right">Female</a>
+	<a href="#" data-gender="wtf" class="eventhub-small-link eventhub-wtf-trigger">Don't know?</a>
 </div>
 
 <div id="eventhub-table">
 
-	<h1>Event List</h1>
-	<span><a href="/" >&lt; Back</a></span>
+	<h1>Events in "<b></b>"</h1>
+	<small>Order by highest rate of getting laid.</small>
+	<span><a href="/" style="width:65px;">&lt; Back</a></span>
 
-
+	<section id="eventhub-table-wrapper" class="ac-container">
+	</section>
 
 </div>
 
-<div id="lighbox">
-	<div class="close"></div>
-	<div class="info"></div>
+<div id="eventhub-about">
+	<div class="eventhub-about-close"></div>
+	<h2>What tha fu&#35;&#36; is this shit?</h2>
+	<p>We're just two random guys want to help you to get laid.</p>
+	<p>If you are nearby and want to hangout, give us a call</p>
+	<hr>
+	<p>
+		<a href="http://franciscodias.net/" target="_blank">Francisco Dias</a> &amp; 
+		<a href="https://www.facebook.com/AndreFilipe.F.Silva" target="_blank">Andr&eacute; Silva</a>
+	</p>
+	<hr>
+	<p>Thanks for the inspiration <a href="http://showmethechicks.com/">SHOWMETHECHICKS</a>! =)</p>
+
 </div>
-<div id="lighbox-shadow"></div>
+
+
+<div id="eventhub-wtf">
+	<div class="eventhub-wtf-close"></div>
+	<h2>WUAT?</h2>
+	<p>faggot, pick a sex!<br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+</div>
 {{> footer}}

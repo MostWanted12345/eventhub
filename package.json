@@ -1,6 +1,6 @@
 {
   "name": "eventhub",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "EventHub. The best thing ever!",
   "main": "main.js",
   "scripts": {
