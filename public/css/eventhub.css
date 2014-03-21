@@ -10,14 +10,16 @@
 	color: #EBEBEB;
 	line-height: 120px;
 }
+
 #eventhub-header small{
 	font-size: 12px;
 	color: #ccc;
 	text-shadow: 0px 0px 2px #CF2727;
 	text-transform: uppercase;
 }
+
 #eventhub-welcome{
-	width: 525px;
+	width: 650px;
 	height: 250px;
 	margin: 0px auto;
 	margin-top: 200px;
@@ -28,6 +30,18 @@
 	text-shadow: 1px 2px 3px #000;
 }
 
+#eventhub-welcome label{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+	color: #fff;
+}
+
+#eventhub-welcome select{
+	float: right;
+	margin-top: 15px;
+}
+
 .eventhub-small-link{
 	display: block;
 	text-align: center;
@@ -36,16 +50,17 @@
 	text-shadow: 1px 1px 1px #000;
 	font-size: 14px;
 	line-height: 14px;
+	margin-top: 90px;
 }
 
 .eventhub-button{
 	text-align: center;
 	font-size: 26px;
-	width: 250px;
+	width: 310px;
 	padding: 25px 35px;
+	margin-top: 15px;
 	line-height: 26px;
 }
-
 
 #eventhub-table{
 	display: none;
@@ -58,6 +73,7 @@
 	height: auto;
 	border-bottom: 3px solid #B4B4B4;
 }
+
 #eventhub-table span a{
 	display: block;
 	margin: 0;
@@ -66,88 +82,19 @@
 	font-weight: 700;
 	color:#333;
 }
+
 #eventhub-table span a:hover{
 	color: #888;
 	text-decoration: underline;
 	cursor: pointer;
 }
+
 #eventhub-table h1{
 	padding-bottom: 10px;
 	text-shadow: 1px 2px 1px #333;
 }
-
-#eventhub-table .eventhub-table-row{
-	width: auto;
-	height: auto;
-	background: rgb(241, 241, 241);
-	padding: 15px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom: 2px solid #ccc;
-	margin-bottom: 10px;
-}
-#eventhub-table .eventhub-table-row-detail{
-	height: 90px;
-}
-#eventhub-table .eventhub-table-row-detail img{
-	display: block;
-	width: 75px;
-	height: 75px;
-	float: left;
-	border-radius: 5px;
-	border: 1px solid #999;
-}
-#eventhub-table .eventhub-table-row-detail h3{
-	float: left;
-	font-size: 24px;
-	line-height: 75px;
-	margin: 0px;
-	padding: 0px 10px;
-
-}
-#eventhub-table .eventhub-table-row-detail a{
-	color: #333;
-}
-
-#eventhub-table .eventhub-table-row-detail span{
-	float: right;
-	margin: 0px;
-	width: 94px;
-	text-align: center;
-	height: 94px;
-	font-weight: 700;
-	font-size: 35px;
-	padding-top: 24px;
-	line-height: 24px;
-	border-radius: 5px;
-	background: #ddd;
-	box-shadow: 0px 0px 4px #999;
-}
-#eventhub-table .eventhub-table-row-detail small{
-	font-size: 12px;
-	line-height: 10px;
-}
-
-#eventhub-table .eventhub-table-row-ppl img{
-	margin-top: 0px;
-	width: 64px;	
-	height: 64px;	
-	float: left;
-	border-radius: 5px;	
-	border: 1px solid #888;
-	margin-right: 5px;
-}
-#eventhub-table .eventhub-table-row-ppl img:hover{
-	cursor: pointer;
-}
-#eventhub-table .eventhub-table-row-ppl small{
-	font-size: 50px;
-	margin: 0px;
-	padding: 0px 10px;
-	line-height: 36px;
-}#eventhub-table .eventhub-table-row-ppl a:hover{
-	cursor: pointer;
-	text-decoration: none;
+#eventhub-table small{
+	font-size: 14px;
 }
 
 #eventhub-footer{
@@ -161,16 +108,47 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
+
 #eventhub-footer p{ 
 	color: #777;
 	font-size: 13px;
 	line-height: 17px;
 }
+
 #eventhub-footer a{
 	color: #fff;
 	text-decoration: none;
 }
+
 #eventhub-footer a:hover{
 	color: rgba(255,255,255,0.7);
 	text-decoration: none;
+}
+
+#eventhub-wtf, #eventhub-about{
+	font-size: 13px;
+	line-height: 20px;
+	display: block;
+	position: absolute;
+	opacity: 1;
+	margin: 0 auto;
+	margin-top: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 400px;
+	background: #fff;
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 35px #111;
+}
+
+#eventhub-wtf h2, #eventhub-about h2{
+	margin: 0;
+}
+.eventhub-wtf-close, .eventhub-about-close{
+	width: 16px;
+	height: 16px;
+	float: right;
+	background-image: url(../img/exit.png);
 }
