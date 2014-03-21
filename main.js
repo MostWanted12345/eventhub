@@ -3,20 +3,21 @@ var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
+var pagesFinderOptions = require('./pagesFinderOptions');
 
-var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
+// JSON with all the events by City
+var pagesFound = require('./pagesFound');
 
-var myToken = config.access_token;
-graph.setAccessToken(myToken);
+graph.setAccessToken(config.access_token);
 
-var events = [];
+// Global Var
+// updated constantly, contains every event on the "menu"
+var events = {};
 var server, port = 8000;
-var hapiOptions = {
+var hapiOptions = {			
     views: {
         path: 'templates',
-        engines: {
-            html: 'handlebars'
-        },
+        engines: { html: 'handlebars' },
         partialsPath: 'partials'
     }
 };
@@ -24,43 +25,44 @@ var hapiOptions = {
 var routes = [
     { method: 'GET', path: '/', config: { handler: homeHandler } },
     { method: 'GET', path: '/api', config: { handler: apiHandler } },
-    { method: 'GET', path: '/{path*}', handler: {
-        directory: { path: './public', listing: true, index: true }
-    } }
+    { method: 'GET', path: '/{path*}', handler: { directory: { path: './public', listing: true, index: true } } }
 ];
 
 // Create a server with a host, port, and options
 server = hapi.createServer('0.0.0.0', port, hapiOptions);
 server.route(routes);
 
-// HAPI HANDLER
+
 function homeHandler (request, reply) {
-    // Render the view with the custom greeting
     reply.view('index.html', {
-			events: events
+      cities: pagesFinderOptions.cities
     });
 };
 
 function apiHandler (request, reply) {
-    // Render the view with the custom greeting
-    reply(events);
+    console.log("RESQUEST ON API FOR: ", request.url.query.c);
+    reply(events[request.url.query.c]);
 };
 
 
 var searchOptions = {
-  q : "lisbon",
-  type : "event",
-  limit: 15
+	q : "lisbon",
+	type : "event",
+	limit: 15
 }
 
 
-config.pages.forEach(function(page) {
-  graph.get(page.id+"/events", function(err, res) {
-    //console.log(res); // { id: '4', name: 'Mark Zuckerberg'... }
-    res.data.forEach(function(entry) {
-      processEvent(entry);
-    });
-  });
+pagesFinderOptions.cities.forEach(function(city) {
+	events[city.name] = [];
+	pagesFound[city.name].forEach(function(page) {
+		graph.get(page.id+"/events", function(err, res) {
+			if(res && res.data) {
+				res.data.forEach(function(entry) {
+					processEvent(entry, city);
+				});
+			};
+		});
+	});
 });
 
 /*
@@ -71,7 +73,7 @@ graph.search(searchOptions, function(err, res) {
 });
 */
 
-var processEvent = function(entry) {
+var processEvent = function(entry, city) {
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
@@ -83,7 +85,7 @@ var processEvent = function(entry) {
 		var l_male = [];
 		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=10", function(err, result) {
+		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
 
 			var counter = 0;
 
@@ -103,7 +105,7 @@ var processEvent = function(entry) {
 						var p_male = Math.round((male / total_ppz)*100);
 						var p_female = Math.round((female / total_ppz)*100);
 
-						events.push({
+						events[city.name].push({
 							name: event_name,
 							id: entry.id,
 							total_ppl: total_ppz,
