@@ -3,6 +3,7 @@ var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
+var async = require('async');
 var pagesFinderOptions = require('./pagesFinderOptions');
 
 // JSON with all the events by City
@@ -14,7 +15,7 @@ graph.setAccessToken(config.access_token);
 // updated constantly, contains every event on the "menu"
 var events = {};
 var server, port = 8000;
-var hapiOptions = {			
+var hapiOptions = {
     views: {
         path: 'templates',
         engines: { html: 'handlebars' },
@@ -52,17 +53,28 @@ var searchOptions = {
 }
 
 
-pagesFinderOptions.cities.forEach(function(city) {
+async.each(pagesFinderOptions.cities, function(city, cityCallback) {
 	events[city.name] = [];
-	pagesFound[city.name].forEach(function(page) {
+	async.each(pagesFound[city.name], function(page, pageCallback) {
 		graph.get(page.id+"/events", function(err, res) {
 			if(res && res.data) {
-				res.data.forEach(function(entry) {
-					processEvent(entry, city);
-				});
+				async.each(res.data, function(entry, eventCallback) {
+					processEvent(entry, city, function() {eventCallback();});
+				}, function(err){
+          // All events ended
+          pageCallback();
+        });
 			};
 		});
-	});
+	}, function(err) {
+    // All pages ended
+    console.log("\n\nCITY FINISHED\n\n");
+    cityCallback();
+  });
+}, function(err) {
+  // All cities finished
+  console.log("\n\nEVERYTHING FINISHED\n\n");
+
 });
 
 /*
@@ -73,7 +85,7 @@ graph.search(searchOptions, function(err, res) {
 });
 */
 
-var processEvent = function(entry, city) {
+var processEvent = function(entry, city, eventCallback) {
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
@@ -87,41 +99,46 @@ var processEvent = function(entry, city) {
 
 		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
 
-			var counter = 0;
-
-			result.data.forEach(function(ppl){
+			async.each(result.data, function(ppl, personCallback){
 
 				graph.get(ppl.id, function(err, response){
 
-					counter++;
 					switch(response.gender){
 						case 'female' : female++; l_female.push(ppl.id); break;
 						case 'male' : male++; l_male.push(ppl.id); break;
 					}
 
-					if(counter == result.data.length){
+          personCallback();
+        });
+      }, function(err) {
+        // All people finished
 
-						var total_ppz = male + female;
-						var p_male = Math.round((male / total_ppz)*100);
-						var p_female = Math.round((female / total_ppz)*100);
+        var total_ppz = male + female;
+        var p_male = Math.round((male / total_ppz)*100);
+        var p_female = Math.round((female / total_ppz)*100);
 
-						events[city.name].push({
-							name: event_name,
-							id: entry.id,
-							total_ppl: total_ppz,
-							p_male: p_male,
-							male: male,
-							p_female: p_female,
-							female: female,
-							list_male : l_male.slice(0,32),
-							list_female : l_female.slice(0,32)
-						});
-						console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
-					}
-				});
-			});
-		});
+        if(total_ppz > 4) {
+          events[city.name].push({
+            name: event_name,
+            id: entry.id,
+            total_ppl: total_ppz,
+            p_male: p_male,
+            male: male,
+            p_female: p_female,
+            female: female,
+            list_male : l_male.slice(0,32),
+            list_female : l_female.slice(0,32)
+          });
+        }
+        console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+
+        eventCallback();
+      });
+    });
 	}
+  else {
+    eventCallback();
+  }
 }
 
 // Start the server
