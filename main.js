@@ -14,7 +14,7 @@ graph.setAccessToken(config.access_token);
 // Global Var
 // updated constantly, contains every event on the "menu"
 var events = {};
-var server, port = 8000;
+var server, port = 8008;
 var hapiOptions = {
     views: {
         path: 'templates',
