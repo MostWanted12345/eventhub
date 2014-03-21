@@ -3,78 +3,66 @@ var hapi = require('hapi');
 var config = require('./config');
 var http = require('http');
 var graph = require('fbgraph');
-var pagesFound = require('./pagesFound');
 var pagesFinderOptions = require('./pagesFinderOptions');
 
+// JSON with all the events by City
+var pagesFound = require('./pagesFound');
 
-var options = {timeout:  5000, pool: { maxSockets:  Infinity }, headers:  { connection:  "keep-alive" }};
+graph.setAccessToken(config.access_token);
 
-var myToken = config.access_token;
-graph.setAccessToken(myToken);
-
+// Global Var
+// updated constantly, contains every event on the "menu"
 var events = {};
 var server, port = 8000;
-var hapiOptions = {
+var hapiOptions = {			
     views: {
         path: 'templates',
-        engines: {
-            html: 'handlebars'
-        },
+        engines: { html: 'handlebars' },
         partialsPath: 'partials'
     }
 };
 
 var routes = [
     { method: 'GET', path: '/', config: { handler: homeHandler } },
-    { method: 'GET', path: '/wtf', config: { handler: wtfHandler } },
     { method: 'GET', path: '/api', config: { handler: apiHandler } },
-    { method: 'GET', path: '/{path*}', handler: {
-        directory: { path: './public', listing: true, index: true }
-    } }
+    { method: 'GET', path: '/{path*}', handler: { directory: { path: './public', listing: true, index: true } } }
 ];
 
 // Create a server with a host, port, and options
 server = hapi.createServer('0.0.0.0', port, hapiOptions);
 server.route(routes);
 
-// HAPI HANDLER
+
 function homeHandler (request, reply) {
-    // Render the view with the custom greeting
     reply.view('index.html', {
       cities: pagesFinderOptions.cities
     });
 };
-function wtfHandler (request, reply) {
-    // Render the view with the custom greeting
-    reply.view('wtf.html');
-};
 
 function apiHandler (request, reply) {
-    // Render the view with the custom greeting
     console.log("RESQUEST ON API FOR: ", request.url.query.c);
-
     reply(events[request.url.query.c]);
 };
 
 
 var searchOptions = {
-  q : "lisbon",
-  type : "event",
-  limit: 15
+	q : "lisbon",
+	type : "event",
+	limit: 15
 }
 
 
 pagesFinderOptions.cities.forEach(function(city) {
-  events[city.name] = [];
-  pagesFound[city.name].forEach(function(page) {
-    graph.get(page.id+"/events", function(err, res) {
-      if(res && res.data) {
-        res.data.forEach(function(entry) {
-          processEvent(entry, city);
-        });
-      };
-    });
-  });
+	events[city.name] = [];
+	pagesFound[city.name].forEach(function(page) {
+		graph.get(page.id+"/events", function(err, res) {
+			if(res && res.data) {
+				res.data.forEach(function(entry) {
+					processEvent(entry, city);
+				});
+			};
+		});
+	});
 });
 
 /*
@@ -97,7 +85,7 @@ var processEvent = function(entry, city) {
 		var l_male = [];
 		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=100000000", function(err, result) {
+		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
 
 			var counter = 0;
 
