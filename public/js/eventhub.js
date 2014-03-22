@@ -114,7 +114,7 @@ $(document).ready(function(){
 						if(gender_data.error === true)
 							return false;
 
-						var name = (obj.name.length > 69) ? obj.name.substring(0, 70) : obj.name;
+						var name = (obj.name.length > 55) ? obj.name.substring(0, 70) : obj.name;
 						var selected = (counter == 1) ? "checked" : "";
 						var html = '<div>';
 						html += '<input id="ac-'+counter+'" name="accordion-1" type="checkbox" '+selected+' />';
