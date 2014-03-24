@@ -151,11 +151,7 @@ var processEvent = function(entry, city, eventCallback) {
 }
 
 // Start the server
-// server.start(function () {
-// 	uri = server.info.uri;
-// 	console.log('Server started at: ' + server.info.uri);
-// });
-
-server.listen(port, function() {
-  console.log("Listening on " + port);
+server.start(function () {
+	uri = server.info.uri;
+	console.log('Server started at: ' + server.info.uri);
 });
