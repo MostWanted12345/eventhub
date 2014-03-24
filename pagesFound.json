@@ -1,6 +1,51 @@
 {
   "Lisboa": [
     {
+      "name" : "ErasmusStudentNetworkLisboa",
+      "id" : "369533256434412"
+    },
+    {
+      "name" : "Aeisa Agronomia",
+      "id" : "100000297357009"
+    },
+    {
+      "name": "Associação Académica de Lisboa", 
+      "id": "112067048831527"
+    },
+    {
+  "name": "Ae Escs", 
+  "id": "199439280090430"
+},{
+  "name": "AEFFUL", 
+  "id": "289714362413"
+},{
+  "name": "AEIST - Associação dos Estudantes do Instituto Superior Técnico", 
+  "id": "145517700850"
+},{
+  "name": "BEST Lisboa", 
+  "id": "55168963364"
+},{
+  "name": "Cpleic", 
+  "id": "125210107531000"
+},
+{
+  "name": "Fórum Civil", 
+  "id": "159796024048890"
+},{
+  "name": "Fórum Mecânica", 
+  "id": "123822397730681"
+},{
+  "name": "Comissão de Praxes de MEEC do IST", 
+  "id": "132612700125240"
+},
+{
+  "name": "IEEE IST Student Branch", 
+  "id": "212991678724583"
+},{
+  "name": "Tuna Universitária do Instituto Superior Técnico", 
+  "id": "130523219590"
+},
+    {
       "name": "Comissão de Praxe da Universidade Atlântica",
       "id": "202226239958149"
     },

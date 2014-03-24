@@ -90,11 +90,17 @@
 }
 
 #eventhub-table h1{
+	float: left;
 	padding-bottom: 10px;
 	text-shadow: 1px 2px 1px #333;
 }
 #eventhub-table small{
 	font-size: 14px;
+}
+
+#eventhub-table small.subtitle{
+	float: right;
+	margin-top: 25px;
 }
 
 #eventhub-footer{

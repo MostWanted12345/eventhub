@@ -1,7 +1,7 @@
 {
   "name": "eventhub",
-  "version": "1.0.0",
-  "description": "EventHub. The best thing ever!",
+  "version": "0.4.2",
+  "description": "EventHub. The best thing ever to get laid!",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
