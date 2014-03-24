@@ -133,7 +133,7 @@ $(document).ready(function(){
 						html += '<span>'+gender_data.percentil+'%<br/><small>('+gender_data.qtd+')</small></span>';
 						html += '</label>';
 						html += '<article class="ac-small">';
-						html += '<p>get creeping...</p>';
+						html += '<p>get creeping... <span>(⌐■_■)</span></p>';
 						html += '<div>';
 						gender_data.list.forEach(function(id){
 							html += '<a target="_blank" href="http://www.facebook.com/'+id+'">';

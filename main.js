@@ -6,14 +6,12 @@ var graph = require('fbgraph');
 var async = require('async');
 var pagesFinderOptions = require('./pagesFinderOptions');
 
-// JSON with all the events by City
 var pagesFound = require('./pagesFound');
 
 graph.setAccessToken(config.access_token);
 
-// Global Var
-// updated constantly, contains every event on the "menu"
 var events = {};
+var event_name_array = []; // for global check.. it's slow, should be better
 var server, port = 8008;
 var hapiOptions = {
     views: {
@@ -29,7 +27,7 @@ var routes = [
     { method: 'GET', path: '/{path*}', handler: { directory: { path: './public', listing: true, index: true } } }
 ];
 
-// Create a server with a host, port, and options
+
 server = hapi.createServer('0.0.0.0', port, hapiOptions);
 server.route(routes);
 
@@ -46,45 +44,34 @@ function apiHandler (request, reply) {
 };
 
 
-var searchOptions = {
-	q : "lisbon",
-	type : "event",
-	limit: 15
-}
-
-
 async.each(pagesFinderOptions.cities, function(city, cityCallback) {
-	events[city.name] = [];
-	async.each(pagesFound[city.name], function(page, pageCallback) {
-		graph.get(page.id+"/events", function(err, res) {
-			if(res && res.data) {
-				async.each(res.data, function(entry, eventCallback) {
-					processEvent(entry, city, function() {eventCallback();});
-				}, function(err){
-          // All events ended
-          pageCallback();
+    events[city.name] = [];
+    async.each(pagesFound[city.name], function(page, pageCallback) {
+        graph.get(page.id+"/events", function(err, res) {
+
+            if(res && res.data) {
+                async.each(res.data, function(entry, eventCallback) {
+                    processEvent(entry, city, function() { eventCallback(); });                   
+                }, function(err){
+                    // All events ended
+                    pageCallback();
+                });
+            }
         });
-			};
-		});
-	}, function(err) {
-    // All pages ended
-    console.log("\n\nCITY FINISHED\n\n");
-    cityCallback();
-  });
+    }, function(err) {
+        // All pages ended
+        console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING "+city.name+"\n\n");
+        cityCallback();
+    });
 }, function(err) {
-  // All cities finished
-  console.log("\n\nEVERYTHING FINISHED\n\n");
-
+    // All cities finished
+    console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING EVERYTHING\n\n");
 });
 
-/*
-graph.search(searchOptions, function(err, res) {
-	res.data.forEach(function(entry) {
-    processEvent(entry);
-	});
-});
-*/
+// Returns true if element is inside array.. false otherwise
+function isInArray(value, array) { return array.indexOf(value) > -1; }
 
+// Substitutes number of month for the name itself (first 3 chars)
 var get_month = function(id){
   switch(id){
     case '01' : return "JAN";
@@ -106,69 +93,61 @@ var processEvent = function(entry, city, eventCallback) {
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
-  //for stats only
-  var moret10 = 0;
-  var lesst10 = 0;
-
 	if(end_time >= now) {
 
 		var event_name = entry.name;
-		var	male = 0;
-		var female = 0;
-		var l_male = [];
-		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=10", function(err, result) {
+        if(!isInArray(event_name, event_name_array)){
+            event_name_array.push(event_name);
+    		var	male = 0;
+    		var female = 0;
+    		var l_male = [];
+    		var l_female = [];
 
-			async.each(result.data, function(ppl, personCallback){
+    		graph.get(entry.id+"/attending?limit=10", function(err, result) {
 
-				graph.get(ppl.id, function(err, response){
+        		async.each(result.data, function(ppl, personCallback){
 
-					switch(response.gender){
-						case 'female' : female++; l_female.push(ppl.id); break;
-						case 'male' : male++; l_male.push(ppl.id); break;
-					}
+    				graph.get(ppl.id, function(err, response){
 
-          personCallback();
-        });
-      }, function(err) {
-        // All people finished
+    					switch(response.gender){
+    						case 'female' : female++; l_female.push(ppl.id); break;
+    						case 'male' : male++; l_male.push(ppl.id); break;
+    					}
 
-        var total_ppz = male + female;
-        var p_male = Math.round((male / total_ppz)*100);
-        var p_female = Math.round((female / total_ppz)*100);
+                        personCallback();
+                    });
+                }, function(err) {
+                // All people finished
 
-        if(total_ppz >= 10) {
-          moret10 += 1;
-          events[city.name].push({
-            name: event_name,
-            id: entry.id,
-            total_ppl: total_ppz,
-            p_male: p_male,
-            male: male,
-            p_female: p_female,
-            female: female,
-            list_male : l_male.slice(0,32),
-            list_female : l_female.slice(0,32),
-            dataday: entry.start_time.split("-")[2].substring(0,2),
-            datamonth: get_month(entry.start_time.split("-")[1])
-          });
+                    var total_ppz = male + female;
+                    var p_male = Math.round((male / total_ppz)*100);
+                    var p_female = Math.round((female / total_ppz)*100);
 
-          console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
-        } else {
-          lesst10 += 1;
+                    if(total_ppz >= 10) {
+                        events[city.name].push({
+                            name: event_name,
+                            id: entry.id,
+                            total_ppl: total_ppz,
+                            p_male: p_male,
+                            male: male,
+                            p_female: p_female,
+                            female: female,
+                            list_male : l_male.slice(0,32),
+                            list_female : l_female.slice(0,32),
+                            dataday: entry.start_time.split("-")[2].substring(0,2),
+                            datamonth: get_month(entry.start_time.split("-")[1])
+                        });
+
+                        console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+                    } 
+                    eventCallback();
+                });
+            });
         }
-        
-
-
-
+    } else {
         eventCallback();
-      });
-    });
-	}
-  else {
-    eventCallback();
-  }
+    }
 }
 
 // Start the server
