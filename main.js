@@ -85,9 +85,30 @@ graph.search(searchOptions, function(err, res) {
 });
 */
 
+var get_month = function(id){
+  switch(id){
+    case '01' : return "JAN";
+    case '02' : return "FEV";
+    case '03' : return "MAR";
+    case '04' : return "APR";
+    case '05' : return "MAY";
+    case '06' : return "JUN";
+    case '07' : return "JUL";
+    case '08' : return "AUG";
+    case '09' : return "SEP";
+    case '10' : return "OCT";
+    case '11' : return "NOV";
+    case '12' : return "DEC"; 
+  }
+}
+
 var processEvent = function(entry, city, eventCallback) {
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
+
+  //for stats only
+  var moret10 = 0;
+  var lesst10 = 0;
 
 	if(end_time >= now) {
 
@@ -97,7 +118,7 @@ var processEvent = function(entry, city, eventCallback) {
 		var l_male = [];
 		var l_female = [];
 
-		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
+		graph.get(entry.id+"/attending?limit=10", function(err, result) {
 
 			async.each(result.data, function(ppl, personCallback){
 
@@ -117,7 +138,8 @@ var processEvent = function(entry, city, eventCallback) {
         var p_male = Math.round((male / total_ppz)*100);
         var p_female = Math.round((female / total_ppz)*100);
 
-        if(total_ppz > 4) {
+        if(total_ppz >= 10) {
+          moret10 += 1;
           events[city.name].push({
             name: event_name,
             id: entry.id,
@@ -127,10 +149,18 @@ var processEvent = function(entry, city, eventCallback) {
             p_female: p_female,
             female: female,
             list_male : l_male.slice(0,32),
-            list_female : l_female.slice(0,32)
+            list_female : l_female.slice(0,32),
+            dataday: entry.start_time.split("-")[2].substring(0,2),
+            datamonth: get_month(entry.start_time.split("-")[1])
           });
+
+          console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+        } else {
+          lesst10 += 1;
         }
-        console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
+        
+
+
 
         eventCallback();
       });

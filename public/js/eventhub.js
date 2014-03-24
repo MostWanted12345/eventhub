@@ -90,6 +90,11 @@ $(document).ready(function(){
 		        type: "GET",
 		        success : function(data){
 
+		        	if(data.length === 0){
+		        		var html = '<span class="notification">We\'re still scrapping the fu&#35;&#36; out of facebook... come back later</span>';
+		        		$("#eventhub-table-wrapper").append(html);
+		        	}
+
 					// Sort by highest rate
 					data.sort(function(a,b){
 						if(gender == "female")
@@ -114,15 +119,17 @@ $(document).ready(function(){
 						if(gender_data.error === true)
 							return false;
 
-						var name = (obj.name.length > 55) ? obj.name.substring(0, 70) : obj.name;
+						var name = (obj.name.length > 55) ? obj.name.substring(0, 55) + "..." : obj.name;
 						var selected = (counter == 1) ? "checked" : "";
 						var html = '<div>';
 						html += '<input id="ac-'+counter+'" name="accordion-1" type="checkbox" '+selected+' />';
 						html += '<label for="ac-'+counter+'">';
 						html += '<a href="https://www.facebook.com/events/'+obj.id+'/" target="_blank">';
 						html += '<img src="http://graph.facebook.com/'+obj.id+'/picture?type=square&width=75&height=75"/>';
+						html += '<span class="date">'+obj.dataday+'<br/><small>'+obj.datamonth+'</small></span>';
 						html += '<h3>'+name+'</h3>';
 						html += '</a>';
+						html += '<p>click me</p>';
 						html += '<span>'+gender_data.percentil+'%<br/><small>('+gender_data.qtd+')</small></span>';
 						html += '</label>';
 						html += '<article class="ac-small">';
@@ -137,9 +144,14 @@ $(document).ready(function(){
 						html += '</article>';
 						html += '</div>';
 
-						console.log(html);
 						$("#eventhub-table-wrapper").append(html);
 
+
+						$(".ac-container label").hover(function() {
+							$(this).find("p").css("color","#bbb");
+						}, function() {
+							$(this).find("p").css("color","#fff");
+						});
 					});
 				}
 		    });
@@ -172,21 +184,8 @@ $(document).ready(function(){
 // 	$("#lighbox-shadow").fadeIn(500);
 // }
 
-
-var do_female = function(obj){
-	return { "percentil" : obj.p_male, "qtd" : obj.male + " boys" , "list" : obj.list_male, "error" : false};
-}
-
-var do_male = function(obj){
-	return { "percentil" : obj.p_female, "qtd" : obj.female + " girls", "list" : obj.list_female, "error" : false};
-}
-
-var do_wtf = function(obj){
-	console.log("LOL");
-	return { "error" : true };
-}
-
-var do_nothing = function(obj){
-	console.log("WHAT ARE YOU TRYING TO DO UHN?!\nGive us a call if you reach this page.. we'll buy you a beer just for the efford! ;)")
-	return { "error" : true };
-}
+// UTILS
+var do_female = function(obj){ return { "percentil" : obj.p_male, "qtd" : obj.male + " boys" , "list" : obj.list_male, "error" : false}; }
+var do_male = function(obj){ return { "percentil" : obj.p_female, "qtd" : obj.female + " girls", "list" : obj.list_female, "error" : false}; }
+var do_wtf = function(obj){	console.log("LOL");	return { "error" : true }; }
+var do_nothing = function(obj){	console.log("WHAT ARE YOU TRYING TO DO UHN?!\nGive us a call if you reach this page.. we'll buy you a beer just for the efford! ;)"); return { "error" : true }; }
