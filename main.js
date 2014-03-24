@@ -86,7 +86,7 @@ var get_month = function(id){
     case '12' : return "DEC"; 
   }
 }
-var total_event = 0;
+//var total_event = 0;
 var processEvent = function(entry, city, eventCallback) {
 
 	var now = new Date();
@@ -95,9 +95,8 @@ var processEvent = function(entry, city, eventCallback) {
 	if(end_time >= now) {
 
 		var event_name = entry.name;
-        total_event += 1;
-
-        console.log(event_name + " " +total_event);
+        //total_event += 1;
+        //console.log(event_name + " " +total_event);
         if(!isInArray(event_name, event_name_array)){
             event_name_array.push(event_name);
     		var	male = 0;
