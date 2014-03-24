@@ -28,7 +28,7 @@ var routes = [
 ];
 
 
-server = hapi.createServer( port, hapiOptions);
+server = hapi.createServer("0.0.0.0", port, hapiOptions);
 server.route(routes);
 
 function homeHandler (request, reply) {
@@ -104,7 +104,7 @@ var processEvent = function(entry, city, eventCallback) {
     		var l_male = [];
     		var l_female = [];
 
-    		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
+    		graph.get(entry.id+"/attending?limit=10000", function(err, result) {
 
         		async.each(result.data, function(ppl, personCallback){
 
