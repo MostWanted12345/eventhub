@@ -20,6 +20,11 @@
     "fbgraph": "^0.2.9",
     "hapi": "~3.0.0",
     "handlebars": "~2.0.0-alpha.2",
-    "async": "~0.2.10"
+    "async": "~0.2.10",
+    "logfmt": "^1.0.0",
+    "express": "^3.5.0"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
