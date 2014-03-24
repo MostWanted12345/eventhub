@@ -12,7 +12,7 @@ graph.setAccessToken(config.access_token);
 
 var events = {};
 var event_name_array = []; // for global check.. it's slow, should be better
-var server, port = 8008;
+var server, port = 8000 ;
 var hapiOptions = {
     views: {
         path: 'templates',
