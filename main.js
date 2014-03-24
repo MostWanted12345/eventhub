@@ -12,7 +12,7 @@ graph.setAccessToken(config.access_token);
 
 var events = {};
 var event_name_array = []; // for global check.. it's slow, should be better
-var server, port = 8000 ;
+var server, port = process.env.PORT || 5000 ;
 var hapiOptions = {
     views: {
         path: 'templates',
@@ -30,7 +30,6 @@ var routes = [
 
 server = hapi.createServer('0.0.0.0', port, hapiOptions);
 server.route(routes);
-
 
 function homeHandler (request, reply) {
     reply.view('index.html', {
@@ -90,6 +89,8 @@ var get_month = function(id){
 }
 
 var processEvent = function(entry, city, eventCallback) {
+    console.log(entry.name);
+    return 0;
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
@@ -104,7 +105,7 @@ var processEvent = function(entry, city, eventCallback) {
     		var l_male = [];
     		var l_female = [];
 
-    		graph.get(entry.id+"/attending?limit=1000000", function(err, result) {
+    		graph.get(entry.id+"/attending?limit=10", function(err, result) {
 
         		async.each(result.data, function(ppl, personCallback){
 
@@ -152,6 +153,6 @@ var processEvent = function(entry, city, eventCallback) {
 
 // Start the server
 server.start(function () {
-	uri = server.info.uri;
 	console.log('Server started at: ' + server.info.uri);
 });
+
