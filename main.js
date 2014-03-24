@@ -28,7 +28,7 @@ var routes = [
 ];
 
 
-server = hapi.createServer('0.0.0.0', port, hapiOptions);
+server = hapi.createServer( port, hapiOptions);
 server.route(routes);
 
 function homeHandler (request, reply) {
@@ -47,8 +47,7 @@ async.each(pagesFinderOptions.cities, function(city, cityCallback) {
     events[city.name] = [];
     async.each(pagesFound[city.name], function(page, pageCallback) {
         graph.get(page.id+"/events", function(err, res) {
-
-            if(res && res.data) {
+                if(res && res.data) {
                 async.each(res.data, function(entry, eventCallback) {
                     processEvent(entry, city, function() { eventCallback(); });                   
                 }, function(err){
@@ -87,17 +86,18 @@ var get_month = function(id){
     case '12' : return "DEC"; 
   }
 }
-
+var total_event = 0;
 var processEvent = function(entry, city, eventCallback) {
-    console.log(entry.name);
-    return 0;
+
 	var now = new Date();
 	var end_time = new Date(entry.start_time);
 
 	if(end_time >= now) {
 
 		var event_name = entry.name;
+        total_event += 1;
 
+        console.log(event_name + " " +total_event);
         if(!isInArray(event_name, event_name_array)){
             event_name_array.push(event_name);
     		var	male = 0;
@@ -105,7 +105,7 @@ var processEvent = function(entry, city, eventCallback) {
     		var l_male = [];
     		var l_female = [];
 
-    		graph.get(entry.id+"/attending?limit=10", function(err, result) {
+    		graph.get(entry.id+"/attending?limit=1000", function(err, result) {
 
         		async.each(result.data, function(ppl, personCallback){
 
