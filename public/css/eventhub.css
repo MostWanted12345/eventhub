@@ -11,8 +11,15 @@
 	line-height: 120px;
 }
 
+#eventhub-header small{
+	font-size: 12px;
+	color: #ccc;
+	text-shadow: 0px 0px 2px #CF2727;
+	text-transform: uppercase;
+}
+
 #eventhub-welcome{
-	width: 525px;
+	width: 650px;
 	height: 250px;
 	margin: 0px auto;
 	margin-top: 200px;
@@ -23,6 +30,18 @@
 	text-shadow: 1px 2px 3px #000;
 }
 
+#eventhub-welcome label{
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+	color: #fff;
+}
+
+#eventhub-welcome select{
+	float: right;
+	margin-top: 15px;
+}
+
 .eventhub-small-link{
 	display: block;
 	text-align: center;
@@ -31,20 +50,55 @@
 	text-shadow: 1px 1px 1px #000;
 	font-size: 14px;
 	line-height: 14px;
+	margin-top: 90px;
 }
 
 .eventhub-button{
 	text-align: center;
 	font-size: 26px;
-	width: 250px;
+	width: 310px;
 	padding: 25px 35px;
+	margin-top: 15px;
 	line-height: 26px;
 }
 
+#eventhub-table{
+	display: none;
+	width: 970px;
+	background: #fff;
+	margin: 0 auto;
+	padding: 25px;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	height: auto;
+	border-bottom: 3px solid #B4B4B4;
+}
+
+#eventhub-table span a{
+	display: block;
+	margin: 0;
+	padding: 10px 0px 10px;
+	font-size: 13px;
+	font-weight: 700;
+	color:#333;
+}
+
+#eventhub-table span a:hover{
+	color: #888;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#eventhub-table h1{
+	padding-bottom: 10px;
+	text-shadow: 1px 2px 1px #333;
+}
+#eventhub-table small{
+	font-size: 14px;
+}
 
 #eventhub-footer{
 	text-align: center;
-	bottom: 0;
 	position: absolute;
 	width: 250px;
 	left: 0;
@@ -54,16 +108,47 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
+
 #eventhub-footer p{ 
 	color: #777;
 	font-size: 13px;
 	line-height: 17px;
 }
+
 #eventhub-footer a{
 	color: #fff;
 	text-decoration: none;
 }
+
 #eventhub-footer a:hover{
 	color: rgba(255,255,255,0.7);
 	text-decoration: none;
+}
+
+#eventhub-wtf, #eventhub-about{
+	font-size: 13px;
+	line-height: 20px;
+	display: block;
+	position: absolute;
+	opacity: 1;
+	margin: 0 auto;
+	margin-top: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 400px;
+	background: #fff;
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 35px #111;
+}
+
+#eventhub-wtf h2, #eventhub-about h2{
+	margin: 0;
+}
+.eventhub-wtf-close, .eventhub-about-close{
+	width: 16px;
+	height: 16px;
+	float: right;
+	background-image: url(../img/exit.png);
 }
