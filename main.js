@@ -47,21 +47,26 @@ async.each(pagesFinderOptions.cities, function(city, cityCallback) {
     events[city.name] = [];
     async.each(pagesFound[city.name], function(page, pageCallback) {
         graph.get(page.id+"/events", function(err, res) {
-                if(res && res.data) {
+            if(err) {console.log(err);}
+
+            if(res && res.data) {
                 async.each(res.data, function(entry, eventCallback) {
-                    processEvent(entry, city, function() { eventCallback(); });                   
+                    processEvent(entry, city, function() { eventCallback(); });
                 }, function(err){
+                    if(err) {console.log(err);}
                     // All events ended
                     pageCallback();
                 });
             }
         });
     }, function(err) {
+        if(err) {console.log(err);}
         // All pages ended
         console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING "+city.name+"\n\n");
         cityCallback();
     });
 }, function(err) {
+    if(err) {console.log(err);}
     // All cities finished
     console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING EVERYTHING\n\n");
 });
@@ -83,7 +88,7 @@ var get_month = function(id){
     case '09' : return "SEP";
     case '10' : return "OCT";
     case '11' : return "NOV";
-    case '12' : return "DEC"; 
+    case '12' : return "DEC";
   }
 }
 //var total_event = 0;
@@ -118,7 +123,8 @@ var processEvent = function(entry, city, eventCallback) {
                         personCallback();
                     });
                 }, function(err) {
-                // All people finished
+                    if(err) {console.log(err);}
+                    // All people finished
 
                     var total_ppz = male + female;
                     var p_male = Math.round((male / total_ppz)*100);
@@ -140,7 +146,7 @@ var processEvent = function(entry, city, eventCallback) {
                         });
 
                         console.log(event_name + "\n(M):" + p_male + "%(" + male + ") (F):" + p_female + "%(" + female+ ")\n");
-                    } 
+                    }
                     eventCallback();
                 });
             });
@@ -154,4 +160,3 @@ var processEvent = function(entry, city, eventCallback) {
 server.start(function () {
 	console.log('Server started at: ' + server.info.uri);
 });
-
