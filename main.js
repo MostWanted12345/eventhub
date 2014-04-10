@@ -104,7 +104,7 @@ var processEvent = function(entry, city, eventCallback) {
     		var l_male = [];
     		var l_female = [];
 
-    		graph.get(entry.id+"/attending?limit=10000", function(err, result) {
+    		graph.get(entry.id+"/attending?limit=100", function(err, result) {
 
         		async.each(result.data, function(ppl, personCallback){
 
