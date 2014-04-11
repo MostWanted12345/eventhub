@@ -1,6 +1,6 @@
 var fs = require('fs');
 var fileJSON = require('./pagesFound.json');
-var jQuery = require('jquery');
+
 
 
 var json = {};
