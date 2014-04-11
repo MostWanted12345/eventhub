@@ -4,7 +4,9 @@ var options = {
     {name: 'Porto'},
     {name: 'Aveiro'},
     {name: 'Leiria'},
-    {name: 'Coimbra'}
+    {name: 'Coimbra'},
+    {name: 'Santarem'},
+    {name: 'Evora'}
   ],
   queries: [
     {q: 'estudantes'},
@@ -13,10 +15,10 @@ var options = {
     {q: 'praxe'},
     {q: 'académica'},
     {q: 'bar'},
-    {q: 'discoteca'}
-    //{q: 'grupo+estudantes'},
-    //{q: 'associação+estudantes'},
-    //{q: 'núcleo+estudantes'}
+    {q: 'discoteca'},
+    {q: 'grupo+estudantes'},
+    {q: 'associação+estudantes'},
+    {q: 'núcleo+estudantes'}
   ]
 
 }

@@ -19,9 +19,8 @@ async.each(options.cities, function(city, cityCallback){
       type : "page",
       limit: 1000
     }
-
     graph.search(searchOptions, function(err, res) {
-      //console.log("\n\nLooking for ",searchOptions.q+"\n\n")
+
       async.each(res.data, function(entry, entryCallback) {
         var page = {
           //city: city.name,
@@ -43,12 +42,11 @@ async.each(options.cities, function(city, cityCallback){
       });
     });
   }, function(err){
-    console.log("CITY ENDED");
+    console.log("CITY ENDED " + city.name );
     cityCallback();
   });
 }, function(err){
   console.log("EVERYTHING ENDED");
-  console.log(pagesFound);
   fs.writeFile("pagesFound.json", JSON.stringify(pagesFound, null, 2), function(err) {
 	    if(err) {
 	        console.log(err);
