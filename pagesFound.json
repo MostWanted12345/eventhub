@@ -25,16 +25,16 @@
       "id": "139947029492017"
     },
     {
-      "name": "Lista L Associação Académica de Lisboa",
-      "id": "114392941970470"
-    },
-    {
       "name": "AAFDL - Associação Académica da Faculdade de Direito de Lisboa",
       "id": "159046125464"
     },
     {
       "name": "Semana Académica de Lisboa",
       "id": "209827255715535"
+    },
+    {
+      "name": "Lista L Associação Académica de Lisboa",
+      "id": "114392941970470"
     },
     {
       "name": "Associação Académica De Lisboa",
@@ -65,16 +65,16 @@
       "id": "238158276230611"
     },
     {
-      "name": "Estudantes do Bloco - Lisboa",
-      "id": "173898232755665"
-    },
-    {
       "name": "Fórmula Académica",
       "id": "161448944054562"
     },
     {
       "name": "Associação de Estudantes da Faculdade de Medicina de Lisboa",
       "id": "118861328198933"
+    },
+    {
+      "name": "Estudantes do Bloco - Lisboa",
+      "id": "173898232755665"
     },
     {
       "name": "Associação Estudantes IPAM Lisboa",
@@ -89,20 +89,20 @@
       "id": "172125986818"
     },
     {
-      "name": "Associação de Estudantes ISCSP",
-      "id": "270556423019553"
-    },
-    {
       "name": "Associação de Estudantes - Liceu Camões",
       "id": "732103090138896"
     },
     {
-      "name": "Associação de Estudantes do IGOT - ULisboa",
-      "id": "363465297079007"
+      "name": "Associação de Estudantes ISCSP",
+      "id": "270556423019553"
     },
     {
       "name": "Núcleo de Estudantes de Bioquímica da Universidade de Lisboa",
       "id": "365276586917012"
+    },
+    {
+      "name": "Associação de Estudantes do IGOT - ULisboa",
+      "id": "363465297079007"
     },
     {
       "name": "Núcleo de Estudantes de Direito da Universidade Lusíada de Lisboa",
@@ -113,6 +113,10 @@
       "id": "176751115758491"
     },
     {
+      "name": "Associação de Estudantes - E.S.D.G (oficial)",
+      "id": "264723633580758"
+    },
+    {
       "name": "Associação de Estudantes -  Epadd - Paiã",
       "id": "494286120603151"
     },
@@ -121,40 +125,36 @@
       "id": "199055476775830"
     },
     {
-      "name": "Associação de Estudantes - E.S.D.G (oficial)",
-      "id": "264723633580758"
-    },
-    {
-      "name": "Associação de Estudantes - Escola Secundária Eça de Queirós",
-      "id": "297750600237678"
-    },
-    {
       "name": "ESJA - Associação de Estudantes (Lista R)",
       "id": "104242653070806"
-    },
-    {
-      "name": "Associação de Estudantes Magestil/EML",
-      "id": "560354387376946"
-    },
-    {
-      "name": "E.N.E.C.C. - Encontro Nacional de Estudantes de Ciências da Comunicação",
-      "id": "155290151183518"
     },
     {
       "name": "Quartos estudantes erasmus",
       "id": "443243752470525"
     },
     {
+      "name": "Associação de Estudantes Magestil/EML",
+      "id": "560354387376946"
+    },
+    {
+      "name": "Associação de Estudantes - Escola Secundária Eça de Queirós",
+      "id": "297750600237678"
+    },
+    {
+      "name": "E.N.E.C.C. - Encontro Nacional de Estudantes de Ciências da Comunicação",
+      "id": "155290151183518"
+    },
+    {
       "name": "Associação de Estudantes do Instituto Gregoriano de Lisboa",
       "id": "312014292147813"
     },
     {
-      "name": "V Encontro Nacional de Estudantes de Engenharia Biomédica",
-      "id": "323411582884"
-    },
-    {
       "name": "Quartos Estudantes Erasmus",
       "id": "221229418043714"
+    },
+    {
+      "name": "V Encontro Nacional de Estudantes de Engenharia Biomédica",
+      "id": "323411582884"
     },
     {
       "name": "AE ESLourinhã",
@@ -169,12 +169,12 @@
       "id": "263477897045476"
     },
     {
-      "name": "Faculdade de Direito da Universidade de Lisboa",
-      "id": "159907947451867"
-    },
-    {
       "name": "Faculdade de Medicina de Lisboa",
       "id": "336705459726986"
+    },
+    {
+      "name": "Faculdade de Direito da Universidade de Lisboa",
+      "id": "159907947451867"
     },
     {
       "name": "Faculdade de Belas-Artes da Universidade de Lisboa",
@@ -185,10 +185,6 @@
       "id": "80587943203"
     },
     {
-      "name": "Faculdade de Letras da Universidade de Lisboa",
-      "id": "128835943857328"
-    },
-    {
       "name": "Faculdade de Farmácia da Universidade de Lisboa",
       "id": "213256278720251"
     },
@@ -197,12 +193,16 @@
       "id": "154670837922070"
     },
     {
-      "name": "Faculdade de Farmácia da Universidade de Lisboa",
-      "id": "108293332586923"
+      "name": "Faculdade de Letras da Universidade de Lisboa",
+      "id": "128835943857328"
     },
     {
       "name": "Faculdade de Medicina de Lisboa",
       "id": "163271937097101"
+    },
+    {
+      "name": "Faculdade de Farmácia da Universidade de Lisboa",
+      "id": "108293332586923"
     },
     {
       "name": "Faculdade Direito",
@@ -229,12 +229,12 @@
       "id": "107863239247846"
     },
     {
-      "name": "Faculdade de Motricidade Humana",
-      "id": "114302638658041"
-    },
-    {
       "name": "Nova School of Business and Economics",
       "id": "105373079496351"
+    },
+    {
+      "name": "Faculdade de Motricidade Humana",
+      "id": "114302638658041"
     },
     {
       "name": "Faculdade de Ciências Médicas | NOVA | página oficial",
@@ -293,16 +293,16 @@
       "id": "613481868674704"
     },
     {
-      "name": "Associação dos Antigos Alunos da Faculdade de Medicina de Lisboa",
-      "id": "286619601369822"
-    },
-    {
       "name": "Faculdade Celso Lisboa",
       "id": "185013844904249"
     },
     {
       "name": "Faculdade de Letras da Universidade de Lisboa- FLUL",
       "id": "281153688569608"
+    },
+    {
+      "name": "Associação dos Antigos Alunos da Faculdade de Medicina de Lisboa",
+      "id": "286619601369822"
     },
     {
       "name": "Faculdade De Direito Da Universidade Nova De Lisboa",
@@ -313,24 +313,52 @@
       "id": "326263750774851"
     },
     {
-      "name": "Biblioteca da Faculdade de Letras de Lisboa",
-      "id": "286635648049600"
-    },
-    {
       "name": "Faculdade De Direito Da Universidade De Lisboa",
       "id": "334891946560238"
     },
     {
-      "name": "Biblioteca da Faculdade de Psicologia e do Instituto de Educação UL",
-      "id": "395540373796856"
+      "name": "Biblioteca da Faculdade de Letras de Lisboa",
+      "id": "286635648049600"
     },
     {
       "name": "Serviço de Aconselhamento Vocacional - Faculdade de Psicologia UL",
       "id": "521225881223812"
     },
     {
+      "name": "Biblioteca da Faculdade de Psicologia e do Instituto de Educação UL",
+      "id": "395540373796856"
+    },
+    {
+      "name": "Discoteca Mussulo, Lisboa",
+      "id": "167759356575216"
+    },
+    {
       "name": "Pc-Doctor Mustabsolut - FACULDADE DE ARQUITECTURA - UTL",
       "id": "397889720238607"
+    },
+    {
+      "name": "Discoteca Docks Lisboa",
+      "id": "397917926924203"
+    },
+    {
+      "name": "Discoteca Lisboa",
+      "id": "142098042509810"
+    },
+    {
+      "name": "FÃS DAS  DISCOTECAS DE LISBOA",
+      "id": "234843656550811"
+    },
+    {
+      "name": "Discoteca Plateau",
+      "id": "326559770755734"
+    },
+    {
+      "name": "CF Discoteca Luanda",
+      "id": "233821396789818"
+    },
+    {
+      "name": "Ibéricos - Bar Discoteca",
+      "id": "171659062880603"
     },
     {
       "name": "Universidade de Lisboa - Página Oficial",
@@ -345,12 +373,12 @@
       "id": "112903845387168"
     },
     {
-      "name": "UNIVERSIDADE AUTÓNOMA DE LISBOA",
-      "id": "135990057636"
-    },
-    {
       "name": "Universidade Aberta (UAb)",
       "id": "157257697673304"
+    },
+    {
+      "name": "UNIVERSIDADE AUTÓNOMA DE LISBOA",
+      "id": "135990057636"
     },
     {
       "name": "Technical University of Lisbon",
@@ -373,12 +401,12 @@
       "id": "90132033505"
     },
     {
-      "name": "ICS - Universidade de Lisboa",
-      "id": "114993675188844"
-    },
-    {
       "name": "Instituto Confúcio da Universidade de Lisboa",
       "id": "162993533868622"
+    },
+    {
+      "name": "ICS - Universidade de Lisboa",
+      "id": "114993675188844"
     },
     {
       "name": "Open universities",
@@ -397,20 +425,20 @@
       "id": "152918194270"
     },
     {
-      "name": "Centro de Astronomia e Astrofísica da Universidade de Lisboa",
-      "id": "190604861044783"
-    },
-    {
       "name": "anTUNiA - Tuna de Ciências e Tecnologia da Universidade Nova de Lisboa",
       "id": "145884822094546"
     },
     {
-      "name": "Faculdade de Ciências da Universidade de Lisboa",
-      "id": "123970940960222"
+      "name": "Centro de Astronomia e Astrofísica da Universidade de Lisboa",
+      "id": "190604861044783"
     },
     {
       "name": "Universidade Lisboa",
       "id": "132624266754876"
+    },
+    {
+      "name": "Faculdade de Ciências da Universidade de Lisboa",
+      "id": "123970940960222"
     },
     {
       "name": "ELSA Universidade Católica Portuguesa - Lisboa",
@@ -437,20 +465,20 @@
       "id": "331782250179584"
     },
     {
-      "name": "Coro Infantil da Universidade de Lisboa",
-      "id": "278910530490"
-    },
-    {
       "name": "Moderna University",
       "id": "179525438755116"
     },
     {
-      "name": "Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia",
-      "id": "206245179402576"
+      "name": "Coro Infantil da Universidade de Lisboa",
+      "id": "278910530490"
     },
     {
       "name": "ULHT - Universidade Lusófona de Humanidades e Tecnologias",
       "id": "74646798556"
+    },
+    {
+      "name": "Universidade Nova de Lisboa - Faculdade de Ciências e Tecnologia",
+      "id": "206245179402576"
     },
     {
       "name": "ISEGI - Universidade Nova de Lisboa",
@@ -473,12 +501,12 @@
       "id": "148196018701795"
     },
     {
-      "name": "Boleias para Universidade Católica Portuguesa Lisboa",
-      "id": "257271850987079"
-    },
-    {
       "name": "Mediateca da Universidade Lusíada de Lisboa",
       "id": "111313708931896"
+    },
+    {
+      "name": "Boleias para Universidade Católica Portuguesa Lisboa",
+      "id": "257271850987079"
     },
     {
       "name": "Gabinete de Empreendedorismo da Universidade NOVA de Lisboa",
@@ -501,12 +529,12 @@
       "id": "728378863893128"
     },
     {
-      "name": "FECULTUNA-Tuna da Universidade Católica Portuguesa de Lisboa e Sintra",
-      "id": "182669963613"
-    },
-    {
       "name": "Instituto de Orientação Profissional da Universidade de Lisboa",
       "id": "117318761657252"
+    },
+    {
+      "name": "FECULTUNA-Tuna da Universidade Católica Portuguesa de Lisboa e Sintra",
+      "id": "182669963613"
     },
     {
       "name": "Lusitana - Tuna Feminina da Universidade Lusíada de Lisboa",
@@ -517,12 +545,12 @@
       "id": "148000312052461"
     },
     {
-      "name": "Escola de Psicologia e Ciências da Vida da Universidade Lusófona",
-      "id": "339968182741513"
-    },
-    {
       "name": "Centro de Filosofia das Ciências da Universidade de Lisboa - CFCUL",
       "id": "370519529638782"
+    },
+    {
+      "name": "Escola de Psicologia e Ciências da Vida da Universidade Lusófona",
+      "id": "339968182741513"
     },
     {
       "name": "Instituto de Geografia e Ordenamento do Território, Universidade de Lisboa",
@@ -577,34 +605,6 @@
       "id": "393401394039721"
     },
     {
-      "name": "Discoteca Mussulo, Lisboa",
-      "id": "167759356575216"
-    },
-    {
-      "name": "Discoteca Docks Lisboa",
-      "id": "397917926924203"
-    },
-    {
-      "name": "Discoteca Lisboa",
-      "id": "142098042509810"
-    },
-    {
-      "name": "FÃS DAS  DISCOTECAS DE LISBOA",
-      "id": "234843656550811"
-    },
-    {
-      "name": "Discoteca Plateau",
-      "id": "326559770755734"
-    },
-    {
-      "name": "CF Discoteca Luanda",
-      "id": "233821396789818"
-    },
-    {
-      "name": "Ibéricos - Bar Discoteca",
-      "id": "171659062880603"
-    },
-    {
       "name": "Barcarena, Lisboa, Portugal",
       "id": "113647601980440"
     },
@@ -649,12 +649,12 @@
       "id": "372497439498768"
     },
     {
-      "name": "Casa do Sport Lisboa e Benfica no Barreiro",
-      "id": "106607376057061"
-    },
-    {
       "name": "Gracie Barra Lisboa",
       "id": "773761415973046"
+    },
+    {
+      "name": "Casa do Sport Lisboa e Benfica no Barreiro",
+      "id": "106607376057061"
     },
     {
       "name": "Sweet Bar Lisboa",
@@ -713,12 +713,12 @@
       "id": "149495065113639"
     },
     {
-      "name": "The Fifties - Lisboa",
-      "id": "111980438821763"
-    },
-    {
       "name": "LOW",
       "id": "131870770165894"
+    },
+    {
+      "name": "The Fifties - Lisboa",
+      "id": "111980438821763"
     },
     {
       "name": "São Julião Da Barra, Lisboa, Portugal",
@@ -753,10 +753,6 @@
       "id": "200268896728"
     },
     {
-      "name": "Me & You - Restaurante-Bar no Parque das Nações",
-      "id": "208363681483"
-    },
-    {
       "name": "Hawaii-Lisboa",
       "id": "107605352595807"
     },
@@ -789,12 +785,20 @@
       "id": "307370079316224"
     },
     {
-      "name": "Espaço Académico de Lisboa",
-      "id": "214541785373214"
+      "name": "Me & You - Restaurante-Bar no Parque das Nações",
+      "id": "208363681483"
     },
     {
       "name": "TR3S Lisboa",
       "id": "164995780179598"
+    },
+    {
+      "name": "Espaço Académico de Lisboa",
+      "id": "214541785373214"
+    },
+    {
+      "name": "Marretas Bar - Santos",
+      "id": "243898012322692"
     },
     {
       "name": "Metropolis Club",
@@ -803,10 +807,6 @@
     {
       "name": "A Ginjinha",
       "id": "198515526855419"
-    },
-    {
-      "name": "Marretas Bar - Santos",
-      "id": "243898012322692"
     },
     {
       "name": "Lux",
@@ -845,16 +845,16 @@
       "id": "147780071982080"
     },
     {
-      "name": "LIZBOA café",
-      "id": "146063155551891"
-    },
-    {
       "name": "1300 Taberna",
       "id": "204142182951866"
     },
     {
       "name": "Brownie",
       "id": "393945677346545"
+    },
+    {
+      "name": "LIZBOA café",
+      "id": "146063155551891"
     },
     {
       "name": "Park",
@@ -869,20 +869,16 @@
       "id": "125459617502750"
     },
     {
+      "name": "Bar do Cais",
+      "id": "262781928362"
+    },
+    {
       "name": "Café da Ponte",
       "id": "109528682428901"
     },
     {
       "name": "MegaSex Lisboa",
       "id": "266919970047018"
-    },
-    {
-      "name": "Cinebairro",
-      "id": "519910501441545"
-    },
-    {
-      "name": "Bar do Cais",
-      "id": "262781928362"
     },
     {
       "name": "Taberna Tosca",
@@ -893,12 +889,8 @@
       "id": "120365528102552"
     },
     {
-      "name": "Barreiro Lisboa",
-      "id": "174789062654221"
-    },
-    {
-      "name": "100 Motivos",
-      "id": "1396381973911249"
+      "name": "Cinebairro",
+      "id": "519910501441545"
     },
     {
       "name": "Black Tiger Bar",
@@ -909,12 +901,20 @@
       "id": "118767628211583"
     },
     {
-      "name": "TeatroCinearte - A Barraca",
-      "id": "155009081233446"
+      "name": "100 Motivos",
+      "id": "1396381973911249"
     },
     {
       "name": "Porão de Santos - Restaurante Bar",
       "id": "117985391618120"
+    },
+    {
+      "name": "TeatroCinearte - A Barraca",
+      "id": "155009081233446"
+    },
+    {
+      "name": "Barreiro Lisboa",
+      "id": "174789062654221"
     },
     {
       "name": "Quiosque Galveias",
@@ -941,16 +941,16 @@
       "id": "169732363083662"
     },
     {
-      "name": "El Cartel",
-      "id": "534287676590991"
+      "name": "Lisboa Bar",
+      "id": "201212426604604"
     },
     {
       "name": "Trombeta Bath",
       "id": "113794365349173"
     },
     {
-      "name": "Lisboa Bar",
-      "id": "201212426604604"
+      "name": "El Cartel",
+      "id": "534287676590991"
     },
     {
       "name": "CAFE Lisboa",
@@ -969,16 +969,16 @@
       "id": "106580002765214"
     },
     {
-      "name": "Lisboa Marques De Pombal",
-      "id": "396382517072719"
+      "name": "Barcos Campo Grande - Lisboa",
+      "id": "706169122727661"
     },
     {
       "name": "Café Nova Lisboa",
       "id": "115834928518060"
     },
     {
-      "name": "Barcos Campo Grande - Lisboa",
-      "id": "706169122727661"
+      "name": "Lisboa Marques De Pombal",
+      "id": "396382517072719"
     },
     {
       "name": "COA | Café da Ordem dos Arquitectos",
@@ -1041,16 +1041,16 @@
       "id": "267270333427554"
     },
     {
-      "name": "100 Maneiras, Barrio Alto, Lisboa",
-      "id": "535252189825259"
-    },
-    {
       "name": "Tascá",
       "id": "417807431688723"
     },
     {
       "name": "Estado D'Alma -  Bar & Bistro",
       "id": "257213547664494"
+    },
+    {
+      "name": "100 Maneiras, Barrio Alto, Lisboa",
+      "id": "535252189825259"
     },
     {
       "name": "Grand Lisboa Casino Bar",
@@ -1079,12 +1079,12 @@
   ],
   "Porto": [
     {
-      "name": "República de Estudantes do Porto",
-      "id": "120719944670610"
-    },
-    {
       "name": "NEBUP - Núcleo de Estudantes de Biologia da Universidade do Porto",
       "id": "425613150860480"
+    },
+    {
+      "name": "República de Estudantes do Porto",
+      "id": "120719944670610"
     },
     {
       "name": "Unicepe - Cooperativa Livreira dos Estudantes do Porto, CRL",
@@ -1103,16 +1103,12 @@
       "id": "247036668803615"
     },
     {
-      "name": "Constudent - Quartos Estudantes Porto (rooms students Oporto)",
-      "id": "408971009151333"
-    },
-    {
       "name": "Associação de Estudantes da Faculdade de Teologia do Porto - UCP",
       "id": "111068499008116"
     },
     {
-      "name": "Associação de Estudantes -  Liceu Porto Santo",
-      "id": "139207849582200"
+      "name": "Constudent - Quartos Estudantes Porto (rooms students Oporto)",
+      "id": "408971009151333"
     },
     {
       "name": "Associação de Estudantes Cabo-verdianos no Porto",
@@ -1131,12 +1127,16 @@
       "id": "244981575666546"
     },
     {
-      "name": "Aefcup - Associação de Estudantes da FCUP",
-      "id": "125106824215376"
-    },
-    {
       "name": "Aeicbas - Associação de Estudantes do Icbas",
       "id": "126893377379288"
+    },
+    {
+      "name": "Associação de Estudantes -  Liceu Porto Santo",
+      "id": "139207849582200"
+    },
+    {
+      "name": "Aefcup - Associação de Estudantes da FCUP",
+      "id": "125106824215376"
     },
     {
       "name": "Associação de Estudantes FEUP",
@@ -1163,16 +1163,16 @@
       "id": "498902833453371"
     },
     {
-      "name": "NECEE - Núcleo de Estudantes de Ciências da Economia e da Empresa",
-      "id": "125657160917143"
-    },
-    {
       "name": "Lista Candidata à Associação de Estudantes da ESPF",
       "id": "454016594648369"
     },
     {
       "name": "Associação de Estudantes da Secundária de Alpendorada",
       "id": "139467009536754"
+    },
+    {
+      "name": "NECEE - Núcleo de Estudantes de Ciências da Economia e da Empresa",
+      "id": "125657160917143"
     },
     {
       "name": "Associação de Estudantes AERC",
@@ -1223,366 +1223,6 @@
       "id": "140394226020541"
     },
     {
-      "name": "Universidade do Porto",
-      "id": "51541308379"
-    },
-    {
-      "name": "Lusíada University of Porto",
-      "id": "174634145959858"
-    },
-    {
-      "name": "Universidade Popular do Porto",
-      "id": "316221348458204"
-    },
-    {
-      "name": "Faculdade de Desporto da Universidade do Porto (FADEUP)",
-      "id": "175486869168797"
-    },
-    {
-      "name": "Universidade Católica do Porto (UCP)",
-      "id": "338778486219351"
-    },
-    {
-      "name": "Universidade Católica do Porto",
-      "id": "137087256361950"
-    },
-    {
-      "name": "Universidade Lusófona do Porto",
-      "id": "155687917797703"
-    },
-    {
-      "name": "FEP - Faculdade de Economia da Universidade do Porto",
-      "id": "163306553688550"
-    },
-    {
-      "name": "Universidade Lusiada Porto",
-      "id": "181213458594335"
-    },
-    {
-      "name": "Sociedade de Debates da Universidade do Porto",
-      "id": "128285487219386"
-    },
-    {
-      "name": "Faculdade de Ciências da Universidade do Porto",
-      "id": "169235433239"
-    },
-    {
-      "name": "Universidade Lusófona Porto - Arquitetura",
-      "id": "117527675118188"
-    },
-    {
-      "name": "Faculdade de Belas Artes da Universidade do Porto - Institucional",
-      "id": "665975343466068"
-    },
-    {
-      "name": "Centro de Astrofísica da Universidade do Porto",
-      "id": "360018876571"
-    },
-    {
-      "name": "Universidade douro senior do porto",
-      "id": "188561667833431"
-    },
-    {
-      "name": "Tuna Universidade Católica Portuguesa - Porto",
-      "id": "50998254169"
-    },
-    {
-      "name": "Fernando Pessoa University",
-      "id": "108397769181906"
-    },
-    {
-      "name": "Tuna de Engenharia da Universidade do Porto",
-      "id": "71409979451"
-    },
-    {
-      "name": "ULP - Universidade Lusófona do Porto",
-      "id": "82605596372"
-    },
-    {
-      "name": "Universidade Portucalense UPT",
-      "id": "192706400765220"
-    },
-    {
-      "name": "CUCA - Tuna da Faculdade de Letras da Universidade do Porto",
-      "id": "177960284569"
-    },
-    {
-      "name": "Universidade Sénior de Arte e Cultura do Porto - USAC",
-      "id": "212357122155516"
-    },
-    {
-      "name": "Faculdade de Arquitectura da Universidade do Porto",
-      "id": "132830011041"
-    },
-    {
-      "name": "FDUP - Faculdade de Direito da Universidade do Porto",
-      "id": "377580008949480"
-    },
-    {
-      "name": "Faculdade de Psicologia e de Ciências da Educação da Universidade do Porto",
-      "id": "309426705844979"
-    },
-    {
-      "name": "Grupo de Fados Literatus da Faculdade de Letras da Universidade do Porto",
-      "id": "168287843221792"
-    },
-    {
-      "name": "Loja da Universidade do Porto",
-      "id": "476472115761539"
-    },
-    {
-      "name": "FLUP",
-      "id": "131750980191597"
-    },
-    {
-      "name": "Caloiros 2012/2013 - Universidade do Porto",
-      "id": "236446379772938"
-    },
-    {
-      "name": "Grupo de Fado Académico da Universidade do Porto - OUP",
-      "id": "116622061733163"
-    },
-    {
-      "name": "Museu de História Natural da Universidade do Porto",
-      "id": "128375640510555"
-    },
-    {
-      "name": "Núcleo de Etnografia e Folclore da Universidade do Porto (NEFUP)",
-      "id": "204880992876764"
-    },
-    {
-      "name": "Biblioteca da Faculdade de Medicina da Universidade do Porto",
-      "id": "123628410999053"
-    },
-    {
-      "name": "Clube de Comédia da Universidade do Porto",
-      "id": "449072925140333"
-    },
-    {
-      "name": "Catholic University of Portugal",
-      "id": "108697715819054"
-    },
-    {
-      "name": "Tuna Académica Feminina de Nutrição da Universidade do Porto",
-      "id": "189027371281332"
-    },
-    {
-      "name": "Centro de Estudos Africanos da Universidade do Porto (CEAUP)",
-      "id": "252491898166468"
-    },
-    {
-      "name": "Faculdade de Engenharia da Universidade do Porto",
-      "id": "103993329637639"
-    },
-    {
-      "name": "Instituto de Ciências Biomédicas Abel Salazar da Universidade do Porto",
-      "id": "156517241053547"
-    },
-    {
-      "name": "Tuna Feminina da Faculdade de Letras da Universidade do Porto",
-      "id": "228909233831104"
-    },
-    {
-      "name": "Universidade Sénior Rotary de Valongo",
-      "id": "158866267468349"
-    },
-    {
-      "name": "Formação Contínua - Faculdade de Direito da Universidade do Porto",
-      "id": "336539109768459"
-    },
-    {
-      "name": "Ciências da Comunicação e da Cultura - Universidade Lusófona do Porto",
-      "id": "322484211200068"
-    },
-    {
-      "name": "Tuna Feminina da Universidade Lusíada do Porto",
-      "id": "101877883185098"
-    },
-    {
-      "name": "Faculdade de Farmácia da Universidade do Porto",
-      "id": "198444256860286"
-    },
-    {
-      "name": "O Antigo Egipto na Universidade do Porto (CITCEM)",
-      "id": "226457324146936"
-    },
-    {
-      "name": "AGeoUP - Associação de Geografia da Universidade do Porto",
-      "id": "108283409197276"
-    },
-    {
-      "name": "Associação Académica da Universidade Lusíada do Porto",
-      "id": "341845679232490"
-    },
-    {
-      "name": "Universidade Federal de Ciências da Saúde de Porto Alegre",
-      "id": "105590592808457"
-    },
-    {
-      "name": "Copófona - Tuna Académica da Universidade Lusófona do Porto",
-      "id": "210851938953701"
-    },
-    {
-      "name": "Universidade Moderna",
-      "id": "110806832277678"
-    },
-    {
-      "name": "Laboratório de Bioquímica, Faculdade de Farmácia da Universidade do Porto",
-      "id": "336263503153039"
-    },
-    {
-      "name": "FLUP - Faculdade de Letras da Universidade do Porto",
-      "id": "341239282626290"
-    },
-    {
-      "name": "Grupo de Fados de Arquitectura da Universidade do Porto",
-      "id": "190606757641099"
-    },
-    {
-      "name": "Núcleo de Direito e Solicitadoria da Universidade Lusíada do Porto",
-      "id": "543527225688469"
-    },
-    {
-      "name": "Erasmus - Universidade Fernando Pessoa",
-      "id": "169088479786538"
-    },
-    {
-      "name": "Universidade Senior da Foz - \"Oficial\"",
-      "id": "151225978271783"
-    },
-    {
-      "name": "Biblioteca da Universidade Portucalense",
-      "id": "176582405730298"
-    },
-    {
-      "name": "Universidade Senior Rotary Da Trofa",
-      "id": "172701389534706"
-    },
-    {
-      "name": "Medicina Dentaria - Universidade Fernando Pessoa",
-      "id": "114677945294686"
-    },
-    {
-      "name": "FCT@UFP - Faculdade de Ciência e Tecnologia da Universidade Fernando Pessoa",
-      "id": "197317137018089"
-    },
-    {
-      "name": "Núcleo de Medicina Dentária da Universidade Fernando Pessoa",
-      "id": "310414488993032"
-    },
-    {
-      "name": "Reitoria da Universidade do Porto",
-      "id": "322470104456967"
-    },
-    {
-      "name": "Universidade do Contestado - Unc - Porto União",
-      "id": "117556741665822"
-    },
-    {
-      "name": "Faculdade de Letras da Universidade do Porto",
-      "id": "208854065816146"
-    },
-    {
-      "name": "Faculdade de Psicologia e Ciências da Educação da Universidade do Porto",
-      "id": "201879366496495"
-    },
-    {
-      "name": "Universidade Católica Portuguesa Porto - Instituto Ciências Da Saúde",
-      "id": "112507675528914"
-    },
-    {
-      "name": "Universidade Aberta (UAb)",
-      "id": "157257697673304"
-    },
-    {
-      "name": "Universidade De Coimbra",
-      "id": "295805083794190"
-    },
-    {
-      "name": "Faculdade De Direito Da Universidade Do Porto",
-      "id": "390047854373838"
-    },
-    {
-      "name": "FMUP - Faculdade de Medicina da Universidade do Porto",
-      "id": "120409788036277"
-    },
-    {
-      "name": "FMDUP - Faculdade de Medicina Dentária da Universidade do Porto",
-      "id": "223384981008574"
-    },
-    {
-      "name": "NERIP - Universidade Lusíada do Porto",
-      "id": "182340351905194"
-    },
-    {
-      "name": "Universidade Sénior Preventária",
-      "id": "1553425584881945"
-    },
-    {
-      "name": "Uniporto Universidade De Porto",
-      "id": "741442735877065"
-    },
-    {
-      "name": "Faculdade de Farmácia da Universidade do Porto",
-      "id": "172562919465481"
-    },
-    {
-      "name": "Café Universidade",
-      "id": "298130370274639"
-    },
-    {
-      "name": "Faculdade de Medicina da Universidade do Porto",
-      "id": "225827150781994"
-    },
-    {
-      "name": "Faculty of Architecture and Arts at the Lusíada University of Porto",
-      "id": "267711483280014"
-    },
-    {
-      "name": "ELSA Portucalense",
-      "id": "604924982922240"
-    },
-    {
-      "name": "UNIVERSIDADE SÉNIOR DAS ANTAS",
-      "id": "154584187972626"
-    },
-    {
-      "name": "Centro de Estudos Teatrais da Universidade do Porto",
-      "id": "229285220550783"
-    },
-    {
-      "name": "Nefup-Núcleo de Etnografia E Folclore da Universidade do Porto",
-      "id": "207883059234852"
-    },
-    {
-      "name": "Centro de Geologia da Universidade do Porto",
-      "id": "212033948810886"
-    },
-    {
-      "name": "Universidade Intergeracional Fernando Pessoa",
-      "id": "1487319428163442"
-    },
-    {
-      "name": "CEMUP - Centro de Materiais da Universidade do Porto",
-      "id": "173310656059821"
-    },
-    {
-      "name": "Bar da Universidade Lusíada",
-      "id": "469660513157345"
-    },
-    {
-      "name": "Unidade de Saúde Ocupacional da Universidade do Porto",
-      "id": "278043305696571"
-    },
-    {
-      "name": "Federação Académica do Porto",
-      "id": "212138305469050"
-    },
-    {
-      "name": "Fundação de Apoio da Universidade Federal do RS-Projeto Prelúdio",
-      "id": "126109414133995"
-    },
-    {
       "name": "Federação Académica do Porto",
       "id": "432040235283"
     },
@@ -1591,8 +1231,20 @@
       "id": "306611131618"
     },
     {
+      "name": "Federação Académica do Porto",
+      "id": "212138305469050"
+    },
+    {
       "name": "Festas Académicas",
       "id": "174401722640828"
+    },
+    {
+      "name": "Tuna Académica Feminina de Nutrição da Universidade do Porto",
+      "id": "189027371281332"
+    },
+    {
+      "name": "Associação Académica da Universidade Lusíada do Porto",
+      "id": "341845679232490"
     },
     {
       "name": "União Académica António Aroso",
@@ -1607,12 +1259,84 @@
       "id": "527840893906997"
     },
     {
+      "name": "Copófona - Tuna Académica da Universidade Lusófona do Porto",
+      "id": "210851938953701"
+    },
+    {
       "name": "FAMVet - Federação Académica de Medicina Veterinária",
       "id": "661946803823829"
     },
     {
+      "name": "Faculdade de Desporto da Universidade do Porto (FADEUP)",
+      "id": "175486869168797"
+    },
+    {
+      "name": "Faculdade de Psicologia e Ciências da Educação da Universidade do Porto",
+      "id": "201879366496495"
+    },
+    {
+      "name": "Faculdade de Ciências da Universidade do Porto",
+      "id": "169235433239"
+    },
+    {
+      "name": "Faculdade de Belas Artes da Universidade do Porto - Institucional",
+      "id": "665975343466068"
+    },
+    {
+      "name": "FDUP - Faculdade de Direito da Universidade do Porto",
+      "id": "377580008949480"
+    },
+    {
+      "name": "FEP - Faculdade de Economia da Universidade do Porto",
+      "id": "163306553688550"
+    },
+    {
+      "name": "Faculdade de Letras da Universidade do Porto",
+      "id": "208854065816146"
+    },
+    {
+      "name": "Faculdade de Arquitectura da Universidade do Porto",
+      "id": "132830011041"
+    },
+    {
+      "name": "FLUP",
+      "id": "131750980191597"
+    },
+    {
+      "name": "Faculdade de Psicologia e de Ciências da Educação da Universidade do Porto",
+      "id": "309426705844979"
+    },
+    {
+      "name": "CUCA - Tuna da Faculdade de Letras da Universidade do Porto",
+      "id": "177960284569"
+    },
+    {
+      "name": "Grupo de Fados Literatus da Faculdade de Letras da Universidade do Porto",
+      "id": "168287843221792"
+    },
+    {
+      "name": "Faculdade de Engenharia da Universidade do Porto",
+      "id": "103993329637639"
+    },
+    {
+      "name": "Biblioteca da Faculdade de Medicina da Universidade do Porto",
+      "id": "123628410999053"
+    },
+    {
+      "name": "Faculdade de Farmácia da Universidade do Porto",
+      "id": "198444256860286"
+    },
+    {
       "name": "Faculdade de Física PUCRS",
       "id": "142701172463635"
+    },
+    {
+      "name": "Tuna Feminina da Faculdade de Letras da Universidade do Porto",
+      "id": "228909233831104"
+    },
+    {
+      "name": "Formação Contínua - Faculdade de Direito da Universidade do Porto",
+      "id": "336539109768459"
     },
     {
       "name": "Grupo Coral da Faculdade de Economia do Porto",
@@ -1623,6 +1347,14 @@
       "id": "111480915578391"
     },
     {
+      "name": "FLUP - Faculdade de Letras da Universidade do Porto",
+      "id": "341239282626290"
+    },
+    {
+      "name": "Laboratório de Bioquímica, Faculdade de Farmácia da Universidade do Porto",
+      "id": "336263503153039"
+    },
+    {
       "name": "GFGFEP - Grupo de Fados e Guitarradas da Faculdade de Economia do Porto",
       "id": "114113298611040"
     },
@@ -1631,48 +1363,316 @@
       "id": "110689288952782"
     },
     {
+      "name": "FCT@UFP - Faculdade de Ciência e Tecnologia da Universidade Fernando Pessoa",
+      "id": "197317137018089"
+    },
+    {
+      "name": "Faculdade De Direito Da Universidade Do Porto",
+      "id": "390047854373838"
+    },
+    {
+      "name": "FMUP - Faculdade de Medicina da Universidade do Porto",
+      "id": "120409788036277"
+    },
+    {
+      "name": "FMDUP - Faculdade de Medicina Dentária da Universidade do Porto",
+      "id": "223384981008574"
+    },
+    {
       "name": "Faculdade De Medicina Do Hospital S. João - Porto",
       "id": "351900678201881"
+    },
+    {
+      "name": "Faculdade de Medicina da Universidade do Porto",
+      "id": "225827150781994"
+    },
+    {
+      "name": "Faculdade de Farmácia da Universidade do Porto",
+      "id": "172562919465481"
+    },
+    {
+      "name": "Faculty of Architecture and Arts at the Lusíada University of Porto",
+      "id": "267711483280014"
+    },
+    {
+      "name": "Lusíada University of Porto",
+      "id": "174634145959858"
+    },
+    {
+      "name": "Universidade do Porto",
+      "id": "51541308379"
+    },
+    {
+      "name": "Universidade Católica do Porto (UCP)",
+      "id": "338778486219351"
+    },
+    {
+      "name": "Universidade Popular do Porto",
+      "id": "316221348458204"
+    },
+    {
+      "name": "Universidade Católica do Porto",
+      "id": "137087256361950"
+    },
+    {
+      "name": "Universidade Lusófona do Porto",
+      "id": "155687917797703"
+    },
+    {
+      "name": "Universidade Lusiada Porto",
+      "id": "181213458594335"
+    },
+    {
+      "name": "Sociedade de Debates da Universidade do Porto",
+      "id": "128285487219386"
+    },
+    {
+      "name": "Universidade Lusófona Porto - Arquitetura",
+      "id": "117527675118188"
+    },
+    {
+      "name": "Centro de Astrofísica da Universidade do Porto",
+      "id": "360018876571"
+    },
+    {
+      "name": "Tuna Universidade Católica Portuguesa - Porto",
+      "id": "50998254169"
+    },
+    {
+      "name": "Universidade douro senior do porto",
+      "id": "188561667833431"
+    },
+    {
+      "name": "Tuna de Engenharia da Universidade do Porto",
+      "id": "71409979451"
+    },
+    {
+      "name": "ULP - Universidade Lusófona do Porto",
+      "id": "82605596372"
+    },
+    {
+      "name": "Fernando Pessoa University",
+      "id": "108397769181906"
+    },
+    {
+      "name": "Universidade Portucalense UPT",
+      "id": "192706400765220"
+    },
+    {
+      "name": "Universidade Sénior de Arte e Cultura do Porto - USAC",
+      "id": "212357122155516"
+    },
+    {
+      "name": "Loja da Universidade do Porto",
+      "id": "476472115761539"
+    },
+    {
+      "name": "Caloiros 2012/2013 - Universidade do Porto",
+      "id": "236446379772938"
+    },
+    {
+      "name": "Grupo de Fado Académico da Universidade do Porto - OUP",
+      "id": "116622061733163"
+    },
+    {
+      "name": "Núcleo de Etnografia e Folclore da Universidade do Porto (NEFUP)",
+      "id": "204880992876764"
+    },
+    {
+      "name": "Museu de História Natural da Universidade do Porto",
+      "id": "128375640510555"
+    },
+    {
+      "name": "Clube de Comédia da Universidade do Porto",
+      "id": "449072925140333"
+    },
+    {
+      "name": "Centro de Estudos Africanos da Universidade do Porto (CEAUP)",
+      "id": "252491898166468"
+    },
+    {
+      "name": "Catholic University of Portugal",
+      "id": "108697715819054"
+    },
+    {
+      "name": "Universidade Sénior Rotary de Valongo",
+      "id": "158866267468349"
+    },
+    {
+      "name": "Instituto de Ciências Biomédicas Abel Salazar da Universidade do Porto",
+      "id": "156517241053547"
+    },
+    {
+      "name": "Ciências da Comunicação e da Cultura - Universidade Lusófona do Porto",
+      "id": "322484211200068"
+    },
+    {
+      "name": "Tuna Feminina da Universidade Lusíada do Porto",
+      "id": "101877883185098"
+    },
+    {
+      "name": "O Antigo Egipto na Universidade do Porto (CITCEM)",
+      "id": "226457324146936"
+    },
+    {
+      "name": "AGeoUP - Associação de Geografia da Universidade do Porto",
+      "id": "108283409197276"
+    },
+    {
+      "name": "Universidade Moderna",
+      "id": "110806832277678"
+    },
+    {
+      "name": "Universidade Federal de Ciências da Saúde de Porto Alegre",
+      "id": "105590592808457"
+    },
+    {
+      "name": "Grupo de Fados de Arquitectura da Universidade do Porto",
+      "id": "190606757641099"
+    },
+    {
+      "name": "Núcleo de Direito e Solicitadoria da Universidade Lusíada do Porto",
+      "id": "543527225688469"
+    },
+    {
+      "name": "Universidade Senior da Foz - \"Oficial\"",
+      "id": "151225978271783"
+    },
+    {
+      "name": "Universidade Senior Rotary Da Trofa",
+      "id": "172701389534706"
+    },
+    {
+      "name": "Erasmus - Universidade Fernando Pessoa",
+      "id": "169088479786538"
+    },
+    {
+      "name": "Medicina Dentaria - Universidade Fernando Pessoa",
+      "id": "114677945294686"
+    },
+    {
+      "name": "Biblioteca da Universidade Portucalense",
+      "id": "176582405730298"
+    },
+    {
+      "name": "Núcleo de Medicina Dentária da Universidade Fernando Pessoa",
+      "id": "310414488993032"
+    },
+    {
+      "name": "Reitoria da Universidade do Porto",
+      "id": "322470104456967"
+    },
+    {
+      "name": "Universidade do Contestado - Unc - Porto União",
+      "id": "117556741665822"
+    },
+    {
+      "name": "Universidade Aberta (UAb)",
+      "id": "157257697673304"
+    },
+    {
+      "name": "Universidade De Coimbra",
+      "id": "295805083794190"
+    },
+    {
+      "name": "Universidade Católica Portuguesa Porto - Instituto Ciências Da Saúde",
+      "id": "112507675528914"
+    },
+    {
+      "name": "NERIP - Universidade Lusíada do Porto",
+      "id": "182340351905194"
+    },
+    {
+      "name": "Café Universidade",
+      "id": "298130370274639"
+    },
+    {
+      "name": "Universidade Sénior Preventária",
+      "id": "1553425584881945"
+    },
+    {
+      "name": "Uniporto Universidade De Porto",
+      "id": "741442735877065"
+    },
+    {
+      "name": "ELSA Portucalense",
+      "id": "604924982922240"
+    },
+    {
+      "name": "UNIVERSIDADE SÉNIOR DAS ANTAS",
+      "id": "154584187972626"
+    },
+    {
+      "name": "Centro de Estudos Teatrais da Universidade do Porto",
+      "id": "229285220550783"
+    },
+    {
+      "name": "Centro de Geologia da Universidade do Porto",
+      "id": "212033948810886"
+    },
+    {
+      "name": "Nefup-Núcleo de Etnografia E Folclore da Universidade do Porto",
+      "id": "207883059234852"
+    },
+    {
+      "name": "Universidade Intergeracional Fernando Pessoa",
+      "id": "1487319428163442"
+    },
+    {
+      "name": "Bar da Universidade Lusíada",
+      "id": "469660513157345"
+    },
+    {
+      "name": "Unidade de Saúde Ocupacional da Universidade do Porto",
+      "id": "278043305696571"
+    },
+    {
+      "name": "CEMUP - Centro de Materiais da Universidade do Porto",
+      "id": "173310656059821"
+    },
+    {
+      "name": "Fundação de Apoio da Universidade Federal do RS-Projeto Prelúdio",
+      "id": "126109414133995"
     },
     {
       "name": "Discoteca Feedback Porto",
       "id": "181838381841669"
     },
     {
-      "name": "Bares e Discotecas do Grande Porto",
-      "id": "209276012483667"
-    },
-    {
       "name": "Discoteca Porto",
       "id": "170972062922342"
+    },
+    {
+      "name": "Bares e Discotecas do Grande Porto",
+      "id": "209276012483667"
     },
     {
       "name": "Discoteca Number One",
       "id": "118006098224180"
     },
     {
-      "name": "Discoteca Anos 80",
-      "id": "571129552981253"
-    },
-    {
       "name": "Discoteca Bonnie Club",
       "id": "202912063078775"
     },
     {
-      "name": "Discoteca BlueAct",
-      "id": "229994450411003"
+      "name": "Discoteca Anos 80",
+      "id": "571129552981253"
     },
     {
       "name": "Blues Caffe",
       "id": "129833093790952"
     },
     {
-      "name": "Casa do Cais discoteca e Lounge bar",
-      "id": "570114463058107"
+      "name": "Discoteca BlueAct",
+      "id": "229994450411003"
     },
     {
       "name": "Discoteca Plaza",
       "id": "193352100698698"
+    },
+    {
+      "name": "Casa do Cais discoteca e Lounge bar",
+      "id": "570114463058107"
     },
     {
       "name": "Discoteca Alivez",
@@ -1731,24 +1731,24 @@
       "id": "107346679301213"
     },
     {
-      "name": "Barmania Porto",
-      "id": "158291877654191"
-    },
-    {
       "name": "O' Porto Thasku Restaurante/Bar",
       "id": "1439642182925691"
+    },
+    {
+      "name": "Barmania Porto",
+      "id": "158291877654191"
     },
     {
       "name": "Cálice Porto Bar/Restaurante",
       "id": "535850149764921"
     },
     {
-      "name": "Porto Bar",
-      "id": "399468450102184"
-    },
-    {
       "name": "We Love Porto Bar & Club",
       "id": "1438430623044757"
+    },
+    {
+      "name": "Porto Bar",
+      "id": "399468450102184"
     },
     {
       "name": "Indian American Motorcycles Bar Porto",
@@ -1859,12 +1859,12 @@
       "id": "178433575540262"
     },
     {
-      "name": "Barcelona Vs FC Porto UEFA Super Cup 2011",
-      "id": "160733114007038"
-    },
-    {
       "name": "Pôrto Barra Do Ivinheima, Mato Grosso Do Sul, Brazil",
       "id": "110139912338189"
+    },
+    {
+      "name": "Barcelona Vs FC Porto UEFA Super Cup 2011",
+      "id": "160733114007038"
     },
     {
       "name": "Grupo Capoeira Porto Da Barra - Portugal",
@@ -1915,20 +1915,8 @@
       "id": "136132396587918"
     },
     {
-      "name": "Sheraton Porto Hotel & Spa",
-      "id": "160520493840"
-    },
-    {
       "name": "Vintageoporto / Servartes",
       "id": "122984151095560"
-    },
-    {
-      "name": "TRIBECA Jazz club & restaurante",
-      "id": "221888997828718"
-    },
-    {
-      "name": "RUA",
-      "id": "514455458610673"
     },
     {
       "name": "Yellow Ledbetter",
@@ -1937,10 +1925,6 @@
     {
       "name": "Festas de S. Bartolomeu - Foz do Douro, Porto",
       "id": "598051473580858"
-    },
-    {
-      "name": "La Vie en rose",
-      "id": "109411789077751"
     },
     {
       "name": "Fernando Barrero Porto",
@@ -1955,12 +1939,12 @@
       "id": "491831897498587"
     },
     {
-      "name": "Os Barriguitas",
-      "id": "141640015906699"
-    },
-    {
       "name": "Stavento Beach Bar Plaz Avlaki Porto Rafti",
       "id": "194114207417361"
+    },
+    {
+      "name": "Os Barriguitas",
+      "id": "141640015906699"
     },
     {
       "name": "Do the Evolution",
@@ -1969,6 +1953,10 @@
     {
       "name": "El perro",
       "id": "103738829665531"
+    },
+    {
+      "name": "La Vie en rose",
+      "id": "109411789077751"
     },
     {
       "name": "Given to Fly",
@@ -1987,28 +1975,40 @@
       "id": "213017848728902"
     },
     {
+      "name": "Sheraton Porto Hotel & Spa",
+      "id": "160520493840"
+    },
+    {
+      "name": "RUA",
+      "id": "514455458610673"
+    },
+    {
       "name": "PortoTónico",
       "id": "270442636393572"
     },
     {
-      "name": "PortoBeer",
-      "id": "413296558701717"
+      "name": "TRIBECA Jazz club & restaurante",
+      "id": "221888997828718"
     },
     {
       "name": "Creme",
       "id": "139332122749088"
     },
     {
+      "name": "PortoBeer",
+      "id": "413296558701717"
+    },
+    {
       "name": "Rivoli Porto",
       "id": "487220627960140"
     },
     {
-      "name": "Tapas Club Lounge Bar",
-      "id": "673881339302272"
-    },
-    {
       "name": "Alma",
       "id": "101522613281538"
+    },
+    {
+      "name": "Tapas Club Lounge Bar",
+      "id": "673881339302272"
     },
     {
       "name": "Porto dos Sentidos",
@@ -2023,40 +2023,40 @@
       "id": "189953134422851"
     },
     {
-      "name": "Bar Porto",
-      "id": "185094014890218"
-    },
-    {
       "name": "Porto di Barcellona",
       "id": "227771627236517"
+    },
+    {
+      "name": "Bar Porto",
+      "id": "185094014890218"
     },
     {
       "name": "DOKAKI NIGHT CLUB - Porto Santo",
       "id": "253456808006509"
     },
     {
-      "name": "Porto Varzea",
-      "id": "139078989591627"
-    },
-    {
       "name": "Kastro @ Porto Rafti",
       "id": "159637507441581"
+    },
+    {
+      "name": "Porto Varzea",
+      "id": "139078989591627"
     },
     {
       "name": "Porto d'Abrigo Bar",
       "id": "1384366305167983"
     },
     {
-      "name": "Peter Café Sport Porto",
-      "id": "119368424040"
+      "name": "Bar Del Porto",
+      "id": "119819341437656"
     },
     {
       "name": "Bar del Porto Maratea",
       "id": "224760840893983"
     },
     {
-      "name": "Bar Del Porto",
-      "id": "119819341437656"
+      "name": "Peter Café Sport Porto",
+      "id": "119368424040"
     },
     {
       "name": "Café Célia",
@@ -2083,12 +2083,12 @@
       "id": "127839937293379"
     },
     {
-      "name": "DTonho Restaurante",
-      "id": "135406759991743"
-    },
-    {
       "name": "Lado B",
       "id": "153212204731135"
+    },
+    {
+      "name": "DTonho Restaurante",
+      "id": "135406759991743"
     }
   ],
   "Aveiro": [
@@ -2105,16 +2105,16 @@
       "id": "143148852419865"
     },
     {
-      "name": "ENEEC - Encontro Nacional de Estudantes de Engenharia Civil",
-      "id": "365243623578844"
+      "name": "Núcleo de Estudantes de Medicina da Universidade de Aveiro",
+      "id": "222969827791312"
     },
     {
       "name": "Associação de Estudantes - AEAAV 2013/2014",
       "id": "687983187885970"
     },
     {
-      "name": "Núcleo de Estudantes de Medicina da Universidade de Aveiro",
-      "id": "222969827791312"
+      "name": "ENEEC - Encontro Nacional de Estudantes de Engenharia Civil",
+      "id": "365243623578844"
     },
     {
       "name": "Associação de Estudantes - A.E. Búzio",
@@ -2125,12 +2125,16 @@
       "id": "750420918308744"
     },
     {
-      "name": "Núcleo de Estudantes de Biologia da AAUAv",
-      "id": "178712842224514"
-    },
-    {
       "name": "Núcleo de Estudantes de Sistemas de Informação - AAUAv",
       "id": "495459713844459"
+    },
+    {
+      "name": "Núcleo de Estudantes de Engenharia Mecânica - NEEMec/AAUAv",
+      "id": "238928239558523"
+    },
+    {
+      "name": "Núcleo de Estudantes de Biologia da AAUAv",
+      "id": "178712842224514"
     },
     {
       "name": "Núcleo Estudantes Engenharia Química (NEEQu-AAUAv)",
@@ -2141,20 +2145,16 @@
       "id": "247454202011942"
     },
     {
-      "name": "Núcleo de Estudantes de Engenharia Mecânica - NEEMec/AAUAv",
-      "id": "238928239558523"
-    },
-    {
-      "name": "Residência para estudantes em Aveiro",
-      "id": "1404189219838413"
-    },
-    {
       "name": "Associação de Estudantes 13/14 - ESMS",
       "id": "177253652412825"
     },
     {
       "name": "Lista A - ESAAV",
       "id": "594535487271671"
+    },
+    {
+      "name": "Residência para estudantes em Aveiro",
+      "id": "1404189219838413"
     },
     {
       "name": "GEMA (Grupo de Estudantes da Madeira e dos Açores)",
@@ -2173,16 +2173,16 @@
       "id": "143177699096382"
     },
     {
-      "name": "Universidade de Aveiro",
-      "id": "210336892317219"
+      "name": "Associação Académica da Universidade de Aveiro",
+      "id": "136673149687919"
     },
     {
       "name": "Antigos Alunos Universidade Aveiro",
       "id": "466982770028724"
     },
     {
-      "name": "Associação Académica da Universidade de Aveiro",
-      "id": "136673149687919"
+      "name": "Universidade de Aveiro",
+      "id": "210336892317219"
     },
     {
       "name": "Departamento de Biologia - Universidade de Aveiro",
@@ -2197,40 +2197,40 @@
       "id": "126597297412042"
     },
     {
-      "name": "Spotted: Universidade de Aveiro",
-      "id": "518023651563261"
-    },
-    {
       "name": "ELearning | Universidade de Aveiro",
       "id": "314226178642237"
     },
     {
-      "name": "QOPNA, Universidade de Aveiro",
-      "id": "428152910553830"
+      "name": "Spotted: Universidade de Aveiro",
+      "id": "518023651563261"
     },
     {
       "name": "IEUA - Incubadora de Empresas da Universidade de Aveiro",
       "id": "120173778024701"
     },
     {
-      "name": "Marketing na Universidade de Aveiro",
-      "id": "120869797929990"
+      "name": "QOPNA, Universidade de Aveiro",
+      "id": "428152910553830"
     },
     {
       "name": "Gabinete de Fisioterapia na Universidade de Aveiro",
       "id": "435484869882810"
     },
     {
+      "name": "Marketing na Universidade de Aveiro",
+      "id": "120869797929990"
+    },
+    {
       "name": "NEUA - Núcleo de Espeleologia da AA da Universidade de Aveiro",
       "id": "104033806294454"
     },
     {
-      "name": "RUA - Rugby da Universidade de Aveiro",
-      "id": "367924293235724"
-    },
-    {
       "name": "Tuna Feminina da Associação Académica da Universidade de Aveiro (TFAAUAv)",
       "id": "250545901675217"
+    },
+    {
+      "name": "RUA - Rugby da Universidade de Aveiro",
+      "id": "367924293235724"
     },
     {
       "name": "Biblioteca Universidade de Aveiro",
@@ -2385,12 +2385,12 @@
       "id": "358812680902538"
     },
     {
-      "name": "Fusões - Winery / Restaurante / Bar",
-      "id": "140416739439020"
-    },
-    {
       "name": "Biblioteca Bar",
       "id": "168180706529128"
+    },
+    {
+      "name": "Fusões - Winery / Restaurante / Bar",
+      "id": "140416739439020"
     },
     {
       "name": "Barraca ECT",
@@ -2405,72 +2405,72 @@
       "id": "113213756243"
     },
     {
-      "name": "Caffé da Praça",
-      "id": "146350435430097"
-    },
-    {
       "name": "Autocarro Bar",
       "id": "184602618243431"
-    },
-    {
-      "name": "Bodegas Bar",
-      "id": "151053478270565"
-    },
-    {
-      "name": "Guesthouse Bar",
-      "id": "149618635107505"
-    },
-    {
-      "name": "Maravilhas",
-      "id": "508151009244234"
     },
     {
       "name": "Canto Vivo",
       "id": "144460752290388"
     },
     {
-      "name": "Cais Do Paraiso",
-      "id": "140947182659915"
+      "name": "Caffé da Praça",
+      "id": "146350435430097"
     },
     {
-      "name": "Giz Food & Drinks",
-      "id": "148381438518"
+      "name": "Maravilhas",
+      "id": "508151009244234"
     },
     {
-      "name": "Decante Bar",
-      "id": "171401436237412"
-    },
-    {
-      "name": "Kitten's Irish Pub",
-      "id": "479569855408703"
-    },
-    {
-      "name": "Bar Maravilhas",
-      "id": "146079798866549"
+      "name": "Guesthouse Bar",
+      "id": "149618635107505"
     },
     {
       "name": "Adega 28",
       "id": "236624729681929"
     },
     {
-      "name": "Clandestino",
-      "id": "160466707338303"
+      "name": "Cais Do Paraiso",
+      "id": "140947182659915"
+    },
+    {
+      "name": "Kitten's Irish Pub",
+      "id": "479569855408703"
+    },
+    {
+      "name": "Bodegas Bar",
+      "id": "151053478270565"
+    },
+    {
+      "name": "Giz Food & Drinks",
+      "id": "148381438518"
     },
     {
       "name": "Bianchi 2",
       "id": "101599989942903"
     },
     {
+      "name": "Decante Bar",
+      "id": "171401436237412"
+    },
+    {
+      "name": "Clandestino",
+      "id": "160466707338303"
+    },
+    {
+      "name": "Bar Maravilhas",
+      "id": "146079798866549"
+    },
+    {
       "name": "Toc'aqui",
       "id": "542892835783036"
     },
     {
-      "name": "Cenap Bar",
-      "id": "1396266847264685"
-    },
-    {
       "name": "The Iron Duke Pub",
       "id": "408258289210100"
+    },
+    {
+      "name": "La Parrilla Aveiro",
+      "id": "229199263891030"
     },
     {
       "name": "Bucha & Estica",
@@ -2485,20 +2485,20 @@
       "id": "193776324969"
     },
     {
-      "name": "Posto7",
-      "id": "495084467215697"
-    },
-    {
-      "name": "La Parrilla Aveiro",
-      "id": "229199263891030"
-    },
-    {
       "name": "Shot bar",
       "id": "790955204254781"
     },
     {
+      "name": "Posto7",
+      "id": "495084467215697"
+    },
+    {
       "name": "Esplanada Bar do Marquês de Pombal",
       "id": "150837778421173"
+    },
+    {
+      "name": "LA  CUBATA",
+      "id": "128634190573049"
     },
     {
       "name": "Beira Mar Restaurante Bar",
@@ -2513,20 +2513,20 @@
       "id": "473066316124826"
     },
     {
-      "name": "CONTRASTES BAR",
-      "id": "86282442754"
-    },
-    {
-      "name": "Garrafeira Wine Bar Morpheus",
-      "id": "225893354152198"
+      "name": "Cenap Bar",
+      "id": "1396266847264685"
     },
     {
       "name": "Tahiti Bar",
       "id": "305912602891231"
     },
     {
-      "name": "LA  CUBATA",
-      "id": "128634190573049"
+      "name": "CONTRASTES BAR",
+      "id": "86282442754"
+    },
+    {
+      "name": "Garrafeira Wine Bar Morpheus",
+      "id": "225893354152198"
     },
     {
       "name": "O Carioca\"",
@@ -2537,20 +2537,20 @@
       "id": "176860349133836"
     },
     {
-      "name": "O Bar da Praia - Enterro'13",
-      "id": "127104890815630"
-    },
-    {
       "name": "Barra de Aveiro",
       "id": "198525913524509"
     },
     {
-      "name": "Gelataria Veneto",
-      "id": "365253700246819"
+      "name": "O Bar da Praia - Enterro'13",
+      "id": "127104890815630"
     },
     {
       "name": "Copacabana",
       "id": "203085316482610"
+    },
+    {
+      "name": "Gelataria Veneto",
+      "id": "365253700246819"
     },
     {
       "name": "Aveiro Light",
@@ -2581,12 +2581,12 @@
       "id": "431106753611432"
     },
     {
-      "name": "NOX - friends, food & drinks",
-      "id": "543831755702994"
-    },
-    {
       "name": "MartinsBar",
       "id": "217203068353409"
+    },
+    {
+      "name": "Escolinha da Bubadeira",
+      "id": "582611648464862"
     },
     {
       "name": "Café Aveiro",
@@ -2597,16 +2597,16 @@
       "id": "152976148092523"
     },
     {
-      "name": "Club's Coffee RIFF      .OfficialPage.",
-      "id": "591239244264591"
-    },
-    {
       "name": "Secret CAFFÉ",
       "id": "408542589243091"
     },
     {
-      "name": "Escolinha da Bubadeira",
-      "id": "582611648464862"
+      "name": "NOX - friends, food & drinks",
+      "id": "543831755702994"
+    },
+    {
+      "name": "Club's Coffee RIFF      .OfficialPage.",
+      "id": "591239244264591"
     },
     {
       "name": "Adega Vintage",
@@ -2621,12 +2621,12 @@
       "id": "177355129140491"
     },
     {
-      "name": "A'Capela Bar & Tapas",
-      "id": "265406700234575"
-    },
-    {
       "name": "Salina Club",
       "id": "402952953107243"
+    },
+    {
+      "name": "A'Capela Bar & Tapas",
+      "id": "265406700234575"
     },
     {
       "name": "Glam Cafe",
@@ -2637,6 +2637,10 @@
       "id": "339069876105977"
     },
     {
+      "name": "Barra, Aveiro",
+      "id": "412711425455167"
+    },
+    {
       "name": "Energia caffé",
       "id": "556749531090403"
     },
@@ -2645,16 +2649,12 @@
       "id": "468330533258446"
     },
     {
-      "name": "Barra, Aveiro",
-      "id": "412711425455167"
+      "name": "Barão Caffé",
+      "id": "698509423513500"
     },
     {
       "name": "Restaurante Momentos",
       "id": "615044115173395"
-    },
-    {
-      "name": "Barão Caffé",
-      "id": "698509423513500"
     },
     {
       "name": "BARRA GRILL",
@@ -2677,6 +2677,10 @@
       "id": "217350888426899"
     },
     {
+      "name": "Bárbara Pereira Esteticista",
+      "id": "305719749536656"
+    },
+    {
       "name": "Churrascaria - Grill Feira",
       "id": "668549449870070"
     },
@@ -2685,20 +2689,12 @@
       "id": "300384143429884"
     },
     {
-      "name": "Bárbara Pereira Esteticista",
-      "id": "305719749536656"
-    },
-    {
       "name": "Café Snack Bar Samar",
       "id": "389024001227130"
     },
     {
       "name": "sapataria barata",
       "id": "124867830865868"
-    },
-    {
-      "name": "Barros - Mediação De Seguros, Lda",
-      "id": "604566122944889"
     },
     {
       "name": "Barbearia Sousa",
@@ -2711,6 +2707,10 @@
     {
       "name": "Cafetaria Bar Galeria",
       "id": "183831078336202"
+    },
+    {
+      "name": "Barros - Mediação De Seguros, Lda",
+      "id": "604566122944889"
     },
     {
       "name": "Bar da Praia",
@@ -2755,20 +2755,20 @@
       "id": "516333348457453"
     },
     {
-      "name": "Associação de Estudantes da Escola Básica e Secundária Fernão do Pó",
-      "id": "394172847320611"
-    },
-    {
       "name": "Meet My Room Quartos na Praça Rodrigues Lobo - Leiria",
       "id": "285830458209545"
+    },
+    {
+      "name": "Universidade Sénior da Nazaré",
+      "id": "399031360209683"
     },
     {
       "name": "NEAL - Núcleo de Estudantes Africanos de Leiria",
       "id": "230683367117816"
     },
     {
-      "name": "Universidade Sénior da Nazaré",
-      "id": "399031360209683"
+      "name": "Associação de Estudantes da Escola Básica e Secundária Fernão do Pó",
+      "id": "394172847320611"
     },
     {
       "name": "Comissão de Praxe - ESTG Leiria",
@@ -2795,16 +2795,16 @@
       "id": "123053824382559"
     },
     {
-      "name": "Semana Académica De Leiria",
-      "id": "317303908340465"
-    },
-    {
       "name": "Académica, Papelaria e Brinquedos",
       "id": "193508204001741"
     },
     {
       "name": "Leiria, baratao",
       "id": "382418271841952"
+    },
+    {
+      "name": "Semana Académica De Leiria",
+      "id": "317303908340465"
     },
     {
       "name": "Cheers Bar Leiria",
@@ -2815,12 +2815,12 @@
       "id": "126215497478648"
     },
     {
-      "name": "Barrenta, Leiria, Portugal",
-      "id": "107179912646861"
-    },
-    {
       "name": "Barreiros, Leiria, Portugal",
       "id": "106997379330887"
+    },
+    {
+      "name": "Barrenta, Leiria, Portugal",
+      "id": "107179912646861"
     },
     {
       "name": "Bárrio, Leiria, Portugal",
@@ -2831,16 +2831,12 @@
       "id": "110245049001132"
     },
     {
-      "name": "Barros Da Paz, Leiria, Portugal",
-      "id": "105019849534307"
-    },
-    {
       "name": "Barrocalvo, Leiria, Portugal",
       "id": "116215971724118"
     },
     {
-      "name": "O Fred Bar Cafe # Leiria",
-      "id": "107628482633206"
+      "name": "Barros Da Paz, Leiria, Portugal",
+      "id": "105019849534307"
     },
     {
       "name": "Apoiantes de  Kelly Baron-Leiria Portugal",
@@ -2851,32 +2847,40 @@
       "id": "106401099392974"
     },
     {
-      "name": "Vale De Barreiras, Leiria, Portugal",
-      "id": "113321618679979"
+      "name": "O Fred Bar Cafe # Leiria",
+      "id": "107628482633206"
     },
     {
-      "name": "Barreiras, Leiria, Portugal",
-      "id": "111073612255732"
+      "name": "Vale De Barreiras, Leiria, Portugal",
+      "id": "113321618679979"
     },
     {
       "name": "Candidatura PS a Leiria, Pousos, Barreira e Cortes",
       "id": "1402787466606098"
     },
     {
-      "name": "PSD União Freguesias Leiria Pousos Barreira Cortes",
-      "id": "311602078986535"
+      "name": "Barreiras, Leiria, Portugal",
+      "id": "111073612255732"
     },
     {
       "name": "Barrocal, Leiria, Portugal",
       "id": "107228019316107"
     },
     {
-      "name": "Clube Suite",
-      "id": "125030577598375"
+      "name": "PSD União Freguesias Leiria Pousos Barreira Cortes",
+      "id": "311602078986535"
     },
     {
       "name": "Colégio João de Barros",
       "id": "207988860859"
+    },
+    {
+      "name": "Clube Suite",
+      "id": "125030577598375"
+    },
+    {
+      "name": "Palace Kiay",
+      "id": "221814654502032"
     },
     {
       "name": "Anubis",
@@ -2887,10 +2891,6 @@
       "id": "233774773306505"
     },
     {
-      "name": "Palace Kiay",
-      "id": "221814654502032"
-    },
-    {
       "name": "Praça Caffèe",
       "id": "137046282147"
     },
@@ -2899,64 +2899,56 @@
       "id": "322609531151914"
     },
     {
-      "name": "Parqe",
-      "id": "451957011487348"
-    },
-    {
       "name": "PUB // Leiria Public House",
       "id": "502652436497238"
+    },
+    {
+      "name": "Parqe",
+      "id": "451957011487348"
     },
     {
       "name": "Cafetaria São Marco",
       "id": "199419023432262"
     },
     {
-      "name": "Yellow Bar",
-      "id": "255527541136294"
-    },
-    {
       "name": "Chico Lobo",
       "id": "572790256079370"
-    },
-    {
-      "name": "Kilimanjaro",
-      "id": "524474890971029"
     },
     {
       "name": "Oceanário Caphé Bar",
       "id": "158414740876513"
     },
     {
+      "name": "Yellow Bar",
+      "id": "255527541136294"
+    },
+    {
       "name": "Urban Leiria",
       "id": "508951135891703"
     },
     {
-      "name": "A Pipa",
-      "id": "175505129324624"
+      "name": "Kilimanjaro",
+      "id": "524474890971029"
     },
     {
       "name": "Patio do Barão",
       "id": "147294462082911"
     },
     {
+      "name": "A Pipa",
+      "id": "175505129324624"
+    },
+    {
       "name": "Barosa / Leiria",
       "id": "449384771815983"
-    },
-    {
-      "name": "Sunshine-bar",
-      "id": "177546755777272"
-    },
-    {
-      "name": "Maybe Club",
-      "id": "1435015553381721"
     },
     {
       "name": "Urban Leiria Fan",
       "id": "237020919724808"
     },
     {
-      "name": "O Palaio",
-      "id": "196941887179974"
+      "name": "Sunshine-bar",
+      "id": "177546755777272"
     },
     {
       "name": "Budha's Bar",
@@ -2967,16 +2959,24 @@
       "id": "179346215572630"
     },
     {
+      "name": "O Palaio",
+      "id": "196941887179974"
+    },
+    {
       "name": "Vitoriabar",
       "id": "664637060234992"
     },
     {
-      "name": "Feelings",
-      "id": "175655879193526"
+      "name": "Maybe Club",
+      "id": "1435015553381721"
     },
     {
       "name": "Paul's Bar",
       "id": "130138410421246"
+    },
+    {
+      "name": "Feelings",
+      "id": "175655879193526"
     },
     {
       "name": "IKON BAR",
@@ -3007,20 +3007,20 @@
       "id": "341742335960988"
     },
     {
-      "name": "Charme",
-      "id": "528563180541237"
+      "name": "CAFÉ SÃO BENTO",
+      "id": "272699119555272"
     },
     {
       "name": "Texas Bar",
       "id": "112642015428105"
     },
     {
-      "name": "CAFÉ SÃO BENTO",
-      "id": "272699119555272"
-    },
-    {
       "name": "Cafetaria d vila",
       "id": "521220241319637"
+    },
+    {
+      "name": "Charme",
+      "id": "528563180541237"
     },
     {
       "name": "Rock Beat",
@@ -3039,16 +3039,20 @@
       "id": "432475450148674"
     },
     {
-      "name": "Villa Caffe",
-      "id": "136408999763003"
-    },
-    {
       "name": "Café Leiria",
       "id": "585491124852550"
     },
     {
+      "name": "Villa Caffe",
+      "id": "136408999763003"
+    },
+    {
       "name": "Gotrixbar",
       "id": "738396379505242"
+    },
+    {
+      "name": "Motor Clube Café\\Bar",
+      "id": "236023283229170"
     },
     {
       "name": "Bar Rio Cortiço Mar",
@@ -3063,20 +3067,12 @@
       "id": "446599792115166"
     },
     {
-      "name": "Motor Clube Café\\Bar",
-      "id": "236023283229170"
-    },
-    {
       "name": "Kit-auto",
       "id": "121158998038886"
     },
     {
       "name": "Clube Borgas",
       "id": "1408904409329112"
-    },
-    {
-      "name": "New Buzz @ hype",
-      "id": "143318099694"
     },
     {
       "name": "Social, Crepes & Rum",
@@ -3087,12 +3083,16 @@
       "id": "103799682098"
     },
     {
-      "name": "Casa do Benfica em Leiria",
-      "id": "187604901355336"
+      "name": "New Buzz @ hype",
+      "id": "143318099694"
     },
     {
       "name": "GOVAL 73",
       "id": "367000033425738"
+    },
+    {
+      "name": "Casa do Benfica em Leiria",
+      "id": "187604901355336"
     },
     {
       "name": "Has Caffé",
@@ -3111,6 +3111,10 @@
       "id": "584569108289713"
     },
     {
+      "name": "Batidos Café",
+      "id": "175980222451161"
+    },
+    {
       "name": "Barod",
       "id": "121571514578184"
     },
@@ -3119,24 +3123,20 @@
       "id": "204829269666543"
     },
     {
-      "name": "Batidos Café",
-      "id": "175980222451161"
+      "name": "Frangus",
+      "id": "128947497120404"
     },
     {
       "name": "Why Not? Bar Leiria",
       "id": "375769285895511"
     },
     {
-      "name": "Frangus",
-      "id": "128947497120404"
+      "name": "Churrasqueira Sabores da Nossa Quinta",
+      "id": "141066499436005"
     },
     {
       "name": "Restaurante&Bar \"Twist\"",
       "id": "280933545391058"
-    },
-    {
-      "name": "Churrasqueira Sabores da Nossa Quinta",
-      "id": "141066499436005"
     },
     {
       "name": "Nekob-Café Bar Lda.",
@@ -3147,20 +3147,20 @@
       "id": "195189510559942"
     },
     {
-      "name": "Isa Petiscaria",
-      "id": "805730179441069"
-    },
-    {
       "name": "LMH Wines",
       "id": "191854380988290"
     },
     {
-      "name": "A Barbearia by Ana Raquel",
-      "id": "272667236140089"
+      "name": "Isa Petiscaria",
+      "id": "805730179441069"
     },
     {
       "name": "Café Snack Bar Táskuela",
       "id": "1382911908634501"
+    },
+    {
+      "name": "A Barbearia by Ana Raquel",
+      "id": "272667236140089"
     },
     {
       "name": "Rua  Do Barrinho",
@@ -3171,12 +3171,12 @@
       "id": "654027284633479"
     },
     {
-      "name": "Silvas Pinturas",
-      "id": "444127109021215"
-    },
-    {
       "name": "The Box Space",
       "id": "1379801488925562"
+    },
+    {
+      "name": "Silvas Pinturas",
+      "id": "444127109021215"
     },
     {
       "name": "Audline Lda",
@@ -3187,12 +3187,12 @@
       "id": "559961130692231"
     },
     {
-      "name": "BM-electrodomésticos",
-      "id": "497897166914840"
-    },
-    {
       "name": "Costurart Atelier de Costura",
       "id": "195058983976360"
+    },
+    {
+      "name": "BM-electrodomésticos",
+      "id": "497897166914840"
     },
     {
       "name": "Instituto de Beleza Maria do Céu Costa",
@@ -3237,10 +3237,6 @@
       "id": "214131485286423"
     },
     {
-      "name": "Núcleo de Estudantes de Sociologia da Associação Académica de Coimbra",
-      "id": "578571925520501"
-    },
-    {
       "name": "Núcleo de Estudantes de Biologia - Associação Académica de Coimbra",
       "id": "322779407817126"
     },
@@ -3249,16 +3245,20 @@
       "id": "178155348983655"
     },
     {
+      "name": "Núcleo de Estudantes de Sociologia da Associação Académica de Coimbra",
+      "id": "578571925520501"
+    },
+    {
       "name": "Núcleo de Estudantes de Matemática da Associação Académica de Coimbra",
       "id": "356814097746423"
     },
     {
-      "name": "Núcleo Estudantes de Química",
-      "id": "164350723743712"
-    },
-    {
       "name": "Núcleo de Estudantes Informática",
       "id": "245575372157265"
+    },
+    {
+      "name": "Núcleo Estudantes de Química",
+      "id": "164350723743712"
     },
     {
       "name": "Associação de Estudantes- Escola Secundária Quinta das Flores",
@@ -3277,16 +3277,16 @@
       "id": "495261833875812"
     },
     {
-      "name": "Núcleo de Estudantes de Economia",
-      "id": "130375097052961"
+      "name": "Associação de Estudantes EHTC",
+      "id": "352095938236428"
     },
     {
       "name": "Cidade Fidalga: Quartos para estudantes",
       "id": "1482287295331321"
     },
     {
-      "name": "Associação de Estudantes EHTC",
-      "id": "352095938236428"
+      "name": "Núcleo de Estudantes de Economia",
+      "id": "130375097052961"
     },
     {
       "name": "Solar Residência Dos Estudantes Açoreanos",
@@ -3297,16 +3297,16 @@
       "id": "202798346417929"
     },
     {
-      "name": "Faculdade de Psicologia e Ciências da Educação - Universidade de Coimbra",
-      "id": "644771282227819"
-    },
-    {
       "name": "Faculdade de Direito da Universidade de Coimbra",
       "id": "397264596956371"
     },
     {
       "name": "Faculdade de Direito da Universidade de Coimbra (FDUC)",
       "id": "294664347215460"
+    },
+    {
+      "name": "Faculdade de Psicologia e Ciências da Educação - Universidade de Coimbra",
+      "id": "644771282227819"
     },
     {
       "name": "Biblioteca da Faculdade de Economia da Universidade de Coimbra",
@@ -3317,36 +3317,36 @@
       "id": "139484612783919"
     },
     {
-      "name": "Faculdade de Letras da Universidade de Coimbra",
-      "id": "139564702792684"
-    },
-    {
       "name": "Faculdade de Ciencias e Tecnologia da Universidade de Coimbra",
       "id": "111141745577265"
-    },
-    {
-      "name": "MBA FEUC Programs - Faculdade de Economia da Universidade de Coimbra",
-      "id": "138629089669488"
     },
     {
       "name": "Litteratuna - Tuna Mista da Faculdade de Letras da Universidade de Coimbra",
       "id": "259451347566219"
     },
     {
-      "name": "Faculdade de Medicina da Universidade de Coimbra",
-      "id": "240700769311756"
+      "name": "MBA FEUC Programs - Faculdade de Economia da Universidade de Coimbra",
+      "id": "138629089669488"
+    },
+    {
+      "name": "Faculdade de Letras da Universidade de Coimbra",
+      "id": "139564702792684"
     },
     {
       "name": "Faculdade de Medicina da Universidade de Coimbra",
       "id": "142920452517693"
     },
     {
-      "name": "Faculdade de Letras da Universidade de Coimbra",
-      "id": "179819322063741"
+      "name": "Faculdade de Medicina da Universidade de Coimbra",
+      "id": "240700769311756"
     },
     {
       "name": "Faculdade De Farmácia Da Universidade De Coimbra",
       "id": "278499322174170"
+    },
+    {
+      "name": "Faculdade de Letras da Universidade de Coimbra",
+      "id": "179819322063741"
     },
     {
       "name": "Faculdades Corpo",
@@ -3361,12 +3361,12 @@
       "id": "181658891889036"
     },
     {
-      "name": "Faculdade de Letras (FLUC)",
-      "id": "203976699638519"
-    },
-    {
       "name": "Universidade de Coimbra-Faculdade de Letras",
       "id": "192506724155753"
+    },
+    {
+      "name": "Faculdade de Letras (FLUC)",
+      "id": "203976699638519"
     },
     {
       "name": "Faculdade de Medicina da Universidade de Coimbra",
@@ -3377,12 +3377,12 @@
       "id": "398850853509492"
     },
     {
-      "name": "Faculdades do Corpo - Fitness Center",
-      "id": "202024463173198"
-    },
-    {
       "name": "Faculdade de Ciências do Desporto e Educação Física",
       "id": "427062634023124"
+    },
+    {
+      "name": "Faculdades do Corpo - Fitness Center",
+      "id": "202024463173198"
     },
     {
       "name": "Faculdade de Ciências e Tecnologia",
@@ -3401,24 +3401,24 @@
       "id": "385695891281"
     },
     {
-      "name": "Universidade de Coimbra",
-      "id": "170094986358297"
-    },
-    {
       "name": "Biblioteca Geral da Universidade de Coimbra",
       "id": "158529484349951"
+    },
+    {
+      "name": "Universidade de Coimbra",
+      "id": "170094986358297"
     },
     {
       "name": "Candidaturas Universidade de Coimbra",
       "id": "138396219591023"
     },
     {
-      "name": "Rádio Universidade de Coimbra",
-      "id": "158630599529"
-    },
-    {
       "name": "Observatório Astronómico da Universidade de Coimbra",
       "id": "135303989930611"
+    },
+    {
+      "name": "Rádio Universidade de Coimbra",
+      "id": "158630599529"
     },
     {
       "name": "Sociedade de Debates da Universidade de Coimbra",
@@ -3429,16 +3429,16 @@
       "id": "190730677667848"
     },
     {
+      "name": "EU Careers - Universidade de Coimbra",
+      "id": "354377397980353"
+    },
+    {
       "name": "Serviços Ação Social Universidade de Coimbra",
       "id": "409634205740167"
     },
     {
       "name": "Coro dos Antigos Orfeonistas da Universidade de Coimbra",
       "id": "243359981087"
-    },
-    {
-      "name": "EU Careers - Universidade de Coimbra",
-      "id": "354377397980353"
     },
     {
       "name": "Coro Misto da Universidade de Coimbra",
@@ -3449,12 +3449,12 @@
       "id": "206576872687069"
     },
     {
-      "name": "Mondeguinas - Tuna Feminina da Universidade de Coimbra",
-      "id": "172526472769227"
-    },
-    {
       "name": "Quantunna - Tuna Mista da F. C. T. da Universidade de Coimbra",
       "id": "116839445053521"
+    },
+    {
+      "name": "Mondeguinas - Tuna Feminina da Universidade de Coimbra",
+      "id": "172526472769227"
     },
     {
       "name": "Centro de Estudos Sociais da Universidade de Coimbra",
@@ -3465,12 +3465,12 @@
       "id": "172315299453842"
     },
     {
-      "name": "Bibliotecas da Universidade de Coimbra",
-      "id": "116613321697537"
-    },
-    {
       "name": "Semana Cultural Brasileira-Universidade De Coimbra",
       "id": "368178786655302"
+    },
+    {
+      "name": "Bibliotecas da Universidade de Coimbra",
+      "id": "116613321697537"
     },
     {
       "name": "Dri Universidade de Coimbra",
@@ -3485,16 +3485,12 @@
       "id": "549113198470531"
     },
     {
-      "name": "Museu da Ciência da Universidade de Coimbra",
-      "id": "188225504530359"
-    },
-    {
       "name": "Universidade Coimbra",
       "id": "111593465527274"
     },
     {
-      "name": "Bioquímica - Universidade de Coimbra",
-      "id": "192133140837886"
+      "name": "Museu da Ciência da Universidade de Coimbra",
+      "id": "188225504530359"
     },
     {
       "name": "Tuna de Medicina da Universidade de Coimbra",
@@ -3505,12 +3501,12 @@
       "id": "295805083794190"
     },
     {
-      "name": "Sé Nova (Coimbra)",
-      "id": "1481779445366948"
+      "name": "Bioquímica - Universidade de Coimbra",
+      "id": "192133140837886"
     },
     {
-      "name": "Universidade de Verão Coimbra 2013",
-      "id": "217391605085514"
+      "name": "Sé Nova (Coimbra)",
+      "id": "1481779445366948"
     },
     {
       "name": "Hospitais da Universidade de Coimbra",
@@ -3519,6 +3515,10 @@
     {
       "name": "UC_D | Ensino a Distância da Universidade de Coimbra",
       "id": "210884682355886"
+    },
+    {
+      "name": "Universidade de Verão Coimbra 2013",
+      "id": "217391605085514"
     },
     {
       "name": "86-77-86 [Rádio Universidade de Coimbra]",
@@ -3545,32 +3545,32 @@
       "id": "618880038123637"
     },
     {
-      "name": "Rede UC",
-      "id": "196488884941"
-    },
-    {
       "name": "Coro Misto da Universidade de Coimbra",
       "id": "199883256714749"
+    },
+    {
+      "name": "Rede UC",
+      "id": "196488884941"
     },
     {
       "name": "Instituto de Investigação Interdisciplinar da Universidade de Coimbra",
       "id": "127452247389901"
     },
     {
-      "name": "Capelania da Universidade de Coimbra",
-      "id": "253159784805394"
-    },
-    {
       "name": "Biblioteca Geral da Universidade de Coimbra",
       "id": "138084862887860"
     },
     {
-      "name": "Caloiros Engenharia Electrotécnica e de Computadores - Universidade Coimbra",
-      "id": "347540968658493"
+      "name": "Capelania da Universidade de Coimbra",
+      "id": "253159784805394"
     },
     {
       "name": "Biblioteca das Ciências da Saúde da Universidade de Coimbra",
       "id": "148136261904861"
+    },
+    {
+      "name": "Caloiros Engenharia Electrotécnica e de Computadores - Universidade Coimbra",
+      "id": "347540968658493"
     },
     {
       "name": "Clube de Robótica da Universidade de Coimbra",
@@ -3625,12 +3625,12 @@
       "id": "130681903778623"
     },
     {
-      "name": "Associação Académica de Coimbra - Secção de Basquetebol",
-      "id": "246541802115300"
-    },
-    {
       "name": "AAC - Associação Académica De Coimbra De Rugby",
       "id": "52681162089"
+    },
+    {
+      "name": "Associação Académica de Coimbra - Secção de Basquetebol",
+      "id": "246541802115300"
     },
     {
       "name": "AAC - Associação Académica de Coimbra - Briosa | Adeptos : Fans",
@@ -3641,16 +3641,16 @@
       "id": "435037939973405"
     },
     {
-      "name": "SX AAC - Secção de Xadrez da Associação Académica de Coimbra",
-      "id": "159574210744531"
-    },
-    {
       "name": "Associação Académica de Coimbra - Secção de Futebol",
       "id": "164725983569081"
     },
     {
       "name": "Agenda Académica de Coimbra",
       "id": "120865793669"
+    },
+    {
+      "name": "SX AAC - Secção de Xadrez da Associação Académica de Coimbra",
+      "id": "159574210744531"
     },
     {
       "name": "Associação Académica de Coimbra - Voleibol",
@@ -3681,12 +3681,12 @@
       "id": "131030133603454"
     },
     {
-      "name": "Associação Académica de Coimbra - Secção de Andebol",
-      "id": "249680658403297"
-    },
-    {
       "name": "Associação Académica de Coimbra - Secção de Futebol",
       "id": "109458705761082"
+    },
+    {
+      "name": "Associação Académica de Coimbra - Secção de Andebol",
+      "id": "249680658403297"
     },
     {
       "name": "Real Fortuna Académica de Coimbra",
@@ -3694,11 +3694,11 @@
     },
     {
       "name": "Associação Académica de Coimbra",
-      "id": "100942173281052"
+      "id": "115479245133325"
     },
     {
       "name": "Associação Académica de Coimbra",
-      "id": "115479245133325"
+      "id": "100942173281052"
     },
     {
       "name": "Campo Santa Cruz - Associação Académica de Coimbra",
@@ -3725,12 +3725,12 @@
       "id": "613840801977338"
     },
     {
-      "name": "Quintas-Feiras Académicas",
-      "id": "560511750732967"
-    },
-    {
       "name": "Engomadoria Académica",
       "id": "102275956527183"
+    },
+    {
+      "name": "Quintas-Feiras Académicas",
+      "id": "560511750732967"
     },
     {
       "name": "Associação Académica de Coimbra – O.A.F.",
@@ -3753,12 +3753,12 @@
       "id": "327684653911680"
     },
     {
-      "name": "Bar Rugby Clube de Coimbra",
-      "id": "254596577995761"
-    },
-    {
       "name": "Bar 24",
       "id": "352698738153866"
+    },
+    {
+      "name": "Bar Rugby Clube de Coimbra",
+      "id": "254596577995761"
     },
     {
       "name": "Coimbra - bom e barato",
@@ -3801,6 +3801,10 @@
       "id": "109468285751221"
     },
     {
+      "name": "Aqui Base Tango",
+      "id": "407065216017376"
+    },
+    {
       "name": "The Famous",
       "id": "170219616412780"
     },
@@ -3813,16 +3817,12 @@
       "id": "150662961663215"
     },
     {
-      "name": "Aqui Base Tango",
-      "id": "407065216017376"
-    },
-    {
       "name": "\" O MOELAS \"",
       "id": "173644379355285"
     },
     {
-      "name": "Pop Fresh",
-      "id": "127969423936450"
+      "name": "Estação Coimbra B",
+      "id": "192822330746404"
     },
     {
       "name": "Bigorna bar",
@@ -3833,12 +3833,8 @@
       "id": "313075168359"
     },
     {
-      "name": "Estação Coimbra B",
-      "id": "192822330746404"
-    },
-    {
-      "name": "Fangas Mercearia Bar",
-      "id": "117770804928063"
+      "name": "Pop Fresh",
+      "id": "127969423936450"
     },
     {
       "name": "Quebra",
@@ -3849,12 +3845,24 @@
       "id": "173702339347134"
     },
     {
+      "name": "Fangas Mercearia Bar",
+      "id": "117770804928063"
+    },
+    {
+      "name": "Cabido Bar",
+      "id": "247655378588349"
+    },
+    {
       "name": "Garden Bar",
       "id": "134041146662698"
     },
     {
-      "name": "New On The Rocks",
-      "id": "133638393342123"
+      "name": "Café Académico",
+      "id": "351642588195852"
+    },
+    {
+      "name": "Turbante - Tea Bar",
+      "id": "409422095748237"
     },
     {
       "name": "JP24 café",
@@ -3869,24 +3877,20 @@
       "id": "275436225904647"
     },
     {
-      "name": "Café Académico",
-      "id": "351642588195852"
-    },
-    {
       "name": "Galeria Santa Clara",
       "id": "357288347748644"
     },
     {
-      "name": "Turbante - Tea Bar",
-      "id": "409422095748237"
+      "name": "New On The Rocks",
+      "id": "133638393342123"
     },
     {
       "name": "Shots Bar",
       "id": "152609954766202"
     },
     {
-      "name": "Cabido Bar",
-      "id": "247655378588349"
+      "name": "Casa dos Coimbras",
+      "id": "110483672331045"
     },
     {
       "name": "In'Glish",
@@ -3913,16 +3917,20 @@
       "id": "276837619033176"
     },
     {
+      "name": "Tivoli Caffé",
+      "id": "129364057083954"
+    },
+    {
       "name": "Gula D'arte",
       "id": "517106124997352"
     },
     {
-      "name": "I Remember",
-      "id": "287428698073014"
+      "name": "Rock Café Coimbra",
+      "id": "356412780464"
     },
     {
-      "name": "Tivoli Caffé",
-      "id": "129364057083954"
+      "name": "I Remember",
+      "id": "287428698073014"
     },
     {
       "name": "RS café bar",
@@ -3931,14 +3939,6 @@
     {
       "name": "Cabido BAR",
       "id": "422808511156730"
-    },
-    {
-      "name": "Rock Café Coimbra",
-      "id": "356412780464"
-    },
-    {
-      "name": "Casa dos Coimbras",
-      "id": "110483672331045"
     },
     {
       "name": "Lokomotiva Bar",
@@ -3953,10 +3953,6 @@
       "id": "145711378923880"
     },
     {
-      "name": "Aphrodite BAR",
-      "id": "336757846431554"
-    },
-    {
       "name": "Bar do Rio",
       "id": "307860779357130"
     },
@@ -3965,16 +3961,20 @@
       "id": "1453297244897993"
     },
     {
+      "name": "Ritual Bar",
+      "id": "114885362021752"
+    },
+    {
       "name": "Menu da Maria",
       "id": "234180363416342"
     },
     {
-      "name": "Noites Claras",
-      "id": "516490025096112"
+      "name": "Aphrodite BAR",
+      "id": "336757846431554"
     },
     {
-      "name": "Ritual Bar",
-      "id": "114885362021752"
+      "name": "Noites Claras",
+      "id": "516490025096112"
     },
     {
       "name": "Restaurante OSTRADAMUS",
@@ -3985,12 +3985,12 @@
       "id": "352003734934832"
     },
     {
-      "name": "Passagem de Turno",
-      "id": "272620639569478"
-    },
-    {
       "name": "Carreiras Bar",
       "id": "367655880028566"
+    },
+    {
+      "name": "Passagem de Turno",
+      "id": "272620639569478"
     },
     {
       "name": "Café Moleiro",
@@ -4001,16 +4001,16 @@
       "id": "485721274881721"
     },
     {
-      "name": "Alex's Bar",
-      "id": "521844454514460"
-    },
-    {
-      "name": "Restaurante Gauchão - Coimbra",
-      "id": "1422521097990698"
+      "name": "Bar1910coimbra",
+      "id": "1377365245812612"
     },
     {
       "name": "VOX - Coimbra",
       "id": "191681264189837"
+    },
+    {
+      "name": "Restaurante Gauchão - Coimbra",
+      "id": "1422521097990698"
     },
     {
       "name": "Vint'Sete",
@@ -4021,20 +4021,16 @@
       "id": "196676733723255"
     },
     {
-      "name": "Bar da Praia de Janeiro de Baixo",
-      "id": "499031700145127"
+      "name": "Onda Jovem",
+      "id": "550353808328397"
     },
     {
       "name": "Turbante Tea-Bar",
       "id": "181552121884541"
     },
     {
-      "name": "Onda Jovem",
-      "id": "550353808328397"
-    },
-    {
-      "name": "Bar1910coimbra",
-      "id": "1377365245812612"
+      "name": "Bar da Praia de Janeiro de Baixo",
+      "id": "499031700145127"
     },
     {
       "name": "Café lagoas",
@@ -4049,8 +4045,16 @@
       "id": "417395005064459"
     },
     {
+      "name": "Maternidade Bissaya Barreto",
+      "id": "236341189752583"
+    },
+    {
       "name": "Arcada",
       "id": "504938486291964"
+    },
+    {
+      "name": "Alex's Bar",
+      "id": "521844454514460"
     },
     {
       "name": "BAR do CNM",
@@ -4081,16 +4085,12 @@
       "id": "510900548981101"
     },
     {
-      "name": "Maternidade Bissaya Barreto",
-      "id": "236341189752583"
+      "name": "Quick Coffee",
+      "id": "297417050405418"
     },
     {
       "name": "Diligência Bar",
       "id": "106722422689882"
-    },
-    {
-      "name": "Quick Coffee",
-      "id": "297417050405418"
     },
     {
       "name": "Casa Das Caldeiras - Bar",
@@ -4101,12 +4101,12 @@
       "id": "664937606884094"
     },
     {
-      "name": "Praça Caffé",
-      "id": "149868341868645"
-    },
-    {
       "name": "Compostu",
       "id": "485186851499613"
+    },
+    {
+      "name": "Praça Caffé",
+      "id": "149868341868645"
     },
     {
       "name": "Grelha do Gaúcho",
@@ -4117,12 +4117,12 @@
       "id": "425440623760"
     },
     {
-      "name": "Imperial BAR",
-      "id": "1379704922307330"
-    },
-    {
       "name": "Auditório Bissaya Barreto",
       "id": "612571262106853"
+    },
+    {
+      "name": "Imperial BAR",
+      "id": "1379704922307330"
     },
     {
       "name": "O Pombo O pombo",
@@ -4145,24 +4145,24 @@
       "id": "453561538095889"
     },
     {
-      "name": "A Baratinha",
-      "id": "247786448731758"
-    },
-    {
       "name": "Rei das Francesinhas - Reduto Bar",
       "id": "201091599917939"
+    },
+    {
+      "name": "A Baratinha",
+      "id": "247786448731758"
     },
     {
       "name": "Barco do Amor",
       "id": "223902967803733"
     },
     {
-      "name": "Restaurante Barca do Mondego",
-      "id": "256838927821858"
-    },
-    {
       "name": "A Barca",
       "id": "620172521392078"
+    },
+    {
+      "name": "Restaurante Barca do Mondego",
+      "id": "256838927821858"
     },
     {
       "name": "Snack Bar Silvína",
@@ -4179,12 +4179,12 @@
   ],
   "Santarem": [
     {
-      "name": "Associação de Estudantes da Escola Secundária do Cartaxo",
-      "id": "139121636189774"
-    },
-    {
       "name": "Núcleo de Estudantes EEC - IPT",
       "id": "486831744683271"
+    },
+    {
+      "name": "Associação de Estudantes da Escola Secundária do Cartaxo",
+      "id": "139121636189774"
     },
     {
       "name": "Universidade Canina - Almeirim e Alpiarça",
@@ -4195,24 +4195,28 @@
       "id": "437512186288391"
     },
     {
-      "name": "Federação Académica de Santarém",
-      "id": "181219551950868"
+      "name": "Comissão de Praxe da Escola Superior de Educação de Santarém",
+      "id": "241923409247174"
     },
     {
-      "name": "Associação Académica de Santarém",
-      "id": "172555269422667"
+      "name": "Federação Académica de Santarém",
+      "id": "181219551950868"
     },
     {
       "name": "Sub 10 A- Associação Académica de Santarém",
       "id": "203074613205109"
     },
     {
+      "name": "Associação Académica de Santarém",
+      "id": "172555269422667"
+    },
+    {
       "name": "Escalada Académica. Formação e Explicações .Torres Novas",
       "id": "133579753417030"
     },
     {
-      "name": "Comissão de Praxe da Escola Superior de Educação de Santarém",
-      "id": "241923409247174"
+      "name": "Barrosa, Santarem, Portugal",
+      "id": "113088108708415"
     },
     {
       "name": "Barquinha, Santarem, Portugal",
@@ -4221,10 +4225,6 @@
     {
       "name": "Barroca, Santarem, Portugal",
       "id": "112673335417226"
-    },
-    {
-      "name": "Barrosa, Santarem, Portugal",
-      "id": "113088108708415"
     },
     {
       "name": "Pool Bar",
@@ -4239,20 +4239,20 @@
       "id": "230106067104825"
     },
     {
-      "name": "Barvila Lounge Café",
-      "id": "156007817747993"
-    },
-    {
       "name": "Respublica str",
       "id": "274271532629780"
     },
     {
-      "name": "FRA Club Café",
-      "id": "226145890856977"
+      "name": "Barvila Lounge Café",
+      "id": "156007817747993"
     },
     {
       "name": "BAKUS BAR",
       "id": "232874310206706"
+    },
+    {
+      "name": "FRA Club Café",
+      "id": "226145890856977"
     },
     {
       "name": "Café Bar Casual",
@@ -4263,12 +4263,12 @@
       "id": "197846586899244"
     },
     {
-      "name": "Savana Pool Bar",
-      "id": "1388157258082475"
-    },
-    {
       "name": "El Galego Lounge",
       "id": "244433932248056"
+    },
+    {
+      "name": "Savana Pool Bar",
+      "id": "1388157258082475"
     },
     {
       "name": "Bar do Teatro Sá da Bandeira",
@@ -4329,10 +4329,6 @@
       "id": "269491953194425"
     },
     {
-      "name": "Núcleo de Estudantes de Engenharia Civil da Universidade de Évora",
-      "id": "132086580180589"
-    },
-    {
       "name": "Núcleo de Estudantes de Relações Internacionais da Universidade de Évora",
       "id": "411617165575521"
     },
@@ -4341,12 +4337,16 @@
       "id": "112163875636099"
     },
     {
-      "name": "NEEI - Nucleo de Estudantes Engenharia Informática",
-      "id": "170398459625"
+      "name": "Núcleo de Estudantes de Engenharia Civil da Universidade de Évora",
+      "id": "132086580180589"
     },
     {
       "name": "Associação de estudantes da Escm",
       "id": "127474564068173"
+    },
+    {
+      "name": "NEEI - Nucleo de Estudantes Engenharia Informática",
+      "id": "170398459625"
     },
     {
       "name": "Universidade de Évora",
@@ -4357,20 +4357,20 @@
       "id": "206644535757"
     },
     {
-      "name": "Biblioteca dos Leões- Universidade de Évora",
-      "id": "418578574842926"
-    },
-    {
       "name": "AAUÉ - Associação Académica da Universidade de Évora",
       "id": "207304956380"
     },
     {
-      "name": "Departamento de Gestão - Universidade de Évora",
-      "id": "202494053122267"
-    },
-    {
       "name": "Agronomia - Universidade de Évora",
       "id": "209810965732949"
+    },
+    {
+      "name": "Biblioteca dos Leões- Universidade de Évora",
+      "id": "418578574842926"
+    },
+    {
+      "name": "Departamento de Gestão - Universidade de Évora",
+      "id": "202494053122267"
     },
     {
       "name": "Festas da Universidade de Évora",
@@ -4381,20 +4381,20 @@
       "id": "127327137347235"
     },
     {
-      "name": "Bichos 2013/2014 - Universidade de Évora",
-      "id": "347561998709285"
-    },
-    {
       "name": "Empreendedorismo e Inovação - Universidade de Évora",
       "id": "102458723125083"
     },
     {
-      "name": "Bichos 2012/2013 - Universidade de Évora",
-      "id": "216693611791986"
+      "name": "Bichos 2013/2014 - Universidade de Évora",
+      "id": "347561998709285"
     },
     {
       "name": "Universidade Popular Túlio Espanca - Universidade de Évora",
       "id": "121277941234968"
+    },
+    {
+      "name": "Bichos 2012/2013 - Universidade de Évora",
+      "id": "216693611791986"
     },
     {
       "name": "Serviços Académicos da Universidade de Évora",
@@ -4493,12 +4493,12 @@
       "id": "107183472753884"
     },
     {
-      "name": "Evora Wine & Gin Bar",
-      "id": "465597996804148"
-    },
-    {
       "name": "BARCO EVORA",
       "id": "179152295171"
+    },
+    {
+      "name": "Evora Wine & Gin Bar",
+      "id": "465597996804148"
     },
     {
       "name": "Quinta de Santa Barbara - Évora",
@@ -4517,12 +4517,12 @@
       "id": "108608025828154"
     },
     {
-      "name": "Mariana de la Noche",
-      "id": "109708585722164"
-    },
-    {
       "name": "Jéssica e Cláudio Barbie e Ken/Casa dos Segredos 3- Fãs de Évora",
       "id": "558996514128991"
+    },
+    {
+      "name": "Mariana de la Noche",
+      "id": "109708585722164"
     },
     {
       "name": "EME",
@@ -4533,12 +4533,12 @@
       "id": "198405386864962"
     },
     {
-      "name": "Bar do Tunnel",
-      "id": "172000866316203"
-    },
-    {
       "name": "Classic-Pub",
       "id": "197677473595766"
+    },
+    {
+      "name": "Bar do Tunnel",
+      "id": "172000866316203"
     },
     {
       "name": "Mói-Te",
@@ -4553,12 +4553,12 @@
       "id": "679629535400281"
     },
     {
-      "name": "Bar Pub Jp2",
-      "id": "224767967536691"
-    },
-    {
       "name": "Alkimia Prá Poncha",
       "id": "297203570418318"
+    },
+    {
+      "name": "Bar Pub Jp2",
+      "id": "224767967536691"
     },
     {
       "name": "EME",
@@ -4581,12 +4581,12 @@
       "id": "407313905985022"
     },
     {
-      "name": "Núcleo Sportinguista \"Os Leões de Évora\"",
-      "id": "192267264292070"
-    },
-    {
       "name": "Capítulo 8",
       "id": "185183481680812"
+    },
+    {
+      "name": "Núcleo Sportinguista \"Os Leões de Évora\"",
+      "id": "192267264292070"
     },
     {
       "name": "WINETIME93",
@@ -4597,12 +4597,12 @@
       "id": "270000823126214"
     },
     {
-      "name": "Passion",
-      "id": "193609320773126"
-    },
-    {
       "name": "BARUE",
       "id": "555942691123293"
+    },
+    {
+      "name": "Passion",
+      "id": "193609320773126"
     },
     {
       "name": "Amnésia / Lounge Bar",
@@ -4638,43 +4638,43 @@
     },
     {
       "name": "Infinitu's Bar",
-      "id": "319113584868885"
+      "id": "627570413936138"
     },
     {
       "name": "Infinitu's Bar",
-      "id": "627570413936138"
+      "id": "319113584868885"
     },
     {
       "name": "Café com Canela",
       "id": "205186489500176"
     },
     {
-      "name": "Tasquinha D. Barbara",
-      "id": "177527565766313"
-    },
-    {
       "name": "Bardamoeda",
       "id": "208868529145979"
+    },
+    {
+      "name": "Tasquinha D. Barbara",
+      "id": "177527565766313"
     },
     {
       "name": "Pateo Wine Bar",
       "id": "325833467497615"
     },
     {
-      "name": "Bar e Restaurante Evora",
-      "id": "129090113832452"
-    },
-    {
       "name": "Fama Club",
       "id": "165424571414"
     },
     {
-      "name": "Capítulo 8",
-      "id": "259265847535072"
+      "name": "Bar e Restaurante Evora",
+      "id": "129090113832452"
     },
     {
       "name": "Keep Playing Bar",
       "id": "1425618551012152"
+    },
+    {
+      "name": "Capítulo 8",
+      "id": "259265847535072"
     },
     {
       "name": "LOURO, Tapas Bar & Restaurante",
@@ -4693,28 +4693,28 @@
       "id": "456824761059004"
     },
     {
-      "name": "em memoria dos slows das festas de garagem",
-      "id": "113555585423797"
+      "name": "Clube De Setas De Évora",
+      "id": "296506290505575"
     },
     {
       "name": "BarArena",
       "id": "322396184489998"
     },
     {
-      "name": "Clube De Setas De Évora",
-      "id": "296506290505575"
-    },
-    {
       "name": "Moulin Rouge Night Club Évora",
       "id": "142792565737398"
     },
     {
-      "name": "Trystar club",
-      "id": "613404825385638"
+      "name": "em memoria dos slows das festas de garagem",
+      "id": "113555585423797"
     },
     {
       "name": "Tiem Out",
       "id": "187349617954867"
+    },
+    {
+      "name": "Trystar club",
+      "id": "613404825385638"
     },
     {
       "name": "Bar Norte Sul",
@@ -4741,56 +4741,56 @@
       "id": "227864690592240"
     },
     {
-      "name": "Nuno Barreto Juventude Sport Clube Évora - Gabinete de massagens",
-      "id": "430649933705902"
-    },
-    {
       "name": "Churrasqueira Fidalgo",
       "id": "111703185654808"
     },
     {
-      "name": "Café-Bar da Associação",
-      "id": "1426389457601222"
+      "name": "Nuno Barreto Juventude Sport Clube Évora - Gabinete de massagens",
+      "id": "430649933705902"
     },
     {
       "name": "A Tendinha",
       "id": "1413746925546762"
     },
     {
-      "name": "Snack-Bar Custódio",
-      "id": "302780956523514"
+      "name": "Café-Bar da Associação",
+      "id": "1426389457601222"
     },
     {
       "name": "Roupa Usada e Barata, acessórios e etc",
       "id": "543057865769455"
     },
     {
-      "name": "NY BAR",
-      "id": "1480525285494132"
+      "name": "Snack-Bar Custódio",
+      "id": "302780956523514"
     },
     {
       "name": "Snack-bar O Pocinho",
       "id": "616650191707742"
     },
     {
-      "name": "Snack bar O vizinho",
-      "id": "1470106073216099"
+      "name": "NY BAR",
+      "id": "1480525285494132"
     },
     {
-      "name": "Atelier Jó Barahona",
-      "id": "415160221905767"
+      "name": "Snack bar O vizinho",
+      "id": "1470106073216099"
     },
     {
       "name": "Snack-Bar A Rampa",
       "id": "252790781499738"
     },
     {
-      "name": "Loja Barbinhas",
-      "id": "263930677056587"
+      "name": "Atelier Jó Barahona",
+      "id": "415160221905767"
     },
     {
       "name": "Atelier Barahona Lda",
       "id": "199923366719027"
+    },
+    {
+      "name": "Loja Barbinhas",
+      "id": "263930677056587"
     },
     {
       "name": "O Barril",
