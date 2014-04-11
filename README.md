@@ -2,14 +2,12 @@ eventhub
 ========
 
 
-1º - $ node pagesFinder.js
+1º - weekly use. just to update facebook page events
+> $ node pagesFinder.js
 
-*weekly use. just to update facebook page events*
+2º - remove duplicates on pagesFound.json
+> $ node sortPageFound.js
 
-2º - $ node sortPageFound.js
+3º - runs server
+> $ node main.js
 
-*remove duplicates on pagesFound.json*
-
-3º - $ node main.js
-
-*runs server*
