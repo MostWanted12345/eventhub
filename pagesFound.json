@@ -213,10 +213,6 @@
       "id": "138155862921245"
     },
     {
-      "name": "TAFUL - Tuna Académica da Faculdade de Farmácia da Universidade de Lisboa",
-      "id": "257939768103"
-    },
-    {
       "name": "Faculdade de Teologia - Lisboa",
       "id": "159281827471411"
     },
@@ -237,20 +233,12 @@
       "id": "114302638658041"
     },
     {
-      "name": "Associação de Estudantes da Faculdade de Medicina de Lisboa",
-      "id": "118861328198933"
-    },
-    {
       "name": "Nova School of Business and Economics",
       "id": "105373079496351"
     },
     {
       "name": "Faculdade de Ciências Médicas | NOVA | página oficial",
       "id": "172124572888381"
-    },
-    {
-      "name": "AAFDL - Associação Académica da Faculdade de Direito de Lisboa",
-      "id": "159046125464"
     },
     {
       "name": "Faculdade Medicina Universidade Lisboa",
@@ -405,20 +393,12 @@
       "id": "262308200461940"
     },
     {
-      "name": "Faculdade de Belas-Artes da Universidade de Lisboa",
-      "id": "232696993488672"
-    },
-    {
       "name": "Luz&Tuna, Tuna da Universidade Lusíada de Lisboa",
       "id": "160628447399086"
     },
     {
       "name": "Universidade Europeia",
       "id": "90132033505"
-    },
-    {
-      "name": "AAUL - Associação Académica da Universidade de Lisboa",
-      "id": "10150129651800282"
     },
     {
       "name": "ICS - Universidade de Lisboa",
@@ -439,14 +419,6 @@
     {
       "name": "Universidade de Medicina Chinesa",
       "id": "177742192277458"
-    },
-    {
-      "name": "TAFUL - Tuna Académica da Faculdade de Farmácia da Universidade de Lisboa",
-      "id": "257939768103"
-    },
-    {
-      "name": "Faculdade de Psicologia da Universidade de Lisboa",
-      "id": "80587943203"
     },
     {
       "name": "Instituto de Educação da Universidade de Lisboa",
@@ -485,14 +457,6 @@
       "id": "340576179360096"
     },
     {
-      "name": "Faculty of Social and Human Sciences",
-      "id": "138155862921245"
-    },
-    {
-      "name": "Faculdade de Direito da Universidade Nova de Lisboa",
-      "id": "314236131986272"
-    },
-    {
       "name": "Nova -     Universidade Nova de Lisboa",
       "id": "331782250179584"
     },
@@ -509,14 +473,6 @@
       "id": "126049420808752"
     },
     {
-      "name": "Departamento de Informática da Faculdade Ciências da Universidade de Lisboa",
-      "id": "215112061921775"
-    },
-    {
-      "name": "Faculdade de Direito da Universidade de Lisboa",
-      "id": "159907947451867"
-    },
-    {
       "name": "ULHT - Universidade Lusófona de Humanidades e Tecnologias",
       "id": "74646798556"
     },
@@ -529,14 +485,6 @@
       "id": "119294461480007"
     },
     {
-      "name": "Faculdade de Letras da Universidade de Lisboa",
-      "id": "128835943857328"
-    },
-    {
-      "name": "Faculdade de Medicina Dentária da Universidade de Lisboa",
-      "id": "154670837922070"
-    },
-    {
       "name": "Reitoria da Universidade de Lisboa",
       "id": "153689061363111"
     },
@@ -545,28 +493,12 @@
       "id": "190442327665334"
     },
     {
-      "name": "Faculdade de Farmácia da Universidade de Lisboa",
-      "id": "108293332586923"
-    },
-    {
       "name": "Universidade Verde",
       "id": "204790586208026"
     },
     {
-      "name": "Associação Académica da Universidade Lusíada de Lisboa",
-      "id": "174571875908987"
-    },
-    {
       "name": "Design na Universidade Lusíada de Lisboa",
       "id": "148196018701795"
-    },
-    {
-      "name": "FCT/UNL",
-      "id": "107863239247846"
-    },
-    {
-      "name": "Faculdade Medicina Universidade Lisboa",
-      "id": "192131797512618"
     },
     {
       "name": "Boleias para Universidade Católica Portuguesa Lisboa",
@@ -575,10 +507,6 @@
     {
       "name": "Mediateca da Universidade Lusíada de Lisboa",
       "id": "111313708931896"
-    },
-    {
-      "name": "Nova School of Business and Economics",
-      "id": "105373079496351"
     },
     {
       "name": "ULis2011 - Centenário da Universidade de Lisboa",
@@ -597,32 +525,8 @@
       "id": "172234446253324"
     },
     {
-      "name": "Nucleo de Estudantes de Biologia da Universidade de Lisboa",
-      "id": "172125986818"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Universidade de Lisboa",
-      "id": "365276586917012"
-    },
-    {
-      "name": "Faculdade de Ciências Médicas - Universidade Nova de Lisboa",
-      "id": "267037056643122"
-    },
-    {
-      "name": "Associação Académica Universidade Atlântica",
-      "id": "287112591309336"
-    },
-    {
       "name": "Centro de Filosofia da Universidade de Lisboa",
       "id": "728378863893128"
-    },
-    {
-      "name": "FLUL - Faculdade de Letras da Universidade de Lisboa",
-      "id": "173659925982110"
-    },
-    {
-      "name": "University of Lisbon",
-      "id": "114829941863084"
     },
     {
       "name": "FECULTUNA-Tuna da Universidade Católica Portuguesa de Lisboa e Sintra",
@@ -633,16 +537,8 @@
       "id": "117318761657252"
     },
     {
-      "name": "Núcleo de Estudantes de Direito da Universidade Lusíada de Lisboa",
-      "id": "305267916206094"
-    },
-    {
       "name": "Lusitana - Tuna Feminina da Universidade Lusíada de Lisboa",
       "id": "295504557139054"
-    },
-    {
-      "name": "Conselho de Veteranos da Faculdade de Ciências da Universidade de Lisboa",
-      "id": "613481868674704"
     },
     {
       "name": "Fotografia - Universidade Lusófona",
@@ -673,24 +569,12 @@
       "id": "108763545822362"
     },
     {
-      "name": "Associação Académica da Universidade Aberta",
-      "id": "238158276230611"
-    },
-    {
-      "name": "Comissão de Praxe da Universidade Atlântica",
-      "id": "202226239958149"
-    },
-    {
       "name": "LISTA E - Universidade Europeia",
       "id": "328949783904791"
     },
     {
       "name": "Colégio de Estudos Pós-Graduados - UNIVERSIDADE ATLÂNTICA",
       "id": "167352720016751"
-    },
-    {
-      "name": "Faculdade de Letras da Universidade de Lisboa- FLUL",
-      "id": "281153688569608"
     },
     {
       "name": "University of Lisbon (1911–2013)",
@@ -705,14 +589,6 @@
       "id": "372284799485332"
     },
     {
-      "name": "Faculdade De Direito Da Universidade Nova De Lisboa",
-      "id": "233118380184811"
-    },
-    {
-      "name": "Faculdade de Psicologia Universidade de Lisboa",
-      "id": "326263750774851"
-    },
-    {
       "name": "Auditorio Da Reitoria Da Universidade Nova De Lisboa",
       "id": "388511587851132"
     },
@@ -725,88 +601,8 @@
       "id": "318581251490564"
     },
     {
-      "name": "Faculdade De Direito Da Universidade De Lisboa",
-      "id": "334891946560238"
-    },
-    {
       "name": "CLUNL-Centro de Linguística da Universidade Nova de Lisboa",
       "id": "393401394039721"
-    },
-    {
-      "name": "Associação de Estudantes FCM",
-      "id": "114248715319942"
-    },
-    {
-      "name": "Associação de Estudantes da Faculdade de Medicina de Lisboa",
-      "id": "118861328198933"
-    },
-    {
-      "name": "Associação de Estudantes ISCSP",
-      "id": "270556423019553"
-    },
-    {
-      "name": "Associação de Estudantes - Liceu Camões",
-      "id": "732103090138896"
-    },
-    {
-      "name": "Associação Estudantes IPAM Lisboa",
-      "id": "248267581907800"
-    },
-    {
-      "name": "Associação de Estudantes do IGOT - ULisboa",
-      "id": "363465297079007"
-    },
-    {
-      "name": "Aefmh - Associação dos Estudantes FMH",
-      "id": "176751115758491"
-    },
-    {
-      "name": "Associação de Estudantes -  Epadd - Paiã",
-      "id": "494286120603151"
-    },
-    {
-      "name": "Associação de Estudantes - E.S.D.G (oficial)",
-      "id": "264723633580758"
-    },
-    {
-      "name": "ESJA - Associação de Estudantes (Lista R)",
-      "id": "104242653070806"
-    },
-    {
-      "name": "Associação de Estudantes - Escola Secundária Eça de Queirós",
-      "id": "297750600237678"
-    },
-    {
-      "name": "Associação de Estudantes Magestil/EML",
-      "id": "560354387376946"
-    },
-    {
-      "name": "Associação de Estudantes do Instituto Gregoriano de Lisboa",
-      "id": "312014292147813"
-    },
-    {
-      "name": "AE ESLourinhã",
-      "id": "336386243042351"
-    },
-    {
-      "name": "AE INP - Associação de Estudantes do INP",
-      "id": "208307795962693"
-    },
-    {
-      "name": "Nucleo de Estudantes de Biologia da Universidade de Lisboa",
-      "id": "172125986818"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Universidade de Lisboa",
-      "id": "365276586917012"
-    },
-    {
-      "name": "Lista T - António Damásio",
-      "id": "263477897045476"
-    },
-    {
-      "name": "Núcleo de Estudantes de Direito da Universidade Lusíada de Lisboa",
-      "id": "305267916206094"
     },
     {
       "name": "Barcarena, Lisboa, Portugal",
@@ -1511,10 +1307,6 @@
       "id": "177960284569"
     },
     {
-      "name": "NEBUP - Núcleo de Estudantes de Biologia da Universidade do Porto",
-      "id": "425613150860480"
-    },
-    {
       "name": "Universidade Sénior de Arte e Cultura do Porto - USAC",
       "id": "212357122155516"
     },
@@ -1613,10 +1405,6 @@
     {
       "name": "O Antigo Egipto na Universidade do Porto (CITCEM)",
       "id": "226457324146936"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Universidade do Porto",
-      "id": "498280176868475"
     },
     {
       "name": "Universidade Federal de Ciências da Saúde de Porto Alegre",
@@ -1807,16 +1595,8 @@
       "id": "174401722640828"
     },
     {
-      "name": "Tuna Académica Feminina de Nutrição da Universidade do Porto",
-      "id": "189027371281332"
-    },
-    {
       "name": "União Académica António Aroso",
       "id": "131133553563838"
-    },
-    {
-      "name": "Associação Académica da Universidade Lusíada do Porto",
-      "id": "341845679232490"
     },
     {
       "name": "EU VI O PORTO SER HUMILHADO PELA ACADÉMICA",
@@ -1827,108 +1607,20 @@
       "id": "527840893906997"
     },
     {
-      "name": "Copófona - Tuna Académica da Universidade Lusófona do Porto",
-      "id": "210851938953701"
-    },
-    {
       "name": "FAMVet - Federação Académica de Medicina Veterinária",
       "id": "661946803823829"
-    },
-    {
-      "name": "Faculdade de Desporto da Universidade do Porto (FADEUP)",
-      "id": "175486869168797"
-    },
-    {
-      "name": "Faculdade de Psicologia e Ciências da Educação da Universidade do Porto",
-      "id": "201879366496495"
-    },
-    {
-      "name": "Faculdade de Belas Artes da Universidade do Porto - Institucional",
-      "id": "665975343466068"
-    },
-    {
-      "name": "Faculdade de Ciências da Universidade do Porto",
-      "id": "169235433239"
-    },
-    {
-      "name": "FDUP - Faculdade de Direito da Universidade do Porto",
-      "id": "377580008949480"
-    },
-    {
-      "name": "FEP - Faculdade de Economia da Universidade do Porto",
-      "id": "163306553688550"
-    },
-    {
-      "name": "Faculdade de Letras da Universidade do Porto",
-      "id": "208854065816146"
-    },
-    {
-      "name": "Faculdade de Arquitectura da Universidade do Porto",
-      "id": "132830011041"
-    },
-    {
-      "name": "FLUP",
-      "id": "131750980191597"
-    },
-    {
-      "name": "TAFEP - Tuna Académica da Faculdade de Economia do Porto",
-      "id": "306611131618"
-    },
-    {
-      "name": "Faculdade de Psicologia e de Ciências da Educação da Universidade do Porto",
-      "id": "309426705844979"
-    },
-    {
-      "name": "CUCA - Tuna da Faculdade de Letras da Universidade do Porto",
-      "id": "177960284569"
-    },
-    {
-      "name": "Faculdade de Engenharia da Universidade do Porto",
-      "id": "103993329637639"
-    },
-    {
-      "name": "Grupo de Fados Literatus da Faculdade de Letras da Universidade do Porto",
-      "id": "168287843221792"
-    },
-    {
-      "name": "Biblioteca da Faculdade de Medicina da Universidade do Porto",
-      "id": "123628410999053"
-    },
-    {
-      "name": "Faculdade de Farmácia da Universidade do Porto",
-      "id": "198444256860286"
     },
     {
       "name": "Faculdade de Física PUCRS",
       "id": "142701172463635"
     },
     {
-      "name": "Tuna Feminina da Faculdade de Letras da Universidade do Porto",
-      "id": "228909233831104"
-    },
-    {
-      "name": "Formação Contínua - Faculdade de Direito da Universidade do Porto",
-      "id": "336539109768459"
-    },
-    {
       "name": "Grupo Coral da Faculdade de Economia do Porto",
       "id": "409889299022719"
     },
     {
-      "name": "Associação de Estudantes da Faculdade de Teologia do Porto - UCP",
-      "id": "111068499008116"
-    },
-    {
       "name": "Coro da Faculdade de Economia do Porto - eCOROmia",
       "id": "111480915578391"
-    },
-    {
-      "name": "FLUP - Faculdade de Letras da Universidade do Porto",
-      "id": "341239282626290"
-    },
-    {
-      "name": "Laboratório de Bioquímica, Faculdade de Farmácia da Universidade do Porto",
-      "id": "336263503153039"
     },
     {
       "name": "Universidade Federal de Ciências da Saúde de Porto Alegre",
@@ -1939,40 +1631,8 @@
       "id": "114113298611040"
     },
     {
-      "name": "FCT@UFP - Faculdade de Ciência e Tecnologia da Universidade Fernando Pessoa",
-      "id": "197317137018089"
-    },
-    {
-      "name": "Faculdade De Direito Da Universidade Do Porto",
-      "id": "390047854373838"
-    },
-    {
-      "name": "FMUP - Faculdade de Medicina da Universidade do Porto",
-      "id": "120409788036277"
-    },
-    {
-      "name": "FMDUP - Faculdade de Medicina Dentária da Universidade do Porto",
-      "id": "223384981008574"
-    },
-    {
       "name": "Faculdade De Medicina Do Hospital S. João - Porto",
       "id": "351900678201881"
-    },
-    {
-      "name": "Faculdade de Medicina da Universidade do Porto",
-      "id": "225827150781994"
-    },
-    {
-      "name": "Faculdade de Farmácia da Universidade do Porto",
-      "id": "172562919465481"
-    },
-    {
-      "name": "Faculty of Architecture and Arts at the Lusíada University of Porto",
-      "id": "267711483280014"
-    },
-    {
-      "name": "Grupo de Estudantes Voluntários da FDUP",
-      "id": "162670587205043"
     },
     {
       "name": "Discoteca Feedback Porto",
@@ -2023,110 +1683,6 @@
       "id": "164441563616725"
     },
     {
-      "name": "NEBUP - Núcleo de Estudantes de Biologia da Universidade do Porto",
-      "id": "425613150860480"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Universidade do Porto",
-      "id": "498280176868475"
-    },
-    {
-      "name": "Núcleo de Estudantes Populares - UCP Porto",
-      "id": "348061848570225"
-    },
-    {
-      "name": "NECEE - Núcleo de Estudantes de Ciências da Economia e da Empresa",
-      "id": "125657160917143"
-    },
-    {
-      "name": "NECC (Núcleo de Estudantes de Ciências da Comunicação)",
-      "id": "147206168658729"
-    },
-    {
-      "name": "NES FDUP | Núcleo de Estudantes Socialistas da FDUP",
-      "id": "104290526325199"
-    },
-    {
-      "name": "Associação Estudantes Lusófona Porto",
-      "id": "1421837321386001"
-    },
-    {
-      "name": "Associação de Estudantes Angolanos em Portugal Porto",
-      "id": "187621751392680"
-    },
-    {
-      "name": "Associação de Estudantes FEUP",
-      "id": "229808510378760"
-    },
-    {
-      "name": "AEFLUP - Associação de Estudantes da FLUP",
-      "id": "244981575666546"
-    },
-    {
-      "name": "Aeicbas - Associação de Estudantes do Icbas",
-      "id": "126893377379288"
-    },
-    {
-      "name": "Aefcup - Associação de Estudantes da FCUP",
-      "id": "125106824215376"
-    },
-    {
-      "name": "Associação de Estudantes -  Liceu Porto Santo",
-      "id": "139207849582200"
-    },
-    {
-      "name": "Associação de Estudantes ESPF 2013/14",
-      "id": "214822178693621"
-    },
-    {
-      "name": "Associação de Estudantes da Faculdade de Teologia do Porto - UCP",
-      "id": "111068499008116"
-    },
-    {
-      "name": "Associação de Estudantes Cabo-verdianos no Porto",
-      "id": "278873032194062"
-    },
-    {
-      "name": "Associação de Estudantes - ESAS",
-      "id": "498902833453371"
-    },
-    {
-      "name": "Associação de Estudantes do Iscet",
-      "id": "204818059535659"
-    },
-    {
-      "name": "Associação de Estudantes da Escola Secundária de Rocha Peixoto",
-      "id": "561865477211911"
-    },
-    {
-      "name": "Associação de Estudantes AERC",
-      "id": "488063154539405"
-    },
-    {
-      "name": "Associação de Estudantes da Secundária de Alpendorada",
-      "id": "139467009536754"
-    },
-    {
-      "name": "Lista Candidata à Associação de Estudantes da ESF 2013/2014",
-      "id": "146785572198248"
-    },
-    {
-      "name": "Lista Candidata à Associação de Estudantes da ESPF",
-      "id": "454016594648369"
-    },
-    {
-      "name": "Associação de Estudantes Nisa",
-      "id": "149954818407391"
-    },
-    {
-      "name": "Associação De Estudantes Eb 2/3 de Sobrado",
-      "id": "550373251643655"
-    },
-    {
-      "name": "Associação Nacional de Estudantes de Bioquímica (AN(E)BIOQ)",
-      "id": "417905634936223"
-    },
-    {
       "name": "Porto Barreiro",
       "id": "167370239966777"
     },
@@ -2169,10 +1725,6 @@
     {
       "name": "Bar Porto",
       "id": "130688553655080"
-    },
-    {
-      "name": "Bares e Discotecas do Grande Porto",
-      "id": "209276012483667"
     },
     {
       "name": "Porto Do Barco, Ceara, Brazil",
@@ -2785,92 +2337,20 @@
       "id": "140012712739289"
     },
     {
-      "name": "Núcleo de Estudantes de Medicina da Universidade de Aveiro",
-      "id": "222969827791312"
-    },
-    {
       "name": "Mestrado em Planeamento Regional e Urbano - Universidade de Aveiro",
       "id": "321973551174691"
-    },
-    {
-      "name": "Associação Académica da Universidade de Aveiro",
-      "id": "136673149687919"
     },
     {
       "name": "Discoteca Ria Dreams Aveiro",
       "id": "371201406312993"
     },
     {
-      "name": "Tuna Feminina da Associação Académica da Universidade de Aveiro (TFAAUAv)",
-      "id": "250545901675217"
-    },
-    {
       "name": "Papelaria Académica",
       "id": "130834446950193"
     },
     {
-      "name": "GEMA (Grupo de Estudantes da Madeira e dos Açores)",
-      "id": "189511461159658"
-    },
-    {
       "name": "FENIX DISCOTECA",
       "id": "214055191992747"
-    },
-    {
-      "name": "Associação de Estudantes - A.E. Búzio",
-      "id": "529489883733619"
-    },
-    {
-      "name": "AECAv - Associação de Estudantes Cabo-verdianos em Aveiro",
-      "id": "126819217446467"
-    },
-    {
-      "name": "Associação de Estudantes - AEAAV 2013/2014",
-      "id": "687983187885970"
-    },
-    {
-      "name": "Associação de Estudantes 13/14 - ESMS",
-      "id": "177253652412825"
-    },
-    {
-      "name": "AECMA | Associação Estudantes Conservatório Música Aveiro",
-      "id": "143148852419865"
-    },
-    {
-      "name": "Lista A - ESAAV",
-      "id": "594535487271671"
-    },
-    {
-      "name": "Núcleo Estudantes Socialistas UAveiro",
-      "id": "199687603401943"
-    },
-    {
-      "name": "Núcleo de Estudantes de Medicina da Universidade de Aveiro",
-      "id": "222969827791312"
-    },
-    {
-      "name": "Núcleo Estudantes Engenharia Ambiente",
-      "id": "247454202011942"
-    },
-    {
-      "name": "Núcleo Estudantes Engenharia Química (NEEQu-AAUAv)",
-      "id": "170552619643612"
-    },
-    {
-      "name": "Núcleo de Estudantes de Biologia da AAUAv",
-      "id": "178712842224514"
-    },
-    {
-      "name": "Núcleo de Estudantes de Engenharia Física AAUAv",
-      "id": "750420918308744"
-    },
-    {
-      "name": "Núcleo de Estudantes de Engenharia Mecânica - NEEMec/AAUAv",
-      "id": "238928239558523"
-    },
-    {
-      "name": "Núcleo de Estudantes de Sistemas de Informação - AAUAv",
-      "id": "495459713844459"
     },
     {
       "name": "Barra, Aveiro, Portugal",
@@ -3321,26 +2801,6 @@
     {
       "name": "Académica, Papelaria e Brinquedos",
       "id": "193508204001741"
-    },
-    {
-      "name": "Associação de Estudantes ISLA Leiria",
-      "id": "630383947034205"
-    },
-    {
-      "name": "Associação de Estudantes D. Inês de Castro",
-      "id": "516333348457453"
-    },
-    {
-      "name": "Associação de Estudantes da Escola Básica e Secundária Fernão do Pó",
-      "id": "394172847320611"
-    },
-    {
-      "name": "Núcleo de Estudantes Socialistas da ESTG Leiria",
-      "id": "169817186460518"
-    },
-    {
-      "name": "NEAL - Núcleo de Estudantes Africanos de Leiria",
-      "id": "230683367117816"
     },
     {
       "name": "Cheers Bar Leiria",
@@ -3961,14 +3421,6 @@
       "id": "135303989930611"
     },
     {
-      "name": "FEUC - Faculdade de Economia da Universidade de Coimbra",
-      "id": "202798346417929"
-    },
-    {
-      "name": "Faculdade de Psicologia e Ciências da Educação - Universidade de Coimbra",
-      "id": "644771282227819"
-    },
-    {
       "name": "Sociedade de Debates da Universidade de Coimbra",
       "id": "454220014593393"
     },
@@ -4013,10 +3465,6 @@
       "id": "172315299453842"
     },
     {
-      "name": "Faculdade de Direito da Universidade de Coimbra",
-      "id": "397264596956371"
-    },
-    {
       "name": "Bibliotecas da Universidade de Coimbra",
       "id": "116613321697537"
     },
@@ -4033,32 +3481,12 @@
       "id": "236430189743375"
     },
     {
-      "name": "Clube MBA Faculdade Economia Universidade Coimbra",
-      "id": "139484612783919"
-    },
-    {
-      "name": "Faculdade de Direito da Universidade de Coimbra (FDUC)",
-      "id": "294664347215460"
-    },
-    {
       "name": "Coro Capela Universidade Coimbra",
       "id": "549113198470531"
     },
     {
-      "name": "Estudantes Conselheiros da Universidade de Coimbra",
-      "id": "114141118753601"
-    },
-    {
       "name": "Museu da Ciência da Universidade de Coimbra",
       "id": "188225504530359"
-    },
-    {
-      "name": "Faculdade de Letras da Universidade de Coimbra",
-      "id": "179819322063741"
-    },
-    {
-      "name": "Biblioteca da Faculdade de Economia da Universidade de Coimbra",
-      "id": "268688913291927"
     },
     {
       "name": "Universidade Coimbra",
@@ -4077,10 +3505,6 @@
       "id": "295805083794190"
     },
     {
-      "name": "Faculdade De Farmácia Da Universidade De Coimbra",
-      "id": "278499322174170"
-    },
-    {
       "name": "Sé Nova (Coimbra)",
       "id": "1481779445366948"
     },
@@ -4097,20 +3521,8 @@
       "id": "137801822908581"
     },
     {
-      "name": "Universidade de Coimbra-Faculdade de Letras",
-      "id": "192506724155753"
-    },
-    {
       "name": "86-77-86 [Rádio Universidade de Coimbra]",
       "id": "149753388388078"
-    },
-    {
-      "name": "Litteratuna - Tuna Mista da Faculdade de Letras da Universidade de Coimbra",
-      "id": "259451347566219"
-    },
-    {
-      "name": "MBA FEUC Programs - Faculdade de Economia da Universidade de Coimbra",
-      "id": "138629089669488"
     },
     {
       "name": "Departamento de Engenharia Civil da Universidade de Coimbra",
@@ -4121,16 +3533,8 @@
       "id": "1397154033886496"
     },
     {
-      "name": "Faculdade de Medicina da Universidade de Coimbra",
-      "id": "204309289620654"
-    },
-    {
       "name": "Capela da Universidade de Coimbra",
       "id": "145758782162009"
-    },
-    {
-      "name": "Faculdade De Psicologia Da Universidade De Coimbra",
-      "id": "181658891889036"
     },
     {
       "name": "Aposenior - Universidade Senior de Coimbra",
@@ -4141,16 +3545,8 @@
       "id": "618880038123637"
     },
     {
-      "name": "Centro de Línguas da Faculdade de Letras - Universidade de Coimbra",
-      "id": "398850853509492"
-    },
-    {
       "name": "Coro Misto da Universidade de Coimbra",
       "id": "199883256714749"
-    },
-    {
-      "name": "Faculdade de Letras da Universidade de Coimbra",
-      "id": "139564702792684"
     },
     {
       "name": "Rede UC",
@@ -4181,10 +3577,6 @@
       "id": "241117275971462"
     },
     {
-      "name": "Faculdade de Medicina da Universidade de Coimbra",
-      "id": "240700769311756"
-    },
-    {
       "name": "Utentes e familiares de utentes dos Hospitais da Universidade de Coimbra",
       "id": "495533433861508"
     },
@@ -4205,20 +3597,8 @@
       "id": "109283872424372"
     },
     {
-      "name": "Faculdade de Medicina da Universidade de Coimbra",
-      "id": "142920452517693"
-    },
-    {
       "name": "Museu da Ciência da Universidade de Coimbra",
       "id": "113079615407949"
-    },
-    {
-      "name": "Faculdade de Medicina da Universidade de Coimbra",
-      "id": "110131419016737"
-    },
-    {
-      "name": "Leitorado de Neerlandês da Faculdade de Letras da Universidade de Coimbra",
-      "id": "540374652689691"
     },
     {
       "name": "Centro de Estudos Sociais, Universidade de Coimbra, Portugal",
@@ -4263,10 +3643,6 @@
     {
       "name": "Sanfil Corrida Académica Coimbra",
       "id": "435037939973405"
-    },
-    {
-      "name": "Tuna Académica da Universidade de Coimbra (TAUC)",
-      "id": "236430189743375"
     },
     {
       "name": "Associação Académica de Coimbra - Secção de Futebol",
@@ -4317,10 +3693,6 @@
       "id": "109458705761082"
     },
     {
-      "name": "Núcleo de Estudantes de Farmácia  Associação Académica de Coimbra",
-      "id": "347202365321479"
-    },
-    {
       "name": "Real Fortuna Académica de Coimbra",
       "id": "230123576110"
     },
@@ -4341,28 +3713,8 @@
       "id": "106374646106105"
     },
     {
-      "name": "Núcleo de Estudantes de Gestão da Associação Académica de Coimbra",
-      "id": "140227282719142"
-    },
-    {
-      "name": "Núcleo de Estudantes de Sociologia da Associação Académica de Coimbra",
-      "id": "578571925520501"
-    },
-    {
-      "name": "Núcleo de Estudantes de Biologia - Associação Académica de Coimbra",
-      "id": "322779407817126"
-    },
-    {
       "name": "Secção de Judo da Associação Académica de Coimbra",
       "id": "137584607787"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Associação Académica de Coimbra",
-      "id": "178155348983655"
-    },
-    {
-      "name": "Núcleo de Estudantes de Matemática da Associação Académica de Coimbra",
-      "id": "356814097746423"
     },
     {
       "name": "Judo - Estágio Internacional Da Académica / Académica Training Camp 2013",
@@ -4395,86 +3747,6 @@
     {
       "name": "Secção de Karaté da Associação Académica de Coimbra",
       "id": "439405579525753"
-    },
-    {
-      "name": "Associação de Estudantes do Conservatório de Música de Coimbra",
-      "id": "214131485286423"
-    },
-    {
-      "name": "Núcleo de Estudantes de Farmácia  Associação Académica de Coimbra",
-      "id": "347202365321479"
-    },
-    {
-      "name": "Associação de Estudantes- Escola Secundária Quinta das Flores",
-      "id": "143568789036598"
-    },
-    {
-      "name": "Núcleo de Estudantes de Biologia - Associação Académica de Coimbra",
-      "id": "322779407817126"
-    },
-    {
-      "name": "Núcleo de Estudantes de Gestão da Associação Académica de Coimbra",
-      "id": "140227282719142"
-    },
-    {
-      "name": "Núcleo de Estudantes de Sociologia da Associação Académica de Coimbra",
-      "id": "578571925520501"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Associação Académica de Coimbra",
-      "id": "178155348983655"
-    },
-    {
-      "name": "Núcleo de Estudantes de Matemática da Associação Académica de Coimbra",
-      "id": "356814097746423"
-    },
-    {
-      "name": "Associação de Estudantes EHTC",
-      "id": "352095938236428"
-    },
-    {
-      "name": "Núcleo Estudantes de Psicologia, Ciências da Educação e Serviço Social/ AAC",
-      "id": "356889571054595"
-    },
-    {
-      "name": "Núcleo de Estudantes de Farmácia  Associação Académica de Coimbra",
-      "id": "347202365321479"
-    },
-    {
-      "name": "Núcleo de Estudantes de Biologia - Associação Académica de Coimbra",
-      "id": "322779407817126"
-    },
-    {
-      "name": "Núcleo de Estudantes de Gestão da Associação Académica de Coimbra",
-      "id": "140227282719142"
-    },
-    {
-      "name": "Núcleo de Estudantes de Sociologia da Associação Académica de Coimbra",
-      "id": "578571925520501"
-    },
-    {
-      "name": "Núcleo de Estudantes de Bioquímica da Associação Académica de Coimbra",
-      "id": "178155348983655"
-    },
-    {
-      "name": "Núcleo de Estudantes de Matemática da Associação Académica de Coimbra",
-      "id": "356814097746423"
-    },
-    {
-      "name": "Núcleo de Estudantes de Economia",
-      "id": "130375097052961"
-    },
-    {
-      "name": "Núcleo de Estudantes Informática",
-      "id": "245575372157265"
-    },
-    {
-      "name": "Núcleo Estudantes de Química",
-      "id": "164350723743712"
-    },
-    {
-      "name": "Núcleo de Estudantes do Departamento de Engenharia Química da AAC",
-      "id": "495261833875812"
     },
     {
       "name": "Coimbra Cocktail Bar",
@@ -4943,10 +4215,6 @@
       "id": "113088108708415"
     },
     {
-      "name": "Núcleo de Estudantes EEC - IPT",
-      "id": "486831744683271"
-    },
-    {
       "name": "Barquinha, Santarem, Portugal",
       "id": "108834515811943"
     },
@@ -5041,10 +4309,6 @@
     {
       "name": "Mundo da Picaria Bar",
       "id": "827383137275253"
-    },
-    {
-      "name": "Associação de Estudantes da Escola Secundária do Cartaxo",
-      "id": "139121636189774"
     }
   ],
   "Evora": [
@@ -5109,14 +4373,6 @@
       "id": "398588126903994"
     },
     {
-      "name": "Tuna Academica da Universidade de Évora",
-      "id": "206644535757"
-    },
-    {
-      "name": "AAUÉ - Associação Académica da Universidade de Évora",
-      "id": "207304956380"
-    },
-    {
       "name": "Agronomia - Universidade de Évora",
       "id": "209810965732949"
     },
@@ -5157,10 +4413,6 @@
       "id": "146162402092226"
     },
     {
-      "name": "Associação de Estudantes de Medicina Veterinária da Universidade de Évora",
-      "id": "164705140214609"
-    },
-    {
       "name": "Arquitectura Paisagista na Universidade de Évora",
       "id": "177178689136275"
     },
@@ -5177,10 +4429,6 @@
       "id": "186994477998554"
     },
     {
-      "name": "Liga de Estudantes Africanos da Universidade de Évora (LEAUE)",
-      "id": "200201960025050"
-    },
-    {
       "name": "Veteranos Rugby Universidade de Evora",
       "id": "308904775914369"
     },
@@ -5193,10 +4441,6 @@
       "id": "153993994654702"
     },
     {
-      "name": "Núcleo de Estudantes de Economia e Gestão da Universidade de Évora",
-      "id": "269491953194425"
-    },
-    {
       "name": "Licenciatura em Geologia, Universidade de Évora",
       "id": "174715156036249"
     },
@@ -5205,16 +4449,8 @@
       "id": "149322621788924"
     },
     {
-      "name": "Núcleo de Estudantes de Engenharia Civil da Universidade de Évora",
-      "id": "132086580180589"
-    },
-    {
       "name": "Núcleo de Alunos de Geografia da Universidade de Évora",
       "id": "281914511901240"
-    },
-    {
-      "name": "Núcleo de Estudantes de Relações Internacionais da Universidade de Évora",
-      "id": "411617165575521"
     },
     {
       "name": "Centro de Documentação Europeia da Universidade de Évora",
@@ -5231,10 +4467,6 @@
     {
       "name": "Geoue-Núcleo de Geologia da Universidade de Évora",
       "id": "476707422405496"
-    },
-    {
-      "name": "NEHEV - Núcleo de Estudantes de História da Universidade de Évora",
-      "id": "112163875636099"
     },
     {
       "name": "Curso Preparatório de Matemática para o Ingresso na Universidade",
@@ -5255,34 +4487,6 @@
     {
       "name": "Discoteca Praxis Club",
       "id": "148257385245260"
-    },
-    {
-      "name": "Núcleo de Estudantes de Economia e Gestão da Universidade de Évora",
-      "id": "269491953194425"
-    },
-    {
-      "name": "Núcleo de Estudantes de Engenharia Civil da Universidade de Évora",
-      "id": "132086580180589"
-    },
-    {
-      "name": "Núcleo de Estudantes de Relações Internacionais da Universidade de Évora",
-      "id": "411617165575521"
-    },
-    {
-      "name": "NEHEV - Núcleo de Estudantes de História da Universidade de Évora",
-      "id": "112163875636099"
-    },
-    {
-      "name": "NEEI - Nucleo de Estudantes Engenharia Informática",
-      "id": "170398459625"
-    },
-    {
-      "name": "Associação de Estudantes de Medicina Veterinária da Universidade de Évora",
-      "id": "164705140214609"
-    },
-    {
-      "name": "Associação de estudantes da Escm",
-      "id": "127474564068173"
     },
     {
       "name": "Évora Wine Bar",
