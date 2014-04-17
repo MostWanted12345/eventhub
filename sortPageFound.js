@@ -4,7 +4,6 @@ var fileJSON = require('./pagesFound.json');
 
 
 var json = {};
-
 for( key in fileJSON ){
 
 	var data_array = [];
@@ -12,6 +11,7 @@ for( key in fileJSON ){
 	var num_of_deleted = 0;
 
 	for( value in o_json ){
+
 		if(!isInArray(JSON.stringify(o_json[value]), data_array)){
 			data_array.push(JSON.stringify(o_json[value]));
 		} else {

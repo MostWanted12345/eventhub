@@ -23,6 +23,7 @@ var hapiOptions = {
 var routes = [
     { method: 'GET', path: '/', config: { handler: homeHandler } },
     { method: 'GET', path: '/api', config: { handler: apiHandler } },
+    { method: 'GET', path: '/config', config: { handler: configHandler } },
     { method: 'GET', path: '/{path*}', handler: { directory: { path: './public', listing: true, index: true } } }
 ];
 
@@ -41,34 +42,43 @@ function apiHandler (request, reply) {
     reply(events[request.url.query.c]);
 };
 
+function configHandler (request, reply) {
+    console.log("Changing facebook token: ", request.url.query.token);
+    graph.setAccessToken(request.url.query.token);
+    runasync();
+    console.log("2as");
+};
 
-async.each(pagesFinderOptions.cities, function(city, cityCallback) {
-    events[city.name] = [];
-    async.each(pagesFound[city.name], function(page, pageCallback) {
-        graph.get(page.id+"/events", function(err, res) {
+
+function runasync(){
+    async.each(pagesFinderOptions.cities, function(city, cityCallback) {
+        events[city.name] = [];
+        async.each(pagesFound[city.name], function(page, pageCallback) {
+            graph.get(page.id+"/events", function(err, res) {
+                if(err) {console.log(err);}
+
+                if(res && res.data) {
+                    async.each(res.data, function(entry, eventCallback) {
+                        processEvent(entry, city, function() { eventCallback(); });
+                    }, function(err){
+                        if(err) {console.log(err);}
+                        // All events ended
+                        pageCallback();
+                    });
+                }
+            });
+        }, function(err) {
             if(err) {console.log(err);}
-
-            if(res && res.data) {
-                async.each(res.data, function(entry, eventCallback) {
-                    processEvent(entry, city, function() { eventCallback(); });
-                }, function(err){
-                    if(err) {console.log(err);}
-                    // All events ended
-                    pageCallback();
-                });
-            }
+            // All pages ended
+            console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING "+city.name+"\n\n");
+            cityCallback();
         });
     }, function(err) {
         if(err) {console.log(err);}
-        // All pages ended
-        console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING "+city.name+"\n\n");
-        cityCallback();
+        // All cities finished
+        console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING EVERYTHING\n\n");
     });
-}, function(err) {
-    if(err) {console.log(err);}
-    // All cities finished
-    console.log("\n\n\t\t\t\t\tFINISHED SCRAPPING EVERYTHING\n\n");
-});
+}
 
 // Returns true if element is inside array.. false otherwise
 function isInArray(value, array) { return array.indexOf(value) > -1; }
@@ -158,4 +168,5 @@ var processEvent = function(entry, city, eventCallback) {
 // Start the server
 server.start(function () {
 	console.log('Server started at: ' + server.info.uri);
+    runasync();
 });
