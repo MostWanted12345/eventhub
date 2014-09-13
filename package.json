@@ -4,24 +4,39 @@
   "description": "EventHub. The best thing ever to get laid!",
   "main": "main.js",
   "scripts": {
+    "start": "node server/index.js | bunyan",
+    "run": "nodemon server/index.js | bunyan",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MostWanted12345/eventhub.git"
+    "url": "git://github.com/andreffs18/eventhub.git"
   },
-  "author": "",
-  "license": "ISC",
+  "authors": [
+    {
+      "name": "Andre Silva",
+      "email": "andre.f.f.s18@gmail.com",
+      "url": "https://twitter.com/andreffs18"
+    },
+    {
+      "name": "Francisco Dias",
+      "email": "francisco@baiodias.com",
+      "url": "http://franciscodias.net"
+    }
+  ],
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MostWanted12345/eventhub/issues"
+    "url": "https://github.com/andreffs18/eventhub/issues"
   },
-  "homepage": "https://github.com/MostWanted12345/eventhub",
+  "homepage": "http://eventhub.pt",
   "dependencies": {
     "fbgraph": "^0.2.9",
-    "hapi": "~3.0.0",
-    "handlebars": "~2.0.0-alpha.2",
     "async": "~0.2.10",
-    "logfmt": "^1.0.0",
-    "express": "^3.5.0"
+    "hapi": "~6.8.1",
+    "bunyan": "~1.0.1",
+    "nodemon": "~1.2.1",
+    "lab": "~4.4.2",
+    "joi": "~4.6.2",
+    "mongoose": "~3.8.16"
   }
 }
