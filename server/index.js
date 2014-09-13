@@ -2,6 +2,7 @@ var Hapi = require('hapi');
 var port = require('../config').port;
 var updateOnStart = require('../config').updateOnStart;
 var log = require('./helpers/logger');
+var crono = require('./crono');
 
 var scripts = require('./scripts');
 
@@ -14,7 +15,11 @@ var server = module.exports.hapi = new Hapi.Server(port);
 server.start(function () {
   var routes = require('./routes');
   log.info('Server started at: ' + server.info.uri);
+
+  crono.events.start();
+  // crono.pages.start();
 });
+
 
 if(updateOnStart) {
   db.once('open', function (){

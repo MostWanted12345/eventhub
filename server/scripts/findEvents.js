@@ -10,7 +10,7 @@ graph.setAccessToken(accessToken);
 
 var LIMIT = 50;
 var SAMPLE_MAX_SIZE = 200;
-module.exports = function findPages (done) {
+module.exports = function findEvents (done) {
 
   Page.findAll(function(err, pages) {
     if (err) {
@@ -22,7 +22,7 @@ module.exports = function findPages (done) {
 
     async.eachSeries(pages, function(page, pageDone){
 
-    log.debug('getting events from page', page);
+    log.debug('getting events from %s', page.name);
 
       graph.get(page.id+'/events', function(err, res) {
         if(err || !res || !res.data) {
@@ -58,7 +58,7 @@ var processEvent = function(eventInfo, eventCallback) {
   var maleAttendees = [];
   var femaleAttendees = [];
 
-  log.debug('processing event', eventInfo);
+  // log.debug('processing event', eventInfo.name);
 
   graph.get(eventInfo.id+'/attending?limit=10000', function(err, result) {
 
@@ -73,7 +73,7 @@ var processEvent = function(eventInfo, eventCallback) {
 
     async.eachLimit(attendeesSample, LIMIT, function(attendee, personCallback){
 
-      log.debug('getting %s', attendee.name);
+      // log.debug('getting %s', attendee.name);
 
       graph.get(attendee.id, function(err, person){
         if(err) {
@@ -105,7 +105,7 @@ var processEvent = function(eventInfo, eventCallback) {
       var malePertentage = Math.round((maleAttendees.length / attendeesSample.length)*100);
       var femalePercentage = Math.round((femaleAttendees.length / attendeesSample.length)*100);
 
-      var newEvent = new Event({
+      eventInfo = {
         id: eventInfo.id,
         name: eventInfo.name,
         attending: totalAttendes.length,
@@ -115,13 +115,15 @@ var processEvent = function(eventInfo, eventCallback) {
         femaleAttendees : femaleAttendees,
         date: eventInfo.start_time,
         updated: Date.now()
-      });
+      };
+
+      var newEvent = new Event(eventInfo);
 
       newEvent.save(function (err){
         if (err) {
           if(err.code == 11000) {
-            // Page already exists
-            return eventCallback();
+            // Event already exists
+            return Event.update({id: eventInfo.id}, eventInfo, eventCallback);
           }
           log.error({err: err, event: eventInfo}, 'error creating event');
           return eventCallback(err);
