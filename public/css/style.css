@@ -1,0 +1,22 @@
+body {
+  /*background-image: url(/img/stardust.png); 
+  background-position: initial initial; 
+  background-repeat: initial initial;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  padding: 0px;
+}
+.logo a {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.attendee {
+  width: 25px;
+}
+
+.event {
+  margin: 60px;
+}

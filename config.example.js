@@ -1,7 +1,7 @@
 var config = {
   url: process.env.EVENTHUB_URL || 'http://localhost:8080',
   port: process.env.EVENTHUB_PORT || 8080,
-  updateOnStart: process.env.EVENTHUB_UPDATE_ON_START || false
+  updateOnStart: (process.env.EVENTHUB_UPDATE_ON_START && process.env.EVENTHUB_UPDATE_ON_START=='true') || false
 };
 
 config.mongo = {

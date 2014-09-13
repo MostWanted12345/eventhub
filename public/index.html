@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="eventhub">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EventHub</title>
+    <meta name="description" content="">
+    <meta name="author" content="ink, cookbook, recipes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) here  -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS Bower Stuff  -->
+    <link rel="stylesheet" type="text/css" href="lib/Ink/dist/css/ink.css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+
+    <!-- Our Custom CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/eventhub.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    
+    <!-- Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css'>
+
+
+    <!--[if lte IE 8 ]>
+        <link rel="stylesheet" href="lib/Ink/dist/css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+
+    <!-- JS Bower Stuff  -->
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="lib/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="lib/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script type="text/javascript" src="lib/underscore/underscore.js"></script>
+    <script type="text/javascript" src="lib/Ink/dist/js/holder.js"></script>
+    <script type="text/javascript" src="lib/Ink/dist/js/ink-all.min.js"></script>
+    <script type="text/javascript" src="lib/Ink/dist/js/autoload.js"></script>
+
+    <!-- Our Custom JS  -->
+    <script type="text/javascript" src="js/eventhub.js"></script>
+  </head>
+
+  <body class="ink-drawer" ng-controller="MainController">
+    <div id="topbar" style="z-index:600;">
+      <nav class="ink-navigation ink-grid ie7">
+        <ul class="menu horizontal push-left medium-push-center small-push-center tiny-push-center" style="height: 44px;">
+          <li class="hide-all show-medium show-tiny show-small"><button class="fa fa-bars left-drawer-trigger" style="color:#333;"></button></li>
+          <li class="logo">
+            <a href="#/">
+              <i class="fa fa-circle-o-notch fa-spin" ng-if="loading"></i> eventhub 
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="left-drawer" style="z-index:500;">
+    </div>
+
+    <br><br>
+
+    <div class="content-drawer">
+      <div ng-view></div>
+    </div>
+
+    <script>
+      Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+        var inkDrawer = new Drawer({ sides: 'left', mode: 'over' });
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49435043-1', 'eventhub.pt');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

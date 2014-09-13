@@ -1,0 +1,14 @@
+<div class="ink-grid">
+
+  <div class="all-100" infinite-scroll="scroll()">
+    <div class="event" ng-repeat="event in events">
+      <a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a>
+      <div class="small">{{timeSince(event.date)}}</div>
+      <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
+      <div>
+        <img ng-repeat="attendee in event.femaleAttendees" class="attendee" ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server/index.js | bunyan",
     "run": "nodemon server/index.js | bunyan",
+    "dist": "node_modules/.bin/browserify -t brfs --debug -e client/index.js -o public/js/eventhub.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,10 +35,16 @@
     "async": "~0.2.10",
     "hapi": "~6.8.1",
     "bunyan": "~1.0.1",
-    "nodemon": "~1.2.1",
-    "lab": "~4.4.2",
     "joi": "~4.6.2",
     "mongoose": "~3.8.16",
     "cron": "~1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "~1.2.1",
+    "lab": "~4.4.2",
+    "colors": "~0.6.2",
+    "gaze": "~0.4.3",
+    "brfs": "0.0.8",
+    "browserify": "~3.20.0"
   }
 }
