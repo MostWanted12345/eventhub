@@ -13,6 +13,5 @@ module.exports = new CronJob({
       log.info('pages search done');
     });
   },
-  start: false,
-  timeZone: 'Portugal'
+  start: false
 });
