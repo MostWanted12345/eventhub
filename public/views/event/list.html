@@ -6,7 +6,10 @@
       <div class="small">{{timeSince(event.date)}}</div>
       <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
       <div>
-        <img ng-repeat="attendee in event.femaleAttendees" class="attendee" ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
+        <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees" target="_blank">
+          <img ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
+        </a>
+        <span ng-if="event.femaleAttendees.length+event.maleAttendees.length < event.attending">(...)</span>
       </div>
     </div>
   </div>

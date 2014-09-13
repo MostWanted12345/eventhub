@@ -13,8 +13,9 @@ body {
   text-decoration: none;
 }
 
-.attendee {
-  width: 25px;
+.attendee img {
+  margin-bottom: 5px;
+  width: 35px;
 }
 
 .event {
