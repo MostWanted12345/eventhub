@@ -18,19 +18,19 @@ module.exports = function findEvents (done) {
       return done (err);
     }
 
-    log.debug('got %s pages', pages.length);
+    // log.debug('got %s pages', pages.length);
 
     async.eachSeries(pages, function(page, pageDone){
 
     log.debug('getting events from %s', page.name);
 
-      graph.get(page.id+'/events', function(err, res) {
+      graph.get(page.id+'/events?fields=id,name,cover,start_time', function(err, res) {
         if(err || !res || !res.data) {
           return pageDone(err);
         }
 
         async.eachLimit(res.data, LIMIT, function(eventInfo, eventCallback) {
-          processEvent(eventInfo, eventCallback);
+          processEvent(eventInfo, page, eventCallback);
         }, pageDone);
       });
     }, function(err){
@@ -44,7 +44,7 @@ module.exports = function findEvents (done) {
   });
 };
 
-var processEvent = function(eventInfo, eventCallback) {
+var processEvent = function(eventInfo, page, eventCallback) {
 
   var now = new Date();
   var endTime = new Date(eventInfo.start_time);
@@ -58,39 +58,33 @@ var processEvent = function(eventInfo, eventCallback) {
   var maleAttendees = [];
   var femaleAttendees = [];
 
-  // log.debug('processing event', eventInfo.name);
+  log.debug('processing event', eventInfo.name);
 
-  graph.get(eventInfo.id+'/attending?limit=10000', function(err, result) {
+  graph.get(eventInfo.id+'/attending?limit=10000&fields=id,name,gender', function(err, result) {
 
-    log.debug('got ‰s attendees:', eventInfo.name, result.data.length);
+    // log.debug('got ‰s attendees:', eventInfo.name, result.data);
 
     totalAttendes = result.data;
     attendeesSample = result.data;
     
-    if(attendeesSample.length > SAMPLE_MAX_SIZE) {
-      attendeesSample = attendeesSample.slice(0, SAMPLE_MAX_SIZE);
-    }
+    // if(attendeesSample.length > SAMPLE_MAX_SIZE) {
+    //   attendeesSample = attendeesSample.slice(0, SAMPLE_MAX_SIZE);
+    // }
 
-    async.eachLimit(attendeesSample, LIMIT, function(attendee, personCallback){
+    async.each(attendeesSample, function(attendee, personCallback){
 
       // log.debug('getting %s', attendee.name);
 
-      graph.get(attendee.id, function(err, person){
-        if(err) {
-          return personCallback(err);
-        }
+      switch(attendee.gender) {
+        case 'female' : 
+          femaleAttendees.push(attendee.id); 
+        break;
+        case 'male' : 
+          maleAttendees.push(attendee.id); 
+        break;
+      }
 
-        switch(person.gender) {
-          case 'female' : 
-            femaleAttendees.push(person.id); 
-          break;
-          case 'male' : 
-            maleAttendees.push(person.id); 
-          break;
-        }
-
-        personCallback();
-      });
+      personCallback();
     }, 
     function gotAllAttendees(err) {
       if(err) {
@@ -114,8 +108,13 @@ var processEvent = function(eventInfo, eventCallback) {
         maleAttendees : maleAttendees,
         femaleAttendees : femaleAttendees,
         date: eventInfo.start_time,
-        updated: Date.now()
+        updated: Date.now(),
+        owner: page.id
       };
+
+      if(eventInfo.cover && eventInfo.cover.source) {
+        eventInfo.img =  eventInfo.cover.source;
+      }
 
       var newEvent = new Event(eventInfo);
 

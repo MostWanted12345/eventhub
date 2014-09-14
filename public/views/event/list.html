@@ -6,10 +6,10 @@
       <div class="small">{{timeSince(event.date)}}</div>
       <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
       <div>
-        <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees" target="_blank">
+        <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees | limitTo:((event.showAll) ? 10000 : limit)" target="_blank">
           <img ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
         </a>
-        <span ng-if="event.femaleAttendees.length+event.maleAttendees.length < event.attending">(...)</span>
+        <span ng-if="event.femaleAttendees.length > limit && !event.showAll" ng-click="event.showAll=true" class="ink-button small">Show All</span>
       </div>
     </div>
   </div>

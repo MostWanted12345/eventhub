@@ -5,4 +5,6 @@ eventhubController.controller('EventsController', function ($rootScope, $scope, 
   EventFactory.Event.getAll(function (response) {
     $scope.events = response;
   });
+
+  $scope.limit = 20;
 });
