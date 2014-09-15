@@ -1,4 +1,4 @@
-var Boom = require('Boom');
+var Boom = require('boom');
 var graph = require('fbgraph');
 var url = require('url');
 var Page = require('../../models/page');
