@@ -53,6 +53,8 @@ handlers.create = function create(request, reply) {
       return reply(Boom.badRequest('Page has an invalid Location'));
     }
     
+    page.status = 'suggestion';
+
     var newPage = new Page(page);
     newPage.save(function (err){
       if (err) {
@@ -66,7 +68,7 @@ handlers.create = function create(request, reply) {
         
       log.info({page: newPage}, '[page] created a new page');
 
-      scripts.findEvents(newPage, function (err) {
+      scripts.evnets.getEventsFromPage(newPage, function (err) {
         if(err) {
           return log.error({err: err, page: newPage}, 'error finding new events for this page');
         }

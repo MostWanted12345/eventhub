@@ -1,5 +1,6 @@
 var Event = require('../../models/event');
 var log = require('../../helpers/logger');
+var scripts = require('../../scripts');
 
 var handlers = module.exports;
 
@@ -16,13 +17,26 @@ handlers.list = function list(request, reply) {
 
 
 handlers.get = function get(request, reply) {
-  Event.findById(request.params.id, function(err, result) {
-    if (err || !result || result.length < 1) {
-      log.error({err: err}, '[event] error getting event %s', request.params.id);
-      return reply({error: 'Unable to find event with id \'' + request.params.id + '\'.'});
+  var eventId = request.params.id;
+
+  Event.findById(eventId, function(err, result) {
+    if (err) {
+      log.error({err: err}, '[event] error getting event %s', eventId);
+      return reply({error: 'Error getting event with id \'' + eventId + '\'.'});
     }
     
-    reply(result[0]);
+    if (result && result.length > 0) {
+      return reply(result[0]);
+    }
+    
+    scripts.events.getEvent(eventId, function(err, newEvent) {
+      if (err) {
+        log.error({err: err}, '[event] error creating event %s', eventId);
+        return reply({error: 'Error finding event with id \'' + eventId + '\'.'});
+      }
+
+      reply(newEvent);
+    });
   });
 
 };

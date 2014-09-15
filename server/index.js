@@ -31,7 +31,7 @@ if(updateOnStart) {
       log.info('pages search done');
 
       log.info('## Updating events ##');
-      scripts.findEvents(function (err) {
+      scripts.events.getAllEvents(function (err) {
         if(err) {
           return log.error({err: err}, 'error finding new events');
         }

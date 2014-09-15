@@ -5,6 +5,7 @@ var pageSchema = new mongoose.Schema({
   name: String,
   query: String,
   description: String,
+  status: String,
   updated: { type: Date }
 });
 
