@@ -10,7 +10,12 @@ graph.setAccessToken(accessToken);
 
 var LIMIT = 50;
 var SAMPLE_MAX_SIZE = 200;
-module.exports = function findEvents (done) {
+module.exports = function findEvents (page, done) {
+  if(typeof(page) != 'function') {
+    return findEventsFromPage(page, done);
+  }
+
+  done = page;
 
   Page.findAll(function(err, pages) {
     if (err) {
@@ -20,20 +25,7 @@ module.exports = function findEvents (done) {
 
     // log.debug('got %s pages', pages.length);
 
-    async.eachSeries(pages, function(page, pageDone){
-
-    log.debug('getting events from %s', page.name);
-
-      graph.get(page.id+'/events?fields=id,name,cover,start_time', function(err, res) {
-        if(err || !res || !res.data) {
-          return pageDone(err);
-        }
-
-        async.eachLimit(res.data, LIMIT, function(eventInfo, eventCallback) {
-          processEvent(eventInfo, page, eventCallback);
-        }, pageDone);
-      });
-    }, function(err){
+    async.eachSeries(pages, findEventsFromPage, function(err){
       if(err) {
         // log.error({err: err}, 'error finding events');
         return done(err);
@@ -41,6 +33,20 @@ module.exports = function findEvents (done) {
 
       done();
     });
+  });
+};
+
+var findEventsFromPage = function (page, pageDone) {
+  log.debug('getting events from %s', page.name);
+  
+  graph.get(page.id+'/events?fields=id,name,cover,start_time', function(err, res) {
+    if(err || !res || !res.data) {
+      return pageDone(err);
+    }
+
+    async.eachLimit(res.data, LIMIT, function(eventInfo, eventCallback) {
+      processEvent(eventInfo, page, eventCallback);
+    }, pageDone);
   });
 };
 

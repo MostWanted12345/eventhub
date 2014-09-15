@@ -29,3 +29,19 @@ server.route({
     }
   }
 });
+
+server.route({
+  method: 'POST',
+  path: '/api/page',
+  config: {
+    handler: handlers.create,
+    auth: false,
+    validate: {
+      params: {},
+      query: {},
+      payload: {
+        url: Joi.string().required()
+      }
+    }
+  }
+});
