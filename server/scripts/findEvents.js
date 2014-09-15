@@ -99,7 +99,7 @@ var processEvent = function(eventInfo, page, eventCallback) {
       var malePertentage = Math.round((maleAttendees.length / attendeesSample.length)*100);
       var femalePercentage = Math.round((femaleAttendees.length / attendeesSample.length)*100);
 
-      eventInfo = {
+      var newEventInfo = {
         id: eventInfo.id,
         name: eventInfo.name,
         attending: totalAttendes.length,
@@ -113,26 +113,26 @@ var processEvent = function(eventInfo, page, eventCallback) {
       };
 
       if(eventInfo.cover && eventInfo.cover.source) {
-        eventInfo.img =  eventInfo.cover.source;
-      }
-
-      var newEvent = new Event(eventInfo);
+        newEventInfo.img =  eventInfo.cover.source;
+      }  
+      
+      var newEvent = new Event(newEventInfo);
 
       newEvent.save(function (err){
         if (err) {
           if(err.code == 11000) {
             // Event already exists
-            return Event.update({id: eventInfo.id}, eventInfo, eventCallback);
+            return Event.update({id: newEventInfo.id}, newEventInfo, eventCallback);
           }
-          log.error({err: err, event: eventInfo}, 'error creating event');
+          log.error({err: err, event: newEventInfo}, 'error creating event');
           return eventCallback(err);
         }
           
-        log.info({event: eventInfo}, 'created a new event');
+        log.info({event: newEventInfo}, 'created a new event');
         eventCallback();
       });
 
-      log.debug(eventInfo.name + '\n(M):' + malePertentage + '%(' + maleAttendees.length + ') (F):' + femalePercentage + '%(' + femaleAttendees.length+ ')\n');  
+      log.debug(newEventInfo.name + '\n(M):' + malePertentage + '%(' + maleAttendees.length + ') (F):' + femalePercentage + '%(' + femaleAttendees.length+ ')\n');  
     });
   });
 };

@@ -2,7 +2,8 @@
 
   <div class="all-100" infinite-scroll="scroll()">
     <div class="event" ng-repeat="event in events">
-      <a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a>
+      <div ng-if="event.img" class="cover" style="background-image:url({{event.img}});"></div>
+      <h3><a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a></h3>
       <div class="small">{{timeSince(event.date)}}</div>
       <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
       <div>
