@@ -1,9 +1,9 @@
 'use strict';
 
 eventhubServices
-  .factory('EventFactory', function ($resource) {
+  .factory('PageFactory', function ($resource) {
     return {
-      Event: $resource(url_prefix+'/api/event/:id', null, {
+      Page: $resource(url_prefix+'/api/page/:id', null, {
         'getAll': {method: 'GET', isArray: true},
         'create': {method: 'POST'},
       })

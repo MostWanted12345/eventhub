@@ -6,10 +6,11 @@ body {
 }
 
 .logo {
-  padding: 0px;
+  padding-top: 30px;
 }
 .logo a {
   font-size: 40px;
+  font-weight: 300;
   text-decoration: none;
 }
 

@@ -1,6 +1,6 @@
 'use strict';
 
-eventhubController.controller('MainController', function ($scope, $routeParams, $location, $window, $rootScope, EventFactory) {
+eventhubController.controller('MainController', function ($scope, $routeParams, $location, $window, $rootScope, EventFactory, PageFactory) {
 
   $scope.loading = true;
 
@@ -13,6 +13,28 @@ eventhubController.controller('MainController', function ($scope, $routeParams, 
     return $scope.events.filter(function(o) {
       return o.id == eventId;
     })[0];
+  };
+
+  $scope.getUrl = function(url) {
+    var eventPattern = /facebook\.com\/events\/([a-z0-9]+)/; 
+    var eventMatch = url.match(eventPattern);
+    if(eventMatch && eventMatch[1]) {
+      return $location.path('/event/'+eventMatch[1]);
+    }
+
+    var pagePattern = /(?:https?:\/\/)?(?:www\.)?facebook\.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[\w\-]*\/)*([\w\-\.]*)/;
+    var pageMatch = url.match(pagePattern);
+    if(pageMatch && pageMatch[1]) {
+      PageFactory.Page.create({url: url}, function(response) {
+        if(response.success) {
+          $scope.message=response.success;
+        }
+
+        EventFactory.Event.getAll(function(events) {
+          $scope.events = events;
+        });
+      });
+    }    
   };
 
   $scope.timeSince =function (date) {

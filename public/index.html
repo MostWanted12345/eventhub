@@ -48,23 +48,25 @@
   </head>
 
   <body class="ink-drawer" ng-controller="MainController">
-    <div id="topbar" style="z-index:600;">
-      <nav class="ink-navigation ink-grid ie7">
-        <ul class="menu horizontal push-left medium-push-center small-push-center tiny-push-center" style="height: 44px;">
-          <li class="hide-all"><button class="fa fa-bars left-drawer-trigger" style="color:#333;"></button></li>
-          <li class="logo">
-            <a href="#/">
-              <i class="fa fa-circle-o-notch fa-spin" ng-if="loading"></i> eventhub 
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="ink-grid">
+      <h1 class="logo">
+        <a href="#/">
+          eventhub <i class="fa fa-circle-o-notch fa-spin" ng-if="loading"></i> 
+        </a>
+      </h1>
+
+      <div ng-if="message" class="ink-alert basic info" role="alert">
+        <button class="ink-dismiss">&times;</button>
+        <p>{{message}}</p>
+      </div>
+      <div ng-if="error" class="ink-alert basic error" role="alert">
+        <button class="ink-dismiss">&times;</button>
+        <p>{{error}}</p>
+      </div>
     </div>
 
     <div class="left-drawer" style="z-index:500;">
     </div>
-
-    <br><br>
 
     <div class="content-drawer">
       <div ng-view></div>

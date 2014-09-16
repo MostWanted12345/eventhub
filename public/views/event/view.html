@@ -1,19 +1,9 @@
 <div class="ink-grid">
 
   <div class="all-100">
-    <form class="ink-form" ng-submit="getUrl(url)">
-      <div class="control-group">
-      <div class="control">
-        <input type="text" ng-model="url" placeholder="Insert a facebook event or page url">
-      </div>
-      </div>
-    </form>
-  </div>
+    <h1 ng-if="!event">Loading event...</h1>
 
-  </div>
-<div class="ink-grid">
-  <div class="all-100" infinite-scroll="scroll()">
-    <div class="event" ng-repeat="event in events">
+    <div class="event" ng-if="event">
       <a href="#/event/{{event.id}}"><div ng-if="event.img" class="cover" style="background-image:url({{event.img}});"></div></a>
       <h3><a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a></h3>
       <div class="small">{{timeSince(event.date)}}</div>

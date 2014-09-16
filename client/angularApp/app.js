@@ -12,7 +12,7 @@ angular.module('eventhub', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'views/home.html', controller: 'HomeController'});
-  $routeProvider.when('/events/', {templateUrl: 'views/event/list.html', controller: 'EventsController'});
+  $routeProvider.when('/event/', {templateUrl: 'views/event/list.html', controller: 'EventsController'});
   $routeProvider.when('/event/:id', {templateUrl: 'views/event/view.html', controller: 'EventController'});
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

@@ -68,7 +68,7 @@ handlers.create = function create(request, reply) {
         
       log.info({page: newPage}, '[page] created a new page');
 
-      scripts.evnets.getEventsFromPage(newPage, function (err) {
+      scripts.events.getEventsFromPage(newPage, function (err) {
         if(err) {
           return log.error({err: err, page: newPage}, 'error finding new events for this page');
         }
