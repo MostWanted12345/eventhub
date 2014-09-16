@@ -1,0 +1,35 @@
+body {
+  /*background-image: url(/img/stardust.png); 
+  background-position: initial initial; 
+  background-repeat: initial initial;*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  padding-top: 30px;
+}
+.logo a {
+  font-size: 40px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.attendee img {
+  margin-bottom: 5px;
+  width: 35px;
+}
+
+.event {
+  margin: 60px;
+}
+.cover {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-repeat:no-repeat;
+  background-position:center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

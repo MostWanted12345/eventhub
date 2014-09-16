@@ -1,0 +1,20 @@
+<div class="ink-grid">
+
+  <div class="all-100">
+    <h1 ng-if="!event">Loading event...</h1>
+
+    <div class="event" ng-if="event">
+      <a href="#/event/{{event.id}}"><div ng-if="event.img" class="cover" style="background-image:url({{event.img}});"></div></a>
+      <h3><a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a></h3>
+      <div class="small">{{timeSince(event.date)}}</div>
+      <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
+      <div>
+        <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees | limitTo:((event.showAll) ? 10000 : limit)" target="_blank">
+          <img ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
+        </a>
+        <span ng-if="event.femaleAttendees.length > limit && !event.showAll" ng-click="event.showAll=true" class="ink-button small">Show All</span>
+      </div>
+    </div>
+  </div>
+
+</div>
