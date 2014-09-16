@@ -7,4 +7,5 @@ eventhubController.controller('EventsController', function ($rootScope, $scope, 
   });
 
   $scope.limit = 20;
+  $scope.predicate = 'date';
 });

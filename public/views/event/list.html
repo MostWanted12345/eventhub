@@ -9,22 +9,28 @@
       </div>
     </form>
   </div>
-
-  </div>
-<div class="ink-grid">
-  <div class="all-100" infinite-scroll="scroll()">
-    <div class="event" ng-repeat="event in events">
-      <a href="#/event/{{event.id}}"><div ng-if="event.img" class="cover" style="background-image:url({{event.img}});"></div></a>
-      <h3><a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a></h3>
-      <div class="small">{{timeSince(event.date)}}</div>
-      <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
-      <div>
-        <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees | limitTo:((event.showAll) ? 10000 : limit)" target="_blank">
-          <img ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
-        </a>
-        <span ng-if="event.femaleAttendees.length > limit && !event.showAll" ng-click="event.showAll=true" class="ink-button small">Show All</span>
+  <div class="all-100">
+    <div>
+      Order by 
+      <a href="" ng-click="predicate = 'date'; reverse=!reverse">Date</a> | 
+      <a href="" ng-click="predicate = 'attending'; reverse=!reverse"># Attendees</a> | 
+      <a href="" ng-click="predicate = 'femaleAttendees.length'; reverse=!reverse"># Girls</a> | 
+      <a href="" ng-click="predicate = 'maleAttendees.length'; reverse=!reverse"># Guys</a> | 
+      <a href="" ng-click="predicate = 'malePertentage'; reverse=!reverse">Ratio</a>
+    </div>
+    <div infinite-scroll="scroll()">
+      <div class="event" ng-repeat="event in events | orderBy:predicate:reverse">
+        <a href="#/event/{{event.id}}"><div ng-if="event.img" class="cover" style="background-image:url({{event.img}});"></div></a>
+        <h3><a href="http://www.facebook.com/events/{{event.id}}" target="_blank">{{event.name}}</a></h3>
+        <div class="small">{{timeSince(event.date)}}</div>
+        <div>{{event.attending}} Attendees ~ {{event.femalePercentage}}% Female</div>
+        <div>
+          <a class="attendee" href="https://www.facebook.com/profile.php?id={{attendee}}" ng-repeat="attendee in event.femaleAttendees | limitTo:((event.showAll) ? 10000 : limit)" target="_blank">
+            <img ng-src="https://graph.facebook.com/{{attendee}}/picture?width=30&height=30">
+          </a>
+          <span ng-if="event.femaleAttendees.length > limit && !event.showAll" ng-click="event.showAll=true" class="ink-button small">Show All</span>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
