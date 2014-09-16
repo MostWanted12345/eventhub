@@ -4,5 +4,13 @@ eventhub
 Installation
 ```npm install```
 
-Run server 
+Compile angular app
+```npm run dist```
+
+Start server 
 ```npm start```
+
+Run server (reloads automatically when files change) 
+```npm run run```
+
+Don't forget to create an `config.js` file based on `config.example.js`, but with your configuration.
